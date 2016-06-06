@@ -24,6 +24,7 @@ branches:
 install:
   - bundle install
   - npm install -g npm@2
+  - npm install
 
 script:
   - npm run travis
