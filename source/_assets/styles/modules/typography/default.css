@@ -1,0 +1,191 @@
+/* ========================================================================== *\
+   TYPE ($type)
+\* ========================================================================== */
+
+:root {
+  --type-focus-outline-fallback: 1px dotted var(--color-black);
+  --type-focus-outline: var(--spacing-1) auto -webkit-focus-ring-color;
+  --type-body-font-family: var(--font-family-1);
+  --type-body-font-size: var(--font-size-5);
+  --type-body-line-height: var(--line-height-1);
+  --type-body-color: var(--color-gray-darker);
+  --type-anchor-color: var(--color-theme-1-dark);
+  --type-anchor-visited-color: var(--color-theme-4);
+  --type-vertical-rhythm: var(--spacing-4);
+  --type-del-font-style: italic;
+  --type-del-text-decoration: line-through;
+  --type-del-color: var(--color-gray);
+  --type-heading-font-family: var(--font-family-1);
+  --type-heading-font-weight: 700;
+  --type-heading-line-height: var(--line-height-2);
+  --type-heading-color: var(--color-gray-darkest);
+  --type-heading-1-font-size: var(--font-size-10);
+  --type-heading-2-font-size: var(--font-size-9);
+  --type-heading-3-font-size: var(--font-size-8);
+  --type-heading-4-font-size: var(--font-size-7);
+  --type-heading-5-font-size: var(--font-size-6);
+  --type-heading-6-font-size: var(--font-size-5);
+  --type-list-item-padding: var(--spacing-4);
+}
+
+/**
+ * Set the baseline <body> text styles.
+ */
+
+body {
+  font-family: var(--type-body-font-family);
+  font-size: var(--type-body-font-size);
+  line-height: var(--type-body-line-height);
+  color: var(--type-body-color);
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+}
+
+/**
+ * Set the baseline `:focus` styles
+ */
+
+:focus {
+  outline: var(--type-focus-outline-fallback);
+  outline: var(--type-focus-outline);
+}
+
+/**
+ * Set the baseline heading text styles.
+ */
+
+h1, .heading-1,
+h2, .heading-2,
+h3, .heading-3,
+h4, .heading-4,
+h5, .heading-5,
+h6, .heading-6 {
+  font-family: var(--type-heading-font-family);
+  font-weight: var(--type-heading-font-weight);
+  line-height: var(--type-heading-line-height);
+  color: var(--type-heading-color);
+}
+
+h1, .heading-1 {
+  font-size: var(--type-heading-1-font-size);
+}
+
+h2, .heading-2 {
+  font-size: var(--type-heading-2-font-size);
+}
+
+h3, .heading-3 {
+  font-size: var(--type-heading-3-font-size);
+}
+
+h4, .heading-4 {
+  font-size: var(--type-heading-4-font-size);
+  font-weight: 400;
+}
+
+h5, .heading-5 {
+  font-size: var(--type-heading-5-font-size);
+}
+
+h6, .heading-6 {
+  font-size: var(--type-heading-6-font-size);
+}
+
+/**
+ * Set the baseline <a> styles.
+ */
+
+a {
+  color: var(--type-anchor-color);
+}
+
+a:visited {
+  color: var(--type-anchor-visited-color);
+}
+
+/**
+ * Add a help cursor to elements that need one.
+ */
+
+abbr,
+acronym,
+dfn[title] {
+  cursor: help;
+}
+
+/**
+ * Remove `text-decoration` on links inside <abbr> elements, since there are
+ * already border styles on the <abbr> element.
+ */
+
+abbr a {
+  text-decoration: none;
+}
+
+/**
+ * Set <acronym> elements to be uppercase by default.
+ */
+
+acronym {
+  text-transform: uppercase;
+}
+
+/**
+ * Set a consistent margin for common elements to create a vertical rhythm.
+ */
+
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+summary,
+table,
+ul {
+  margin: 0;
+  margin-bottom: var(--type-vertical-rhythm);
+}
+
+/**
+ * Add word wrapping and basic hyphenation to common elements.
+ */
+
+caption,
+p,
+table,
+td,
+textarea,
+th {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/**
+ * Set some basic styles for <del> tags.
+ */
+
+del {
+  font-style: var(--type-del-font-style);
+  text-decoration: var(--type-del-text-decoration);
+  color: var(--type-del-color);
+}
+
+/**
+ * Add back some default styles for <ul> and <ol> elements
+ */
+
+ul,
+ol {
+  padding-left: var(--type-list-item-padding);
+}

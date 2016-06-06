@@ -1,0 +1,145 @@
+/* ========================================================================== *\
+   FONT FAMILY ($font-family)
+\* ========================================================================== */
+
+.font-family-1 {
+  font-family: var(--font-family-1);
+}
+
+.font-family-2 {
+  font-family: var(--font-family-2);
+}
+
+.font-family-3 {
+  font-family: var(--font-family-3);
+}
+
+.font-family-4 {
+  font-family: var(--font-family-4);
+}
+
+@media screen and (--min-width-xxs) {
+  .xxs-font-family-1 {
+    font-family: var(--font-family-1);
+  }
+
+  .xxs-font-family-2 {
+    font-family: var(--font-family-2);
+  }
+
+  .xxs-font-family-3 {
+    font-family: var(--font-family-3);
+  }
+
+  .xxs-font-family-4 {
+    font-family: var(--font-family-4);
+  }
+}
+
+@media screen and (--min-width-xs) {
+  .xs-font-family-1 {
+    font-family: var(--font-family-1);
+  }
+
+  .xs-font-family-2 {
+    font-family: var(--font-family-2);
+  }
+
+  .xs-font-family-3 {
+    font-family: var(--font-family-3);
+  }
+
+  .xs-font-family-4 {
+    font-family: var(--font-family-4);
+  }
+}
+
+@media screen and (--min-width-sm) {
+  .sm-font-family-1 {
+    font-family: var(--font-family-1);
+  }
+
+  .sm-font-family-2 {
+    font-family: var(--font-family-2);
+  }
+
+  .sm-font-family-3 {
+    font-family: var(--font-family-3);
+  }
+
+  .sm-font-family-4 {
+    font-family: var(--font-family-4);
+  }
+}
+
+@media screen and (--min-width-md) {
+  .md-font-family-1 {
+    font-family: var(--font-family-1);
+  }
+
+  .md-font-family-2 {
+    font-family: var(--font-family-2);
+  }
+
+  .md-font-family-3 {
+    font-family: var(--font-family-3);
+  }
+
+  .md-font-family-4 {
+    font-family: var(--font-family-4);
+  }
+}
+
+@media screen and (--min-width-lg) {
+  .lg-font-family-1 {
+    font-family: var(--font-family-1);
+  }
+
+  .lg-font-family-2 {
+    font-family: var(--font-family-2);
+  }
+
+  .lg-font-family-3 {
+    font-family: var(--font-family-3);
+  }
+
+  .lg-font-family-4 {
+    font-family: var(--font-family-4);
+  }
+}
+
+@media screen and (--min-width-xl) {
+  .xl-font-family-1 {
+    font-family: var(--font-family-1);
+  }
+
+  .xl-font-family-2 {
+    font-family: var(--font-family-2);
+  }
+
+  .xl-font-family-3 {
+    font-family: var(--font-family-3);
+  }
+
+  .xl-font-family-4 {
+    font-family: var(--font-family-4);
+  }
+}
+
+@media screen and (--min-width-xxl) {
+  .xxl-font-family-1 {
+    font-family: var(--font-family-1);
+  }
+
+  .xxl-font-family-2 {
+    font-family: var(--font-family-2);
+  }
+
+  .xxl-font-family-3 {
+    font-family: var(--font-family-3);
+  }
+
+  .xxl-font-family-4 {
+    font-family: var(--font-family-4);
+  }
+}

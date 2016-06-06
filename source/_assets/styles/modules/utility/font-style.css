@@ -1,0 +1,113 @@
+/* ========================================================================== *\
+   FONT WEIGHT ($font-weight)
+\* ========================================================================== */
+
+.font-style-normal {
+  font-style: normal;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.font-style-oblique {
+  font-style: oblique;
+}
+
+@media screen and (--min-width-xxs) {
+  .xxs-font-style-normal {
+    font-style: normal;
+  }
+
+  .xxs-font-style-italic {
+    font-style: italic;
+  }
+
+  .xxs-font-style-oblique {
+    font-style: oblique;
+  }
+}
+
+@media screen and (--min-width-xs) {
+  .xs-font-style-normal {
+    font-style: normal;
+  }
+
+  .xs-font-style-italic {
+    font-style: italic;
+  }
+
+  .xs-font-style-oblique {
+    font-style: oblique;
+  }
+}
+
+@media screen and (--min-width-sm) {
+  .sm-font-style-normal {
+    font-style: normal;
+  }
+
+  .sm-font-style-italic {
+    font-style: italic;
+  }
+
+  .sm-font-style-oblique {
+    font-style: oblique;
+  }
+}
+
+@media screen and (--min-width-md) {
+  .md-font-style-normal {
+    font-style: normal;
+  }
+
+  .md-font-style-italic {
+    font-style: italic;
+  }
+
+  .md-font-style-oblique {
+    font-style: oblique;
+  }
+}
+
+@media screen and (--min-width-lg) {
+  .lg-font-style-normal {
+    font-style: normal;
+  }
+
+  .lg-font-style-italic {
+    font-style: italic;
+  }
+
+  .lg-font-style-oblique {
+    font-style: oblique;
+  }
+}
+
+@media screen and (--min-width-xl) {
+  .xl-font-style-normal {
+    font-style: normal;
+  }
+
+  .xl-font-style-italic {
+    font-style: italic;
+  }
+
+  .xl-font-style-oblique {
+    font-style: oblique;
+  }
+}
+
+@media screen and (--min-width-xxl) {
+  .xxl-font-style-normal {
+    font-style: normal;
+  }
+
+  .xxl-font-style-italic {
+    font-style: italic;
+  }
+
+  .xxl-font-style-oblique {
+    font-style: oblique;
+  }
+}

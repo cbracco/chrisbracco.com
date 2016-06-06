@@ -1,0 +1,24 @@
+/**
+ * Button: Color: Theme 1 Dark
+ */
+
+:root {
+  --button-color-theme-1-dark-background-color: var(--color-theme-1-dark);
+  --button-color-theme-1-dark-background-color-hover: color(var(--button-color-theme-1-dark-background-color) blend(var(--color-black) 5%));
+  --button-color-theme-1-dark-background-color-active: color(var(--button-color-theme-1-dark-background-color) blend(var(--color-black) 15%));
+  --button-color-theme-1-dark-color: var(--color-white);
+}
+
+.button--color-theme-1-dark,
+.button:visited {
+  background-color: var(--button-color-theme-1-dark-background-color);
+  color: var(--button-color-theme-1-dark-color);
+}
+
+.button--color-theme-1-dark:hover {
+  background-color: var(--button-color-theme-1-dark-background-color-hover);
+}
+
+.button--color-theme-1-dark:active {
+  background-color: var(--button-color-theme-1-dark-background-color-active);
+}

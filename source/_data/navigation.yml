@@ -1,0 +1,13 @@
+#
+# Site Navigation
+#
+
+- title: "Blog"
+  url: "/"
+  icon: "ground"
+- title: "Work"
+  url: "/work/"
+  icon: "amplifier"
+- title: "Info"
+  url: "/info/"
+  icon: "helix"

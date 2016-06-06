@@ -1,0 +1,34 @@
+/* ========================================================================== *\
+   GRID ($grid)
+\* ========================================================================== */
+
+/**
+ * Grid System
+ *
+ * Hat tip to Philip Walton for the simple Flexbox technique.
+ *
+ * @link http://cbrac.co/20Q81oQ
+ */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid__item {
+  flex: 1;
+}
+
+/**
+ * Remove flex property for `.grid__item` elements with a specified width
+ * @link http://cbrac.co/1sW9VtE
+ */
+
+.grid > [class^='width-'],
+.grid > [class*='-width-'],
+.grid > [class*=' width-'] {
+  flex: none;
+}

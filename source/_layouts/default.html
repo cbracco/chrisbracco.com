@@ -1,0 +1,13 @@
+{% include head/base.html %}
+  <div id="site" class="page {% if page.pageClass %}page--{{ page.pageClass }} {% endif %}layout--{{ page.layout }} padding-top-4 padding-right-4 padding-left-4 lg-padding-right-0 lg-padding-left-0" role="document">
+    {% include site/browserupgrade.html %}
+    {% include site/skiplink.html %}
+    {% include site/header.html %}
+    <div id="siteMain" class="page__main" role="main">
+      <div class="wrapper wrapper--flush wrapper--lg">
+        {{ content }}
+      </div>
+    </div>
+    {% include site/footer.html %}
+  </div>
+{% include foot/base.html %}

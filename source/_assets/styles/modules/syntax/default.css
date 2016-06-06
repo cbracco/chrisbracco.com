@@ -1,0 +1,74 @@
+/* ========================================================================== *\
+   SYNTAX ($syntax)
+\* ========================================================================== */
+
+:root {
+  --syntax-font-family: var(--font-family-4);
+  --syntax-font-size: var(--font-size-4);
+  --syntax-background-color: var(--color-syntax-background);
+  --syntax-color: var(--color-syntax-text);
+  --syntax-border-radius: var(--border-radius);
+  --syntax-padding: 1px var(--spacing-2);
+  --syntax-pre-code-padding: var(--spacing-3);
+}
+
+/**
+ * 1. Correct `font-family` set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--syntax-font-family); /* 1 */
+  font-size: var(--syntax-font-size);
+  background-color: var(--syntax-background-color);
+  color: var(--syntax-color);
+}
+
+code,
+kbd,
+samp {
+  border-radius: var(--syntax-border-radius);
+  padding: var(--syntax-padding);
+}
+
+code {
+  margin: 0;
+  white-space: nowrap;
+}
+
+kbd {
+  position: relative;
+  top: -1px;
+  margin-bottom: 1px;
+  white-space: nowrap;
+}
+
+pre {
+  position: relative;
+  overflow: auto;
+  padding: 0;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/**
+ * Reset the above <code> styles when nested inside <pre> tags.
+ */
+
+pre code {
+  display: block;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: var(--syntax-pre-code-padding);
+  white-space: pre;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}

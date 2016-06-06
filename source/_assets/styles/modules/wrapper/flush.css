@@ -1,0 +1,8 @@
+/**
+ * Wrapper: Flush
+ * Force `.wrapper` to sit flush with its parent.
+ */
+
+.wrapper--flush {
+  width: 100%;
+}

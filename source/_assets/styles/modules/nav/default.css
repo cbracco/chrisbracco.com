@@ -1,0 +1,46 @@
+/* ========================================================================== *\
+   NAV ($nav)
+\* ========================================================================== */
+
+:root {
+  --nav-link-color: var(--color-gray-darkest);
+  --nav-link-hover-icon-color: var(--color-theme-3);
+  --nav-link-padding: 0 calc(var(--spacing-3) + 4);
+  --nav-item-current-nav-link-color: var(--color-gray);
+  --lg-nav-top: calc(var(--spacing-4) + 8);
+  --lg-nav-left: var(--spacing-4);
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__link,
+.nav__link:visited {
+  color: var(--nav-link-color);
+  padding: var(--nav-link-padding);
+}
+
+.nav__link:hover .nav__link__icon {
+  fill: var(--nav-link-hover-icon-color);
+}
+
+.nav__item.is-current .nav__link,
+.nav__item.is-current .nav__link:hover,
+.nav__item.is-current .nav__link__icon,
+.nav__item.is-current .nav__link__text {
+  color: var(--nav-item-current-nav-link-color);
+  font-style: italic;
+}
+
+.nav__item.is-current .nav__link__icon {
+  fill: var(--nav-item-current-nav-link-color);
+}
+
+@media screen and (--min-width-lg) {
+  .nav {
+    position: absolute;
+    top: var(--lg-nav-top);
+    left: var(--lg-nav-left);
+  }
+}

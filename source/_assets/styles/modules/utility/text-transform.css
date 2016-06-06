@@ -1,0 +1,121 @@
+/* ========================================================================== *\
+   TEXT TRANSFORM ($text-transform)
+\* ========================================================================== */
+
+.text-normal {
+  text-transform: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+@media screen and (--min-width-xxs) {
+  .xxs-text-normal {
+    text-transform: none;
+  }
+
+  .xxs-text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .xxs-text-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+@media screen and (--min-width-xs) {
+  .xs-text-normal {
+    text-transform: none;
+  }
+
+  .xs-text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .xs-text-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+@media screen and (--min-width-sm) {
+  .sm-text-normal {
+    text-transform: none;
+  }
+
+  .sm-text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .sm-text-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+@media screen and (--min-width-md) {
+  .md-text-normal {
+    text-transform: none;
+  }
+
+  .md-text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .md-text-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+@media screen and (--min-width-lg) {
+  .lg-text-normal {
+    text-transform: none;
+  }
+
+  .lg-text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .lg-text-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+@media screen and (--min-width-xl) {
+  .xl-text-normal {
+    text-transform: none;
+  }
+
+  .xl-text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .xl-text-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+@media screen and (--min-width-xxl) {
+  .xxl-text-normal {
+    text-transform: none;
+  }
+
+  .xxl-text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .xxl-text-lowercase {
+    text-transform: lowercase;
+  }
+}

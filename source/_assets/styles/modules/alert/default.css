@@ -1,0 +1,24 @@
+/* ========================================================================== *\
+   ALERT ($alert)
+\* ========================================================================== */
+
+:root {
+  --alert-background-color: var(--color-theme-3);
+  --alert-color: var(--color-gray-darkest);
+  --alert-padding: var(--spacing-3);
+  --alert-paragraph-margin: var(--spacing-4);
+}
+
+.alert {
+  background-color: var(--alert-background-color);
+  color: var(--alert-color);
+  padding: var(--alert-padding);
+}
+
+.alert > p {
+  margin: 0;
+}
+
+.alert > p + p {
+  margin-top: var(--alert-paragraph-margin);
+}
