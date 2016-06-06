@@ -46,8 +46,8 @@ This project is compatible with **Linux**, **Unix**, and **Mac OSX** operating s
 Clone this repository to your local machine, and install its dependencies with the following command(s):
 
 ```bash
-git clone git@github.com:cbracco/jekyll-postcss-browserify.git
-cd jekyll-postcss-browserify/
+git clone git@github.com:cbracco/chrisbracco.com.git
+cd chrisbracco.com/
 npm install
 ```
 
