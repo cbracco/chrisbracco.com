@@ -1,6 +1,6 @@
 # chrisbracco.com
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/cbracco/chrisbracco.com.svg)](https://travis-ci.org/cbracco/chrisbracco.com)
+[![Build Status](https://travis-ci.org/cbracco/chrisbracco.com.svg)](https://travis-ci.org/cbracco/chrisbracco.com)
 
 > The source code for my personal website. It uses [jekyll-postcss-browserify][jekyll-postcss-browserify] as a baseline.
 

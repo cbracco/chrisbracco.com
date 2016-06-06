@@ -12,10 +12,10 @@ env:
 sudo: false
 
 # cache both Ruby gems and npm node_modules between builds (for faster builds)
-# cache:
-#   bundler: true
-#   directories:
-#     - node_modules
+cache:
+  bundler: true
+  directories:
+    - node_modules
 
 branches:
   only:
