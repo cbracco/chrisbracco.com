@@ -1,9 +1,9 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="{{ site.title }}">
-{% if page.title %}
-<meta property="og:title" content="{{ page.title }}">
+{% if page.title and page.pageClass != 'home' %}
+<meta property="og:title" content="{{ page.title }} &bull; {{ site.title }}">
 {% else %}
-<meta property="og:title" content="{{ site.title }}">
+<meta property="og:title" content="{{ site.title }} &bull; {{ site.title_after }}">
 {% endif %}
 {% if page.title %}
 <meta property="og:type" content="article">
@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 {% endif %}
 {% if page.teaser %}
-<meta property="og:description" content="{{ page.description }}">
+<meta property="og:description" content="{{ page.teaser }}">
 {% elsif page.description %}
 <meta property="og:description" content="{{ page.description }}">
 {% else %}

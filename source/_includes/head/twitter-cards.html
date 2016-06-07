@@ -4,10 +4,10 @@
 <meta name="twitter:site" content="@{{ site.twitterCards.username }}">
 <meta name="twitter:creator" content="@{{ site.twitterCards.username }}">
 {% endif %}
-{% if page.title %}
-<meta name="twitter:title" content="{{ page.title }}">
+{% if page.title and page.pageClass != 'home' %}
+<meta name="twitter:title" content="{{ page.title }} &bull; {{ site.title }}">
 {% else %}
-<meta name="twitter:title" content="{{ site.title }}">
+<meta name="twitter:title" content="{{ site.title }} &bull; {{ site.title_after }}">
 {% endif %}
 {% if page.url %}
 <meta name="twitter:url" content="{{ page.url | prepend: site.url | prepend: site.url }}">
