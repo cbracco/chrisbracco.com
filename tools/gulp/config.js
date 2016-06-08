@@ -8,21 +8,6 @@ var production = 'build/production/'
 var productionAssets = 'build/production/assets/'
 var rsyncCredentials = require('../../rsync-credentials.json')
 
-// Require rsyncCredentials only if the file exists to avoid build
-// failure on travis-ci
-// var fs = require('fs')
-
-// if (fs.existsSync('../../rsync-credentials.json')) {
-//   var rsyncCredentials = require('../../rsync-credentials.json')
-// } else {
-//   var rsyncCredentials = {
-//     destination: '/path/to/website',
-//     hostname: 'example.com',
-//     username: 'user',
-//     port: 666
-//   }
-// }
-
 // Define Configuration
 module.exports = {
   watch: {
