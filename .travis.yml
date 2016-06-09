@@ -20,7 +20,7 @@ before_install:
 install:
   - npm install
 before_script:
-  - echo -e "Host cbracco.me\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - echo -e "Host cbracco.me\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/id_rsa\n" >> ~/.ssh/config
 script:
   - npm run build:production
   - npm run test:scripts
