@@ -48,6 +48,7 @@ Clone this repository to your local machine, and install its dependencies with t
 ```bash
 git clone git@github.com:cbracco/chrisbracco.com.git
 cd chrisbracco.com/
+bundle install
 npm install
 ```
 

@@ -5,7 +5,6 @@
   "private": true,
   "main": "gulpfile.js",
   "scripts": {
-    "preinstall": "bundle install",
     "start": "gulp",
     "prod": "gulp prod",
     "build": "gulp build",
