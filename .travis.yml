@@ -20,6 +20,8 @@ before_install:
   - openssl aes-256-cbc -K $encrypted_8205f213b679_key -iv $encrypted_8205f213b679_iv -in deploy-key.enc -out deploy-key -d
 install:
   - npm install
+before_script:
+  - echo -e "Host cbracco.me\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
   - npm run build:production
   - npm run test:scripts
