@@ -1,33 +1,68 @@
 language: ruby
-
 rvm:
   - 2.3.1
-
-# speeds up installation of html-proofer
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
-# route your build to the container-based infrastructure for a faster build
-sudo: false
-
-# cache both Ruby gems and npm node_modules between builds (for faster builds)
-cache:
-  bundler: true
-  directories:
-    - node_modules
-
 branches:
   only:
     - master
-
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+sudo: false
+addons:
+  ssh_known_hosts: cbracco.me
+before_install:
+  - npm i -g npm@3
 install:
-  - bundle install
-  - npm install -g npm@2
   - npm install
-
 script:
-  - npm run travis
+  - npm run build:production
+  - npm run test:scripts
+  - npm run test:html
+before_deploy:
+  - openssl aes-256-cbc -K $encrypted_8205f213b679_key -iv $encrypted_8205f213b679_iv
+    -in deploy-key.enc -out deploy-key -d
+  - rm deploy-key.enc
+  - chmod 600 deploy-key
+  - mv deploy-key ~/.ssh/id_rsa
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: npm run deploy
+  on:
+    branch: master
 
-after_success:
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then npm run deploy; fi
+
+
+# language: ruby
+#
+# rvm:
+#   - 2.3.1
+#
+# # speeds up installation of html-proofer
+# env:
+#   global:
+#     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+#
+# # route your build to the container-based infrastructure for a faster build
+# sudo: false
+#
+# # cache both Ruby gems and npm node_modules between builds (for faster builds)
+# cache:
+#   bundler: true
+#   directories:
+#     - node_modules
+#
+# branches:
+#   only:
+#     - master
+#
+# install:
+#   - bundle install
+#   - npm install -g npm@2
+#   - npm install
+#
+# script:
+#   - npm run travis
+#
+# after_success:
+#   - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then npm run deploy; fi

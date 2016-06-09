@@ -6,9 +6,7 @@ var development = 'build/development/'
 var developmentAssets = 'build/assets/'
 var production = 'build/production/'
 var productionAssets = 'build/production/assets/'
-var rsyncCredentials = require('../../rsync-credentials.json')
 
-// Define Configuration
 module.exports = {
   watch: {
     jekyll: [
@@ -241,11 +239,11 @@ module.exports = {
   rsync: {
     src: production + '/**',
     options: {
-      destination: rsyncCredentials.destination,
+      destination: '/var/www/chrisbracco.com/public_html/www/',
       root: production,
-      hostname: rsyncCredentials.hostname,
-      username: rsyncCredentials.username,
-      port: rsyncCredentials.port,
+      hostname: 'cbracco.me',
+      username: 'deploy',
+      port: 415,
       incremental: true,
       progress: true,
       relative: true,

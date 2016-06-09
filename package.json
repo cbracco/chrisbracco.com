@@ -11,7 +11,7 @@
     "build": "gulp build",
     "build:production": "gulp build:production",
     "deploy": "gulp deploy",
-    "test:js": "standard test/*.js && tape test/*.js | faucet",
+    "test:scripts": "standard test/*.js && tape test/*.js | faucet",
     "test:html": "bundle exec htmlproofer ./build/production --only-4xx --check-favicon --check-html --external_only",
     "travis": "npm run test:js && npm run test:html"
   },
