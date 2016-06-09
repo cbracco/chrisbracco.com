@@ -10,11 +10,17 @@ env:
 sudo: false
 addons:
   ssh_known_hosts: cbracco.me
+cache:
+  bundler: true
+  directories:
+    - node_modules
 before_install:
   - nvm install 0.12
   - npm i -g npm@2
 install:
   - npm install
+before_script:
+  - echo -e "Host cbracco.me\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
   - npm run build:production
   - npm run test:scripts
@@ -31,39 +37,3 @@ deploy:
   script: npm run deploy
   on:
     branch: master
-
-
-
-# language: ruby
-#
-# rvm:
-#   - 2.3.1
-#
-# # speeds up installation of html-proofer
-# env:
-#   global:
-#     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-#
-# # route your build to the container-based infrastructure for a faster build
-# sudo: false
-#
-# # cache both Ruby gems and npm node_modules between builds (for faster builds)
-# cache:
-#   bundler: true
-#   directories:
-#     - node_modules
-#
-# branches:
-#   only:
-#     - master
-#
-# install:
-#   - bundle install
-#   - npm install -g npm@2
-#   - npm install
-#
-# script:
-#   - npm run travis
-#
-# after_success:
-#   - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then npm run deploy; fi
