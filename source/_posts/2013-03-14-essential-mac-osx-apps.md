@@ -51,7 +51,7 @@ After giving it a year to soak in, I decided I should evaluate which apps are es
 * [Google Chrome](https://www.google.com/chrome)
 * [GrabBox](http://grabbox.devsoft.no/)
 * [Growl](http://growl.info/)
-* [iA Writer](http://www.iawriter.com/mac/)
+* [iA Writer](https://ia.net/writer)
 * [ImageAlpha](http://pngmini.com/)
 * [Icon Slate](https://itunes.apple.com/us/app/icon-slate/id439697913?mt=12)
 * [ImageOptim](http://imageoptim.com/)
