@@ -41,10 +41,9 @@
 
   /* Font Families */
 
-  --font-family-1: "acumin-pro", "Helvetica Neue", Arial, sans-serif;
-  --font-family-2: "acumin-pro-wide", "Helvetica Neue", Arial, sans-serif;
-  --font-family-3: Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-family-4: Monaco, Consolas, "Liberation Mono", Courier, monospace;
+  --font-family-1: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-family-2: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-family-3: Monaco, Consolas, "Liberation Mono", Courier, monospace;
 
   /* Font Sizes */
 

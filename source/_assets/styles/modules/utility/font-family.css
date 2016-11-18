@@ -14,10 +14,6 @@
   font-family: var(--font-family-3);
 }
 
-.font-family-4 {
-  font-family: var(--font-family-4);
-}
-
 @media screen and (--min-width-xxs) {
   .xxs-font-family-1 {
     font-family: var(--font-family-1);
@@ -29,10 +25,6 @@
 
   .xxs-font-family-3 {
     font-family: var(--font-family-3);
-  }
-
-  .xxs-font-family-4 {
-    font-family: var(--font-family-4);
   }
 }
 
@@ -48,10 +40,6 @@
   .xs-font-family-3 {
     font-family: var(--font-family-3);
   }
-
-  .xs-font-family-4 {
-    font-family: var(--font-family-4);
-  }
 }
 
 @media screen and (--min-width-sm) {
@@ -65,10 +53,6 @@
 
   .sm-font-family-3 {
     font-family: var(--font-family-3);
-  }
-
-  .sm-font-family-4 {
-    font-family: var(--font-family-4);
   }
 }
 
@@ -84,10 +68,6 @@
   .md-font-family-3 {
     font-family: var(--font-family-3);
   }
-
-  .md-font-family-4 {
-    font-family: var(--font-family-4);
-  }
 }
 
 @media screen and (--min-width-lg) {
@@ -101,10 +81,6 @@
 
   .lg-font-family-3 {
     font-family: var(--font-family-3);
-  }
-
-  .lg-font-family-4 {
-    font-family: var(--font-family-4);
   }
 }
 
@@ -120,10 +96,6 @@
   .xl-font-family-3 {
     font-family: var(--font-family-3);
   }
-
-  .xl-font-family-4 {
-    font-family: var(--font-family-4);
-  }
 }
 
 @media screen and (--min-width-xxl) {
@@ -137,9 +109,5 @@
 
   .xxl-font-family-3 {
     font-family: var(--font-family-3);
-  }
-
-  .xxl-font-family-4 {
-    font-family: var(--font-family-4);
   }
 }

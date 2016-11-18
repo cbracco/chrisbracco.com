@@ -5,7 +5,7 @@
 :root {
   --markdown-heading-margin: 1em 0 0.25em;
   --markdown-heading-color-light: var(--color-gray-dark);
-  --markdown-blockquote-font-family: var(--font-family-3);
+  --markdown-blockquote-font-family: var(--font-family-2);
   --markdown-blockquote-font-style: italic;
   --markdown-blockquote-color: var(--color-gray-dark);
   --markdown-blockquote-margin: 0 0 var(--spacing-4);

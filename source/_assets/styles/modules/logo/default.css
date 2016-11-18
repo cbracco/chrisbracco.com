@@ -3,7 +3,7 @@
 \* ========================================================================== */
 
 :root {
-  --logo-font-family: var(--font-family-2);
+  --logo-font-family: var(--font-family-1);
   --logo-font-size: var(--font-size-7);
   --logo-font-weight: 700;
   --logo-color: var(--color-black);

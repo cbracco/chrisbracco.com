@@ -3,7 +3,7 @@
 \* ========================================================================== */
 
 :root {
-  --syntax-font-family: var(--font-family-4);
+  --syntax-font-family: var(--font-family-3);
   --syntax-font-size: var(--font-size-4);
   --syntax-background-color: var(--color-syntax-background);
   --syntax-color: var(--color-syntax-text);
