@@ -21,6 +21,7 @@
   ],
   "devDependencies": {
     "faucet": "0.0.1",
+    "gulp-gh-pages": "^0.5.4",
     "standard": "^6.0.4",
     "tape": "^4.4.0"
   },

@@ -253,5 +253,8 @@ module.exports = {
       exclude: ['.DS_Store'],
       include: []
     }
+  },
+  ghPages: {
+    src: production + '/**'
   }
 }
