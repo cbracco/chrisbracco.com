@@ -15,8 +15,8 @@ cache:
 addons:
   ssh_known_hosts: cbracco.me
 before_install:
-  - nvm install 0.12
-  - npm i -g npm@2
+  - nvm install 7.8.0
+  - npm i -g npm@5
   - openssl aes-256-cbc -K $encrypted_8205f213b679_key -iv $encrypted_8205f213b679_iv -in deploy-key.enc -out deploy-key -d
 install:
   - bundle install
