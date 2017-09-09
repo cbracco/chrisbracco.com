@@ -1,0 +1,13 @@
+/* The Humans Responsible & Colophon */
+/* humanstxt.org */
+
+/* TEAM */
+Author(s): Chris Bracco
+Site: https://chrisbracco.com
+
+
+/* SITE */
+Last update: 2017/09/09
+Language: en-us
+Doctype: HTML5
+Standards: HTML5, CSS3

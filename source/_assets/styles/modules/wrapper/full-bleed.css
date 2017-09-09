@@ -1,9 +1,0 @@
-/**
- * Wrapper: Full-Bleed
- * Remove any width constraints from the `.wrapper`.
- */
-
-.wrapper--full-bleed {
-  width: auto;
-  max-width: none;
-}
