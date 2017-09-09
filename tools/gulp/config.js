@@ -206,6 +206,12 @@ module.exports = {
       }
     }
   },
+  copy: {
+    cname: {
+      src: 'CNAME',
+      dest: production
+    }
+  },
   revision: {
     src: {
       assets: [
@@ -234,6 +240,10 @@ module.exports = {
   gzip: {
     src: production + '/**/*.{html,xml,json,css,js}',
     dest: production,
+    options: {}
+  },
+  ghPages: {
+    src: production + '/**',
     options: {}
   },
   rsync: {

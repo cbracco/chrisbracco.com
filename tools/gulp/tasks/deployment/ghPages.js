@@ -3,8 +3,8 @@ var gulp = require('gulp')
 var ghPages = require('gulp-gh-pages')
 var config = require('../../config').ghPages
 
-// Deploy Rsync (gulp deploy:ghPages)
-gulp.task('deploy:ghPages', function () {
+// Deploy gh-pages (gulp deploy:gh-pages)
+gulp.task('deploy:gh-pages', function () {
   return gulp.src(config.src)
-    .pipe(ghPages())
-})
+    .pipe(ghPages(config.options))
+});

@@ -2,4 +2,4 @@
 var gulp = require('gulp')
 
 // Deploy (gulp deploy)
-gulp.task('deploy', ['deploy:rsync'])
+gulp.task('deploy', ['deploy:gh-pages'])
