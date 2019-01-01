@@ -44,7 +44,7 @@ killall Finder
 
 The simplest conversion tool I’ve found so far is GIFBrewery, a $4.99 download in the App Store. This app lets you easily convert your screencast into an animated GIF.
 
-1. Download and open up [GIFBrewery](https://itunes.apple.com/us/app/gif-brewery/id435989461?mt=12) ($4.99)
+1. Download and open up [GIFBrewery](https://gfycat.com/gifbrewery) ($4.99)
 2. Crop and resize the capture area as desired.
 3. Use a low FPS (3-5 frames per second) to reduce file size.
 4. Generate, preview, and save your new animated GIF.
