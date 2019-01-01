@@ -242,10 +242,6 @@ module.exports = {
     dest: production,
     options: {}
   },
-  ghPages: {
-    src: production + '/**',
-    options: {}
-  },
   rsync: {
     src: production + '/**',
     options: {
@@ -266,6 +262,7 @@ module.exports = {
     }
   },
   ghPages: {
-    src: production + '/**'
+    src: production + '/**',
+    options: {}
   }
 }

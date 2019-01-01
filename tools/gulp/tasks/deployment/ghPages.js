@@ -7,4 +7,4 @@ var config = require('../../config').ghPages
 gulp.task('deploy:gh-pages', function () {
   return gulp.src(config.src)
     .pipe(ghPages(config.options))
-});
+})
