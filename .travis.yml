@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.2.3
+  - 2.3.0
 branches:
   only:
     - master
@@ -15,7 +15,7 @@ cache:
 addons:
   ssh_known_hosts: cbracco.me
 before_install:
-  - nvm install 7.8.0
+  - nvm install 8.11.3
   - npm i -g npm@5
   - openssl aes-256-cbc -K $encrypted_8205f213b679_key -iv $encrypted_8205f213b679_iv -in deploy-key.enc -out deploy-key -d
 install:
@@ -24,9 +24,8 @@ install:
 before_script:
   - echo -e "Host cbracco.me\n\tStrictHostKeyChecking no\n\tForwardAgent yes\n" >> ~/.ssh/config
 script:
-  - npm run build:production
-  - npm run test:scripts
-  - npm run test:html
+  - npm run build-production
+  - npm run test
 before_deploy:
   - eval "$(ssh-agent -s)"
   - chmod 600 $TRAVIS_BUILD_DIR/deploy-key

@@ -1,5 +1,5 @@
 // Define Dependencies
-var detectJS = require('./modules/detectJS')
+var detectJS = require('./modules/detect-js')
 
 // Detect if JavaScript is enabled
 detectJS()
