@@ -4,8 +4,8 @@ const srcAssets = './source/_assets/'
 const build = './build/'
 const development = './build/development/'
 const developmentAssets = './build/assets/'
-const production = './build/production/'
-const productionAssets = './build/production/assets/'
+const production = './build/production'
+const productionAssets = './build/production/assets'
 
 // Require rsyncCredentials only if the file exists to avoid build
 // failure on travis-ci
@@ -276,7 +276,9 @@ module.exports = {
     }
   },
   ghPages: {
-    src: production + '/**',
-    options: {}
+    dir: production,
+    options: {
+      message: 'Update ' + new Date().toISOString()
+    }
   }
 }
