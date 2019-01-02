@@ -1,0 +1,7 @@
+<div id="siteHeader" class="page__header" role="banner">
+  <div class="wrapper wrapper--lg text-center">
+    {% include site/logo.html %}
+    {% if site.descriptionShort %}{% include site/description.html %}{% endif %}
+    {% include site/navigation.html nav=site.data.navigation %}
+  </div>
+</div>

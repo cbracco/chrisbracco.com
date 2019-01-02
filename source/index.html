@@ -1,0 +1,26 @@
+---
+layout: archive
+title: Weblog
+meta: Thoughts, tutorials, regurgitations, and the occasional <a class="risky-click" href="http://cbrac.co/2rGOBfE" target="_blank">risky click</a>.
+pageClass: home
+---
+
+<ul class="margin-bottom-0 padding-left-0">
+  {% for item in site.posts %}
+    <li class="display-block">
+      <article class="display-table{% unless forloop.last %} border-bottom-1px{% endunless %}">
+        <div class="display-table-cell width-3/4{% if forloop.first %} padding-top-0{% else %} padding-top-4{% endif%} padding-bottom-4">
+          <h1 class="heading-5 margin-bottom-1">
+            <a class="display-inline-block" href="{{ item.url | prepend: site.url }}">{{ item.title }}</a>
+          </h1>
+          {% if item.teaser %}
+            <div class="font-size-4 color-gray-dark">{{ item.teaser }}</div>
+          {% endif %}
+        </div>
+        <div class="display-table-cell width-1/4{% if forloop.first %} padding-top-0{% else %} padding-top-4{% endif%} padding-bottom-4 text-right">
+          <span class="font-size-4 color-gray-dark">{{ item.date | date: "%b %-d, %Y" }}</span>
+        </div>
+      </article>
+    </li>
+  {% endfor %}
+</ul>

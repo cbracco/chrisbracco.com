@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="border-bottom-1px">
+  <article class="page__content">
+    <h1 class="lg-text-center padding-bottom-4 border-bottom-1px">{{ page.title }}</h1>
+    <div class="grid grid--gutter">
+      <div class="grid__item width-one-whole lg-width-1/3">
+        <div class="page__meta font-size-4 color-gray-dark margin-bottom-4">Published on {{ page.date | date: "%B %-d, %Y" }}{% if page.dateUpdated %}, and last updated on {{ page.dateUpdated | date: "%B %-d, %Y" }}{% endif %}.</div>
+      </div>
+      <div class="grid__item width-one-whole lg-width-2/3">
+        <div class="markdown">
+          {{ content }}
+        </div>
+        <div class="page__comments border-top-1px padding-top-4 padding-bottom-4">
+          {% if page.disableComments %}
+            <div class="alert">
+              <p>Comments are currently disabled for this blog post.</p>
+            </div>
+          {% else %}
+            <h1>Leave a Comment</h1>
+            {% include site/comments.html %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

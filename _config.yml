@@ -1,0 +1,114 @@
+#
+# Configuration
+#
+
+# Site
+title: "Chris Bracco"
+title_after: "web designer, developer, etc."
+description: "Hello! My name is Chris and I am a web designer and developer who cares about user-centered design, performance, and accessibility."
+descriptionShort: "web designer, developer, etc."
+author: "Chris Bracco"
+encoding: "utf-8"
+language: "en-us"
+
+# Routes
+source: ./source
+destination: ./build
+baseurl: ""
+url: "http://localhost:9999"
+root: /
+permalink: /:categories/:title/
+
+# Writing
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  work:
+    output: false
+    permalink: /work/:title/
+
+# Publishing
+future: true
+show_drafts: true
+
+# <head>
+favicons: true
+openGraph: true
+twitterCards:
+  username: cbracco
+typekit:
+  id: qct4tzq
+
+# Analytics
+analytics:
+  id: UA-12953082-11
+  domain: {{ site.url }}
+
+# 3rd-Party
+codepen:
+  username: cbracco
+  url: http://codepen.io/cbracco
+
+ello:
+  username: cbracco
+  url: https://ello.co/cbracco
+
+disqus:
+  username: cbracco
+
+feedburner:
+  username: cbracco
+  url: http://feeds.feedburner.com/cbracco
+
+github:
+  username: cbracco
+  url: https://github.com/cbracco
+
+goodreads:
+  username: cbracco
+  url: https://www.goodreads.com/cbracco
+
+instagram:
+  username: cbracco
+  url: https://www.instagram.com/cbracco
+
+lastfm:
+  username: cbracco
+  url: http://www.last.fm/user/cbracco
+
+instapaper:
+  username: cbracco
+  url: https://www.instapaper.com/p/cbracco
+
+runkeeper:
+  username: cbracco
+  url: https://runkeeper.com/user/cbracco/profile
+
+speakerdeck:
+  username: cbracco
+  url: https://speakerdeck.com/cbracco
+
+spotify:
+  username: cbracco
+  url: https://open.spotify.com/user/cbracco
+
+twitter:
+  username: cbracco
+  url: https://twitter.com/cbracco
+
+# Referral URLs
+referralUrls:
+  linode: http://cbrac.co/linode_ref
+  namecheap: http://cbrac.co/namecheap_ref
+  dropbox: http://cbrac.co/mydropbox_ref
+
+# Excludes
+#
+# Travis-CI bundles all gems in the vendor directory on its build
+# servers, which Jekyll will mistakenly read and explode on.
+exclude: [vendor]

@@ -1,0 +1,24 @@
+/**
+ * Button: Color: Theme 4
+ */
+
+:root {
+  --button-color-theme-4-background-color: var(--color-theme-4);
+  --button-color-theme-4-background-color-hover: color(var(--button-color-theme-4-background-color) blend(var(--color-black) 15%));
+  --button-color-theme-4-background-color-active: color(var(--button-color-theme-4-background-color) blend(var(--color-black) 25%));
+  --button-color-theme-4-color: var(--color-white);
+}
+
+.button--color-theme-4,
+.button:visited {
+  background-color: var(--button-color-theme-4-background-color);
+  color: var(--button-color-theme-4-color);
+}
+
+.button--color-theme-4:hover {
+  background-color: var(--button-color-theme-4-background-color-hover);
+}
+
+.button--color-theme-4:active {
+  background-color: var(--button-color-theme-4-background-color-active);
+}

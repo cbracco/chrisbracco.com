@@ -1,0 +1,73 @@
+/* ========================================================================== *\
+   LOGO ($logo)
+\* ========================================================================== */
+
+:root {
+  --logo-font-family: var(--font-family-1);
+  --logo-font-size: var(--font-size-7);
+  --logo-font-weight: 700;
+  --logo-color: var(--color-black);
+  --logo-letter-spacing: var(--letter-spacing);
+  --logo-text-transform: uppercase;
+  --logo-margin:
+    calc(var(--spacing-3) + 2)
+    calc(var(--spacing-4) + 4)
+    calc(var(--spacing-3) + 4)
+    calc(var(--spacing-4) + 4);
+  --logo-border-width: calc(var(--spacing-1) + 1);
+  --logo-border-style: solid;
+  --logo-blend-mode: darken;
+  --logo-before-top: calc(-1 * var(--spacing-2));
+  --logo-before-right: calc((-1 * (var(--spacing-3) + var(--spacing-4))) + (var(--spacing-2) + 2));
+  --logo-before-bottom: calc(-1 * (var(--spacing-2) + 2));
+  --logo-before-left: calc((-1 * (var(--spacing-3) + var(--spacing-4))) + (var(--spacing-2) + 2));
+  --logo-before-border-color: var(--color-theme-1);
+  --logo-after-top: calc((-1 * (var(--spacing-3) + 4)) + 2);
+  --logo-after-right: calc((-1 * (var(--spacing-3) + 4)) - (var(--spacing-1) + 1));
+  --logo-after-bottom: calc(-1 * (var(--spacing-3) + 4));
+  --logo-after-left: calc((-1 * (var(--spacing-3) + 4)) - (var(--spacing-1) + 1));
+  --logo-after-border-color: var(--color-theme-2);
+}
+
+.logo,
+.logo:visited {
+  font-family: var(--logo-font-family);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  position: relative;
+  display: inline-block;
+  margin: var(--logo-margin);
+  text-decoration: none;
+  letter-spacing: var(--logo-letter-spacing);
+  text-transform: var(--logo-text-transform);
+  color: var(--logo-color);
+}
+
+/**
+ * Logo Borders
+ */
+
+.logo:before,
+.logo:after {
+  position: absolute;
+  content: "";
+  border-width: var(--logo-border-width);
+  border-style: var(--logo-border-style);
+  mix-blend-mode: var(--logo-blend-mode);
+}
+
+.logo:before {
+  top: var(--logo-before-top);
+  right: var(--logo-before-right);
+  bottom: var(--logo-before-bottom);
+  left: var(--logo-before-left);
+  border-color: var(--logo-before-border-color);
+}
+
+.logo:after {
+  top: var(--logo-after-top);
+  right: var(--logo-after-right);
+  bottom: var(--logo-after-bottom);
+  left: var(--logo-after-left);
+  border-color: var(--logo-after-border-color);
+}

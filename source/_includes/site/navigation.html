@@ -1,0 +1,19 @@
+<div id="siteNavigation" class="nav lg-position-absolute" role="navigation">
+  {% assign navurl = page.url | remove: 'index.html' %}
+  <ul class="nav__list padding-left-0 lg-margin-bottom">
+    {% for item in include.nav %}
+    {% assign current = nil %}
+    {% if page.url == item.url %}
+      {% assign current = "is-current" %}
+    {% endif %}
+    <li class="nav__item display-inline-block {% if page.url == item.url %} {{ current }}{% endif %}">
+      <a class="nav__link display-block text-decoration-none" href="{{ item.url }}" {% if item.target %} target="{{ item.target }}"{% endif %}>
+        {% if item.icon %}
+        <svg class="nav__link__icon icon--{{ item.icon }} icon--size-3 margin-bottom-2"><use xlink:href="/assets/icons/sprite.svg#icon-{{ item.icon }}"></use></svg>
+        {% endif %}
+        <span class="nav__link__text display-block font-weight-700">{{ item.title }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

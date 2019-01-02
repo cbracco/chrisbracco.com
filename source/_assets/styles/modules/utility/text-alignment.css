@@ -1,0 +1,145 @@
+/* ========================================================================== *\
+   TEXT ALIGNMENT ($text-alignment)
+\* ========================================================================== */
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media screen and (--min-width-xxs) {
+  .xxs-text-left {
+    text-align: left;
+  }
+
+  .xxs-text-right {
+    text-align: right;
+  }
+
+  .xxs-text-center {
+    text-align: center;
+  }
+
+  .xxs-text-justify {
+    text-align: justify;
+  }
+}
+
+@media screen and (--min-width-xs) {
+  .xs-text-left {
+    text-align: left;
+  }
+
+  .xs-text-right {
+    text-align: right;
+  }
+
+  .xs-text-center {
+    text-align: center;
+  }
+
+  .xs-text-justify {
+    text-align: justify;
+  }
+}
+
+@media screen and (--min-width-sm) {
+  .sm-text-left {
+    text-align: left;
+  }
+
+  .sm-text-right {
+    text-align: right;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .sm-text-justify {
+    text-align: justify;
+  }
+}
+
+@media screen and (--min-width-md) {
+  .md-text-left {
+    text-align: left;
+  }
+
+  .md-text-right {
+    text-align: right;
+  }
+
+  .md-text-center {
+    text-align: center;
+  }
+
+  .md-text-justify {
+    text-align: justify;
+  }
+}
+
+@media screen and (--min-width-lg) {
+  .lg-text-left {
+    text-align: left;
+  }
+
+  .lg-text-right {
+    text-align: right;
+  }
+
+  .lg-text-center {
+    text-align: center;
+  }
+
+  .lg-text-justify {
+    text-align: justify;
+  }
+}
+
+@media screen and (--min-width-xl) {
+  .xl-text-left {
+    text-align: left;
+  }
+
+  .xl-text-right {
+    text-align: right;
+  }
+
+  .xl-text-center {
+    text-align: center;
+  }
+
+  .xl-text-justify {
+    text-align: justify;
+  }
+}
+
+@media screen and (--min-width-xxl) {
+  .xxl-text-left {
+    text-align: left;
+  }
+
+  .xxl-text-right {
+    text-align: right;
+  }
+
+  .xxl-text-center {
+    text-align: center;
+  }
+
+  .xxl-text-justify {
+    text-align: justify;
+  }
+}
