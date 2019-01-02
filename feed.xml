@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chris Bracco</title>
+    <description>Hello! My name is Chris and I am a web designer and developer who cares about user-centered design, performance, and accessibility.</description>
+    <link>https://chrisbracco.comhttps://chrisbracco.com/</link>
+    <atom:link href="https://chrisbracco.comhttps://chrisbracco.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 02 Jan 2019 16:52:36 +0000</pubDate>
+    <lastBuildDate>Wed, 02 Jan 2019 16:52:36 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>A Simple, Responsive CSS Grid System</title>
+        <description>&lt;p&gt;We are currently building a new &lt;abbr title=&quot;Content Management System&quot;&gt;CMS&lt;/abbr&gt; at &lt;a href=&quot;http://bigroomstudios.com&quot;&gt;Big Room Studios&lt;/a&gt;, and I was given the task of writing a fluid CSS grid system for said CMS.&lt;/p&gt;
+
+&lt;p&gt;Although this CSS grid is fluid, it also had to be somewhat rigid to start. We didn’t want to give users too much control in the &lt;abbr title=&quot;Minimum Viable Product&quot;&gt;MVP&lt;/abbr&gt; stage.&lt;/p&gt;
+
+&lt;p&gt;Because of this, all grid columns simply stack on top of each other on smaller screens, as 100% width blocks. It’s nothing revolutionary, but the code is super minimal and I wanted to share it here in case anyone else found it useful.&lt;/p&gt;
+
+&lt;div class=&quot;codepen&quot;&gt;
+  &lt;div data-height=&quot;450&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;hjFDL&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 13 Mar 2014 11:13:52 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/a-simple-responsive-css-grid-system/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/a-simple-responsive-css-grid-system/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Reason for Flat Web Design</title>
+        <description>&lt;div class=&quot;tweet&quot;&gt;
+  &lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;i think the real reason flat web design became popular is bc responsive design is fucking hard and ain&amp;#39;t nobody got time for shadows&lt;/p&gt;&amp;mdash; Chris Bracco (@cbracco) &lt;a href=&quot;https://twitter.com/cbracco/statuses/390291444986306561&quot;&gt;October 16, 2013&lt;/a&gt;&lt;/blockquote&gt;
+  &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 16 Oct 2013 16:11:34 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/why-flat-web-design/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/why-flat-web-design/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>A Simple CSS Tooltip</title>
+        <description>&lt;p&gt;With pseudo elements, the triangle hack, and data attributes, I created a simple tooltip system in HTML and CSS.&lt;/p&gt;
+
+&lt;div class=&quot;codepen&quot;&gt;
+  &lt;div data-height=&quot;380&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;qzukg&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To give any element a tooltip, simply add the &lt;code class=&quot;highlighter-rouge&quot;&gt;data-tooltip&lt;/code&gt; attribute to it, like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-tooltip=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am a tooltip&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I am a link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;One caveat with this method is that transitions on pseudo elements &lt;a href=&quot;http://css-tricks.com/transitions-and-animations-on-css-generated-content/&quot;&gt;don’t quite work right&lt;/a&gt; in Webkit browsers (Chrome, Safari). It works just fine in Firefox, but if you include the CSS for the transition it will break the tooltip in Webkit, which is annoying. This means you can’t transition the opacity or positioning of the tooltip for a fade or movement effect. But if you don’t care about that extra pizazz, then this method will work just fine.&lt;/p&gt;
+
+&lt;h2 id=&quot;bonus&quot;&gt;Bonus!&lt;/h2&gt;
+
+&lt;p&gt;Because boredom, I created a simple directional tooltip system. With class names, you can specify which side you would like the tooltip to appear (top, right, bottom, or left).&lt;/p&gt;
+
+&lt;div class=&quot;codepen&quot;&gt;
+  &lt;div data-height=&quot;700&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;nufHz&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 01 Oct 2013 13:00:36 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/a-simple-css-tooltip/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/a-simple-css-tooltip/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>CSS Sticky (But Not Fixed) Footer</title>
+        <description>&lt;p&gt;For a recent web app project, I had to build a footer that would always stick to the bottom of page, using CSS only. My first instincts led me to the &lt;code class=&quot;highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property, but it turns out the client didn’t want the footer visible at all times. They wanted it to behave as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The footer should be visible if the content above it is shorter than the user’s viewport height.&lt;/li&gt;
+  &lt;li&gt;If the content is taller than the user’s viewport height, then the footer should disappear from view and rest at the bottom of the page, as it would naturally.&lt;/li&gt;
+  &lt;li&gt;This must be done without JavaScript, and without using the &lt;code class=&quot;highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property (which would keep the footer at the bottom of the viewport at all times, regardless of the above content).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Below is a small pen demonstrating my solution, and it works fabulously. Feel free to use this method on your next project.&lt;/p&gt;
+
+&lt;div class=&quot;codepen&quot;&gt;
+  &lt;div data-height=&quot;750&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;zekgx&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 26 Sep 2013 11:28:05 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/css-sticky-footer-effect/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/css-sticky-footer-effect/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Free iPhone 5 Sketch Template</title>
+        <description>&lt;p&gt;I’ve been playing around with &lt;a href=&quot;http://bohemiancoding.com/sketch/&quot;&gt;Bohemian Coding’s Sketch&lt;/a&gt; application lately, and I find it to be a bit more intuitive than Adobe Illustrator in some ways. It’s sort of like Keynote in that it gets out of your way, and lets you design something with minimal distractions.&lt;/p&gt;
+
+&lt;p&gt;As an exercise for myself I whipped up a simple iPhone 5 template that can be used to showcase an app design, or a website screenshot, or whatever.&lt;/p&gt;
+
+&lt;p&gt;I’m placing it here for anyone to download, for free. Go nuts!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/downloads/iphone5-black.zip&quot; class=&quot;button button--color-theme-4&quot;&gt;Download Template&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Sep 2013 18:41:40 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/free-iphone-5-sketch-template/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/free-iphone-5-sketch-template/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Simple CSS3 Collapsing Header Effect</title>
+        <description>&lt;p&gt;I wanted a non-JavaScript solution to make a full-width header image appear as though it was collapsing, with content below traveling above the image as the user scrolls. This is what I came up with after a few minutes of tweaking.&lt;/p&gt;
+
+&lt;div class=&quot;codepen&quot;&gt;
+  &lt;div data-height=&quot;450&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;corFl&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 11 Jun 2013 14:56:32 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/simple-css3-collapsing-header-effect/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/simple-css3-collapsing-header-effect/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>“Mobile-first” for Dummies</title>
+        <description>&lt;p&gt;“&lt;a href=&quot;http://www.lukew.com/resources/mobile_first.asp&quot;&gt;Mobile first&lt;/a&gt;”, a phrase coined by Luke Wroblewski &lt;a href=&quot;http://www.lukew.com/ff/entry.asp?933&quot;&gt;in 2009&lt;/a&gt;, is a strategy for web development that focuses on building the mobile experience of a web application first, and &lt;a href=&quot;http://en.wikipedia.org/wiki/Progressive_enhancement&quot;&gt;progressively enhancing&lt;/a&gt; the application for users with larger devices, better browsers, and greater bandwidth.&lt;/p&gt;
+
+&lt;p&gt;The idea is that if you design for the smallest devices (and least capable browsers) first, it forces you to prioritize and determine what are the most important data and actions in your application. The end result is an application that is focused on the key tasks a user is supposed to complete, without the extraneous content and interface fluff that plagues many applications that take a top-down, “PC first” approach.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 May 2013 17:12:50 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/mobile-first-for-dummies/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/mobile-first-for-dummies/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>How I Keep My iPhone in Order</title>
+        <description>&lt;p&gt;A few friends showed some interest in how I organize apps on my iPhone 5, so I’m going to briefly share my approach here. I’ll also share how I control the notifications so that I don’t end up in tears from never-ending flashes, beeps, and vibrations.&lt;/p&gt;
+
+&lt;p&gt;When I first purchased my iPhone 5 in November of 2012, I downloaded a bunch of apps right away and tried to squeeze them all onto a single home screen, grouping all of the icons into categories. This was okay for a while, but things got crowded very quickly. Also, the apps that I used most frequently were with the apps that I rarely used; this made it hard to find the one I was looking for, and easy to get distracted or tempted into doing something else entirely.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Notification_Center&quot;&gt;iOS Notification Center&lt;/a&gt; was new to me, too. It was exciting to be able to keep my hand on the pulse of all these apps from one screen, but my excitement quickly diminished into frustration.&lt;/p&gt;
+
+&lt;p&gt;After using the device for a few months, I kept tabs on which apps I used the most and decided on a new approach to reduce the clutter and noise.&lt;/p&gt;
+
+&lt;h2 id=&quot;three-screen-approach&quot;&gt;Three-screen approach&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/iphone5-screens-ios7.png&quot; alt=&quot;iphone 5 screen ios7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;iOS7 lets you set a different background image for the lock screen, so I chose a photo that I took while visiting Peaks Island, Maine. For the home screens, I chose a neutral background so it would not clash with iOS7’s barf-worthy icons.&lt;/p&gt;
+
+&lt;p&gt;And instead of squishing all of my apps onto one home screen, I divided them up across two screens. On the first (or home) screen, I have my most-used apps in alphabetical order. On the second screen, I have my least-used apps grouped into categorized folders. On the dock, I have my four most-used apps: Messages, Phone, Photos, and &lt;a href=&quot;http://www.sleepcycle.com&quot;&gt;Sleep Cycle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If I use an app on the first screen less often, then I will demote it and promote a different one from the second screen that I use more often. Sometimes I will delete the app entirely if I find it’s not being used at all, or if it’s becoming a distraction (which is why I deleted the Facebook app from my phone). This has been working for me.&lt;/p&gt;
+
+&lt;h2 id=&quot;prioritizing-notifications&quot;&gt;Prioritizing notifications&lt;/h2&gt;
+
+&lt;p&gt;To keep the beeps and buzzes to a minimum, I started by turning off all notifications. I decided the Phone, Messages, Reminders, and Calendar apps were important, and gave them each a sound, badge, and alert. None of my other apps produce a sound or alert notification; they only have badges &lt;strong&gt;(yes, even &lt;a href=&quot;http://www.mailboxapp.com&quot;&gt;Mailbox&lt;/a&gt;, the app I use for email)&lt;/strong&gt;. The only apps that show up in the Notification Center are Calendar and Reminders. Nothing shows up on the lock screen, unless I’m listening to music with &lt;a href=&quot;http://rdio.com/people/cbracco&quot;&gt;Rdio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have been enjoying this setup, and I find myself spending less time derping around on my phone and more time focusing on what I want to do throughout my day.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Apr 2013 12:27:15 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/iphone-organization/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/iphone-organization/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Feed Reader Blues</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/rss-feeds.png&quot; alt=&quot;rss feed icon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am a long-time &lt;abbr title=&quot;Really Simple Syndication&quot;&gt;RSS&lt;/abbr&gt; feed user. I started using them back in 2006 when I was a wee freshman in college, and I like following many publications from one convenient place. Feed readers are great services. Google Reader (&lt;a href=&quot;http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html&quot;&gt;R.I.P.&lt;/a&gt;) was my companion for many years, but I suddenly find myself resenting the RSS experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;it-usually-goes-something-like-this&quot;&gt;It usually goes something like this…&lt;/h2&gt;
+
+&lt;p&gt;I discover a new blog, website, or publication that has great content and is also relevant to my interests. I’ll visit said blog and skim through some content. If I like what I see then I will usually consume some content in full, maybe leave a comment, maybe share something, and then subscribe to the RSS feed.&lt;/p&gt;
+
+&lt;p&gt;If the website publishes content sporadically (weekly, bi-weekly, monthly, etc), I can &lt;em&gt;usually&lt;/em&gt; keep up. If they are posting multiple articles everyday, I end up having to skim through them in my feed reader, leaving several articles unread.&lt;/p&gt;
+
+&lt;p&gt;Since Google Reader has an inbox-style interface, the unread articles are &lt;strong&gt;bold&lt;/strong&gt; and the ones I’ve already read are &lt;small style=&quot;color: #646464;&quot;&gt;less emphasized&lt;/small&gt;. As unread articles accumulate, I become more overwhelmed and disheartened. It feels like I’ve failed that publication and myself because I couldn’t keep up. Time to give in and press the ”Mark as read“ button, or delete the feed entirely.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-vicious-cycle&quot;&gt;A vicious cycle&lt;/h2&gt;
+
+&lt;p&gt;I’ll keep subscribing to more feeds, assuring myself that I will find the time to keep up. After a while, the content piles up and becomes unmanageable. &lt;strong&gt;This happens to me every six months or so.&lt;/strong&gt; And if I subscribe to a few large sites that post upwards of 50 articles per day? Forget about it, I’ve totally hosed myself after a few months. Time to delete everything and start over.&lt;/p&gt;
+
+&lt;p&gt;After allowing this cyclical behavior to happen for years, I came to the initial conclusion that I hated RSS. However, while writing this article I realized that:&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem-isnt-rss-the-problem-is-me&quot;&gt;The problem isn’t RSS. The problem is me.&lt;/h2&gt;
+
+&lt;p&gt;I’ve been abusing RSS all this time and didn’t even know it.&lt;/p&gt;
+
+&lt;p&gt;The inbox-style interfaces of many feed readers get very cluttered when the user is following frequently updated websites. If you’ve subscribed to a website like &lt;a href=&quot;http://mashable.com&quot;&gt;Mashable&lt;/a&gt; or &lt;a href=&quot;http://buzzfeed.com&quot;&gt;Buzzfeed&lt;/a&gt;, your reader will soon resemble an e-mail inbox gone awry. The smaller publications you’ve subscribed to will be very difficult to find unless you filter down to those feeds, specifically.&lt;/p&gt;
+
+&lt;p&gt;This excerpt from Marco Arment’s article &lt;a href=&quot;http://www.marco.org/2013/03/26/power-of-rss&quot;&gt;“The power of the RSS reader”&lt;/a&gt; sums up my feelings nicely:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I don’t mind missing a random &lt;em&gt;New York Times&lt;/em&gt; post, but I’ll regret missing the only &lt;em&gt;Dan’s Data&lt;/em&gt; post this month because it was buried under everyone’s basketball tweets and nobody else I follow will link to it later.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The true power of the RSS inbox is keeping you informed of new posts that you probably won’t see linked elsewhere…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;so-what-now&quot;&gt;So, what now?&lt;/h2&gt;
+
+&lt;p&gt;I erased all the feeds in my Google Reader account since I heard the news that &lt;a href=&quot;http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html&quot;&gt;they will be shutting down in the summer&lt;/a&gt;, and I uninstalled the Reeder app for iOS.&lt;/p&gt;
+
+&lt;p&gt;Recently, I’ve found myself browsing Layervault’s &lt;a href=&quot;https://news.layervault.com&quot;&gt;Designer News&lt;/a&gt; and Y Combinator’s &lt;a href=&quot;https://news.ycombinator.com/&quot;&gt;Hacker News&lt;/a&gt; aggregators whenever I need a short break between working. For any other general news, I check &lt;a href=&quot;https://twitter.com/cbracco&quot;&gt;Twitter&lt;/a&gt; and &lt;a href=&quot;http://reddit.com&quot;&gt;Reddit&lt;/a&gt;, and for personal stuff I’ll log onto &lt;a href=&quot;http://facebook.com&quot;&gt;Facebook&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://instagram.com&quot;&gt;Instagram&lt;/a&gt; once a day (I’ve deleted the Facebook app from my phone to minimize distractions).&lt;/p&gt;
+
+&lt;p&gt;Until a new subscription alternative emerges that I can really get on board with, this will do just fine for now.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 08 Apr 2013 12:53:28 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/rss-feeds/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/rss-feeds/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>My Essential Mac OSX Apps</title>
+        <description>&lt;p&gt;My machines have been feeling a bit sluggish lately, due in part to the amount of applications I’ve downloaded over the past year. The entire Adobe Creative Suite, Microsoft Office, iWork, and a whole mess of smaller applications.&lt;/p&gt;
+
+&lt;p&gt;After giving it a year to soak in, I decided I should evaluate which apps are essential to my workflow, and which rarely see the light of day. In the wake of some digital spring cleaning, I’ve decided to list out the apps that have made the cut.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://agilebits.com/onepassword&quot;&gt;1Password&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.adobe.com/products/photoshop.html&quot;&gt;Adobe Photoshop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.adobe.com/products/illustrator.html&quot;&gt;Adobe Illustrator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.adobe.com/products/indesign.html&quot;&gt;Adobe InDesign&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.freemacsoft.net/appcleaner/&quot;&gt;AppCleaner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.macbartender.com/&quot;&gt;Bartender&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.charlesproxy.com/&quot;&gt;Charles&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mattpatenaude.com/&quot;&gt;Colors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cbrac.co/mydropbox_ref&quot;&gt;Dropbox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://evernote.com/&quot;&gt;Evernote&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mozilla.org/en-US/firefox/new/&quot;&gt;Firefox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gfycat.com/gifbrewery&quot;&gt;GIF Brewery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/chrome&quot;&gt;Google Chrome&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://grabbox.devsoft.no/&quot;&gt;GrabBox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://growl.info/&quot;&gt;Growl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ia.net/writer&quot;&gt;iA Writer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pngmini.com/&quot;&gt;ImageAlpha&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/icon-slate/id439697913?mt=12&quot;&gt;Icon Slate&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://imageoptim.com/&quot;&gt;ImageOptim&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.apple.com/iwork/&quot;&gt;iWork&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/jpegmini-lite/id525742250&quot;&gt;JPEGmini Lite&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/keynote/id409183694?mt=12&quot;&gt;Keynote&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mamp.info/&quot;&gt;MAMP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://office.microsoft.com/&quot;&gt;Microsoft Office&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.microsoft.com/silverlight/&quot;&gt;Microsoft Silverlight&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/mint-personal-finance-money/id300238550?mt=8&quot;&gt;Mint&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://manytricks.com/moom/&quot;&gt;Moom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.opera.com/&quot;&gt;Opera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.opera.com/developer&quot;&gt;Opera Mobile Emulator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/pixelmator/id407963104?mt=12&quot;&gt;Pixelmator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/technologies/mac/graphics-and-animation.html&quot;&gt;Quartz Composer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.rdio.com/&quot;&gt;Rdio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.amazon.com/gp/sendtokindle&quot;&gt;Send to Kindle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sequelpro.com/&quot;&gt;Sequel Pro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bohemiancoding.com/sketch/&quot;&gt;Sketch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.skype.com/&quot;&gt;Skype&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sonos.com/support&quot;&gt;Sonos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/svg/svgo-gui&quot;&gt;svgo-gui&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.roxio.com/enu/products/toast/titanium/overview.html&quot;&gt;Toast Titanium 11&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://panic.com/transmit/&quot;&gt;Transmit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/twitter/id333903271?mt=8&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/gb/app/the-unarchiver/id425424353?mt=12&quot;&gt;The Unarchiver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.utorrent.com/&quot;&gt;uTorrent&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.virtualbox.org/&quot;&gt;VirtualBox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.videolan.org/vlc/index.html&quot;&gt;VLC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/xcode/&quot;&gt;Xcode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 14 Mar 2013 15:16:08 +0000</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/essential-mac-osx-apps/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/essential-mac-osx-apps/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
