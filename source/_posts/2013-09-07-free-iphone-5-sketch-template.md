@@ -11,4 +11,4 @@ As an exercise for myself I whipped up a simple iPhone 5 template that can be us
 
 I’m placing it here for anyone to download, for free. Go nuts!
 
-<a href="/assets/downloads/iphone5-black.zip" class="button button--color-theme-4">Download Template</a>
+<a href="https://github.com/cbracco/chrisbracco.com/raw/gh-pages/assets/downloads/iphone5-black.zip" class="button button--color-theme-4">Download Template</a>
