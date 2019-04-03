@@ -5,8 +5,8 @@
     <description>Hello! My name is Chris and I am a web designer and developer who cares about user-centered design, performance, and accessibility.</description>
     <link>https://chrisbracco.comhttps://chrisbracco.com/</link>
     <atom:link href="https://chrisbracco.comhttps://chrisbracco.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Apr 2019 08:39:08 -0400</pubDate>
-    <lastBuildDate>Wed, 03 Apr 2019 08:39:08 -0400</lastBuildDate>
+    <pubDate>Wed, 03 Apr 2019 08:53:34 -0400</pubDate>
+    <lastBuildDate>Wed, 03 Apr 2019 08:53:34 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -95,23 +95,6 @@
         <pubDate>Thu, 26 Sep 2013 11:28:05 -0400</pubDate>
         <link>https://chrisbracco.comhttps://chrisbracco.com/css-sticky-footer-effect/</link>
         <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/css-sticky-footer-effect/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Free iPhone 5 Sketch Template</title>
-        <description>&lt;p&gt;I’ve been playing around with &lt;a href=&quot;http://bohemiancoding.com/sketch/&quot;&gt;Bohemian Coding’s Sketch&lt;/a&gt; application lately, and I find it to be a bit more intuitive than Adobe Illustrator in some ways. It’s sort of like Keynote in that it gets out of your way, and lets you design something with minimal distractions.&lt;/p&gt;
-
-&lt;p&gt;As an exercise for myself I whipped up a simple iPhone 5 template that can be used to showcase an app design, or a website screenshot, or whatever.&lt;/p&gt;
-
-&lt;p&gt;I’m placing it here for anyone to download, for free. Go nuts!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/cbracco/chrisbracco.com/raw/gh-pages/assets/downloads/iphone5-black.zip&quot; class=&quot;button button--color-theme-4&quot;&gt;Download Template&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 07 Sep 2013 18:41:40 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/free-iphone-5-sketch-template/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/free-iphone-5-sketch-template/</guid>
         
         
       </item>
@@ -288,6 +271,211 @@
         <pubDate>Thu, 14 Mar 2013 15:16:08 -0400</pubDate>
         <link>https://chrisbracco.comhttps://chrisbracco.com/essential-mac-osx-apps/</link>
         <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/essential-mac-osx-apps/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>SSH Keys 101</title>
+        <description>&lt;p&gt;I began by following GitHub’s &lt;a href=&quot;https://help.github.com/articles/generating-ssh-keys&quot;&gt;basic instructions&lt;/a&gt; on how to generate a key pair and add it to my account, but I really didn’t have any clue what I was doing. It just worked, so I left it alone.&lt;/p&gt;
+
+&lt;p&gt;Since then, I’ve had to set up SSH key authentication on several local machines and remote servers, and things have become a mess. It’s time for some spring cleaning.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-an-ssh-key-pair&quot;&gt;What is an SSH key pair?&lt;/h2&gt;
+
+&lt;p&gt;SSH keys are a means of identifying yourself to an SSH server. They are useful because they allow you access to a server, via SSH, without having to manually enter your password each time.&lt;/p&gt;
+
+&lt;p&gt;SSH keys always come in pairs: &lt;strong&gt;one private key&lt;/strong&gt; and &lt;strong&gt;one public key&lt;/strong&gt;. The private key should be safely guarded, while the public key can be shared freely on any SSH server to which you would like to connect.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+
+&lt;p&gt;When you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; command to connect to a server that has your public SSH key on file, a few things happen behind the scenes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The SSH server uses your public SSH key to create and send your machine a “challenge”. This challenge is basically a coded message that must be met with an appropriate response or else your connection attempt will be refused.&lt;/li&gt;
+  &lt;li&gt;The only thing that can decode this challenge and send the correct response is your corresponding &lt;strong&gt;private SSH key&lt;/strong&gt; in the key pair. This encrypted private key usually lives in the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/&lt;/code&gt; directory on your machine.&lt;/li&gt;
+  &lt;li&gt;If a correct response is sent back to the SSH server, your connection will be authenticated and you will receive access.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;managing-ssh-key-pairs&quot;&gt;Managing SSH key pairs&lt;/h2&gt;
+
+&lt;p&gt;Up until now, I’ve been using keys generated on my local machines, passphrase-less keys generated on remote servers, and  whatever else seemed to work. This isn’t terribly secure and it has become unmanageable — confusing, even.&lt;/p&gt;
+
+&lt;p&gt;I came across &lt;a href=&quot;http://serverfault.com/questions/13354/best-system-for-managing-ssh-keys&quot;&gt;a very helpful ServerFault thread&lt;/a&gt; and decided that having &lt;strong&gt;one key pair per local machine&lt;/strong&gt; was the best option for me.&lt;/p&gt;
+
+&lt;p&gt;This has several implications.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;You will have to delete all existing SSH stuff and start fresh. Well, maybe not, but it helped me since I’m new to this stuff.&lt;/li&gt;
+  &lt;li&gt;You will have to generate one key pair on each of your workstations, and then authorize each public key on every server that you’d like to access.&lt;/li&gt;
+  &lt;li&gt;You will have to set up &lt;a href=&quot;http://www.unixwiz.net/techtips/ssh-agent-forwarding.html&quot;&gt;SSH agent forwarding&lt;/a&gt; so that you can use your local keys instead of leaving passphrase-less keys on every server.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;At the moment, I only have two machines: a 15” MacBook Pro at home, and a 27” iMac at the office. This should be a piece of cake, right?&lt;/p&gt;
+
+&lt;p&gt;Welp. Not really.&lt;/p&gt;
+
+&lt;h2 id=&quot;backing-up-and-removing-all-ssh-stuff&quot;&gt;Backing up and removing all SSH stuff&lt;/h2&gt;
+
+&lt;p&gt;Since my situation was such a mess, I wanted to start over with some fresh keys. You don’t necessarily have to, but it relieved some of my confusion by starting from nothing.&lt;/p&gt;
+
+&lt;p&gt;This was not as easy as I had hoped, but going through the motions helped me learn some new things.&lt;/p&gt;
+
+&lt;p&gt;So, before you go on a deleting frenzy, make sure that &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordAuthentication&lt;/code&gt; is set to “Yes” on your &lt;strong&gt;remote server(s)&lt;/strong&gt;, otherwise you will lock yourself out after deleting keys. And obviously, you will need to know your user passwords so you can connect to your servers the ol’ fashioned way.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordAuthentication&lt;/code&gt; is set in the &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/ssh/sshd_config&lt;/code&gt; file on most of my servers. It may be the &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/ssh/ssh_config&lt;/code&gt; file instead.&lt;/p&gt;
+
+&lt;p&gt;Shell in to each &lt;strong&gt;remote server&lt;/strong&gt;, and edit this file:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh you@yourserver.com
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/ssh/sshd_config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Edit the following lines and save:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PasswordAuthentication Yes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Restart SSH:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service ssh restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, you will want to remove any references to your old keys from the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/known_hosts&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/authorized_keys&lt;/code&gt; files, and then remove the keys themselves. &lt;strong&gt;You may need to do this on your remote server(s) and your local machines.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To remove the references, simply open up those files, delete the old entries, and save them.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.ssh/authorized_keys
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.ssh/known_hosts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After deleting the references to the old keys, you will want to delete the keys themselves. If necessary, backup the old keys prior to removing them. Again, do this on your remote server(s) &lt;em&gt;and&lt;/em&gt; local machines if you have keys in both places.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; ~/.ssh/id_rsa ~/.ssh/id_rsa.bak
+&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; ~/.ssh/id_rsa.pub ~/.ssh/id_rsa.pub.bak
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Repeat this process on all of your remote servers and local machines, so that you are back to square one. You should have to type your user password every time you try and SSH into any of your remote servers.&lt;/p&gt;
+
+&lt;h3 id=&quot;removing-keys-from-github&quot;&gt;Removing keys from Github&lt;/h3&gt;
+
+&lt;p&gt;If you are like me and have some remote servers that need to connect to Github, then you’ve probably added a few SSH keys to your account. These will also need to be deleted.&lt;/p&gt;
+
+&lt;p&gt;Simply login to your Github account and go to &lt;a href=&quot;https://github.com/settings/ssh&quot;&gt;this settings page&lt;/a&gt; to delete them.&lt;/p&gt;
+
+&lt;h2 id=&quot;generating-new-local-ssh-key-pairs&quot;&gt;Generating new local SSH key pairs&lt;/h2&gt;
+
+&lt;p&gt;At this point I was pretty terrified with what I did, but confident I could come out the other side a victorious noob.&lt;/p&gt;
+
+&lt;p&gt;Creating new keys is pretty simple. You will be generating a new key on &lt;strong&gt;each local machine&lt;/strong&gt; that you expect to use SSH. For me, that means creating a pair on my laptop and a pair on my work computer.&lt;/p&gt;
+
+&lt;p&gt;You can generate either DSA or RSA keys. I typically generate RSA keys because they have no key length limits, so you can make them larger and therefore &lt;a href=&quot;http://www.guyrutenberg.com/2007/10/05/ssh-keygen-tutorial-generating-rsa-and-dsa-keys/&quot;&gt;more secure&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To generate a pair of public and private SSH keys, simply run this command in your terminal:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;your comment&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;the &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; flag stands for type, the &lt;code class=&quot;highlighter-rouge&quot;&gt;-b&lt;/code&gt; flag stands for the key length in bits, and the &lt;code class=&quot;highlighter-rouge&quot;&gt;-C&lt;/code&gt; flag stands for the comment included in the pair.&lt;/p&gt;
+
+&lt;p&gt;Comments in your SSH public keys can help differentiate copies of the same public key. &lt;strong&gt;Each copy of a public key can have its own unique comment.&lt;/strong&gt; I like to specify the local machine in the comment (e.g. “iMac”, “MacBook”, whatever).&lt;/p&gt;
+
+&lt;p&gt;After running the previous &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-keygen&lt;/code&gt; command, you will be prompted for the desired name and location of your private key. To accept the defaults, &lt;strong&gt;press return&lt;/strong&gt; for each prompt.&lt;/p&gt;
+
+&lt;p&gt;Next, you will be prompted for a passphrase. Make it strong, and store it somewhere so you don’t have to remember it. I use &lt;a href=&quot;https://agilebits.com/onepassword&quot;&gt;1Password&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you create a passphrase-less key,&lt;/strong&gt; you will want to be aware of the risks. Without a passphrase, your private key will be stored on your machine in an unencrypted form. If some jerk gets their hands on your private key, they can assume your identity on any SSH server that is using the corresponding public key in the pair. You also must trust your root user (if it isn’t you), because they can bypass file permissions and will be able to access your private key file at any time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you have an existing private key&lt;/strong&gt; on your local machine that you would like to keep the same but add/change/remove the passphrase, then run the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ~/.ssh/id_rsa &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;authorizing-public-keys-on-your-remote-servers&quot;&gt;Authorizing public keys on your remote server(s)&lt;/h2&gt;
+
+&lt;p&gt;Once your new keys are generated, you will want to authorize your public keys for each server that you plan on accessing. There are several ways you can do this, but I prefer to stay in the terminal for this process, using the secure copy &lt;code class=&quot;highlighter-rouge&quot;&gt;scp&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;scp ~/.ssh/id_rsa.pub you@yourserver.com:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command copies your public key (&lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt;) to your home directory on the server. The colon &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; at the end of the command is important — it stands for your home directory.&lt;/p&gt;
+
+&lt;p&gt;Now, you will want to connect to your server via SSH, concatenate your public key to the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/authorized_keys&lt;/code&gt; file using the &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command, and change the permissions so that the file is only readable and writable by you:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh you@yourserver.com
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; ~/id_rsa.pub &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.ssh/authorized_keys
+&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;700 ~/.ssh
+&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;600 ~/.ssh/authorized_keys
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After adding your public key to &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/authorized_keys&lt;/code&gt;, remove your key from your home directory:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; ~/id_rsa.pub
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Repeat this process&lt;/strong&gt; on every remote server, for each of your public keys.&lt;/p&gt;
+
+&lt;p&gt;Once you are done authorizing your new keys, remember to set &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordAuthentication&lt;/code&gt; back to “No” in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/ssh/sshd_config&lt;/code&gt;, and restart ssh on each remote server.&lt;/p&gt;
+
+&lt;p&gt;When you SSH back in, you will be prompted for your &lt;strong&gt;SSH passphrase&lt;/strong&gt; (if you entered one while creating your key pair). On OSX, you can select “Remember password in my keychain” so that you don’t have to type in the passphrase every time you use &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; to access your remote server(s). Enter the password and continue, and you should be connected to your server.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuring-ssh-agent-forwarding&quot;&gt;Configuring SSH agent forwarding&lt;/h2&gt;
+
+&lt;p&gt;(These forwarding instructions were mostly extracted from &lt;a href=&quot;https://help.github.com/articles/using-ssh-agent-forwarding&quot;&gt;this Github article&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;After you authorize your new SSH key pairs, it’s time to set up agent forwarding so you can actually use the suckers.&lt;/p&gt;
+
+&lt;p&gt;This nifty little technique allows you to use SSH keys stored on your local machines instead of leaving passphrase-less keys sitting on your remote servers. &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-agent&lt;/code&gt; runs in the background, and keeps your key stored in memory so you don’t have to enter your passphrase every time you need to use the key.&lt;/p&gt;
+
+&lt;p&gt;To start, you will want to create/modify the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/config&lt;/code&gt; file to allow forwarding to your remote servers.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.ssh/config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add the following, replacing &lt;code class=&quot;highlighter-rouge&quot;&gt;yourserver.com&lt;/code&gt; with your remote server’s domain name or IP address:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Host yourserver.com
+	ForwardAgent yes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You will want to add a host entry for each remote server you would like to access. It’s more secure this way than to use a wildcard like &lt;code class=&quot;highlighter-rouge&quot;&gt;Host *&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;add-your-new-local-keys-to-github&quot;&gt;Add your new local keys to Github&lt;/h2&gt;
+
+&lt;p&gt;Now you will want to add your new keys in &lt;a href=&quot;https://github.com/settings/ssh&quot;&gt;the same spot&lt;/a&gt; where you removed them earlier in this process. You should now be able to access Github from your remote server(s)!&lt;/p&gt;
+
+&lt;h2 id=&quot;troubleshoot&quot;&gt;Troubleshoot&lt;/h2&gt;
+
+&lt;p&gt;At this point, you may be all set up. In my case, I was still having trouble, specifically with Github. I was getting this mysterious error:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fatal: The remote end hung up unexpectedly
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you see this, you should follow the “Troubleshooting” section of &lt;a href=&quot;https://help.github.com/articles/using-ssh-agent-forwarding&quot;&gt;this Github article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For me, I needed to add each of my private keys to &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-agent&lt;/code&gt; and everything was working again.&lt;/p&gt;
+
+&lt;h2 id=&quot;extra-security-optional&quot;&gt;Extra security (optional)&lt;/h2&gt;
+
+&lt;p&gt;These extra tweaks are to protect yourself from yourself. You will want to run these commands on  your &lt;strong&gt;remote server(s)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;400 ~/.ssh/authorized_keys
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chattr +i ~/.ssh/authorized_keys
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chattr +i ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The first command makes the file read-only by you, so that it cannot be accidentally edited…by you. The second command prevents you, the user, from simply changing the permissions back. The third command prevents you from accidentally renaming the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;This of course assumes that you will not need to change the file. If you end up having to change something in the future, then you will have to reverse this process in order to edit the file again.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The learning curve for this was much higher than I had expected, but I’m glad I muscled through it. I am still very new to all of this, so if there is something I am doing wrong or could be doing better please feel free to flame me in the comments.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Mar 2013 14:42:56 -0500</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/ssh-keys/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/ssh-keys/</guid>
         
         
       </item>
