@@ -9,7 +9,7 @@
   --type-body-font-size: var(--font-size-5);
   --type-body-line-height: var(--line-height-1);
   --type-body-color: var(--color-gray-darker);
-  --type-anchor-color: var(--color-theme-1-dark);
+  --type-anchor-color: var(--color-theme-5);
   --type-anchor-visited-color: var(--color-theme-4);
   --type-vertical-rhythm: var(--spacing-4);
   --type-del-font-style: italic;
@@ -120,6 +120,7 @@ dfn[title] {
  * already border styles on the <abbr> element.
  */
 
+abbr[title],
 abbr a {
   text-decoration: none;
 }
