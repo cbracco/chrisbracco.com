@@ -66,7 +66,6 @@ After giving it a year to soak in, I decided I should evaluate which apps are es
 * [Opera](http://www.opera.com/)
 * [Opera Mobile Emulator](http://www.opera.com/developer)
 * [Pixelmator](https://itunes.apple.com/us/app/pixelmator/id407963104?mt=12)
-* [Quartz Composer](https://developer.apple.com/technologies/mac/graphics-and-animation.html)
 * [Rdio](http://www.rdio.com/)
 * [Send to Kindle](http://www.amazon.com/gp/sendtokindle)
 * [Sequel Pro](http://www.sequelpro.com/)
