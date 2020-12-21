@@ -2,6 +2,7 @@
 _raw/
 build/
 _drafts/
+_archived/
 node_modules/
 tmp/
 

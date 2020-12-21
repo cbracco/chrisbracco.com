@@ -13,16 +13,6 @@ layout: default
         <div class="markdown">
           {{ content }}
         </div>
-        <div class="page__comments border-top-1px padding-top-4 padding-bottom-4">
-          {% if page.disableComments %}
-            <div class="alert">
-              <p>Comments are currently disabled for this blog post.</p>
-            </div>
-          {% else %}
-            <h1>Leave a Comment</h1>
-            {% include site/comments.html %}
-          {% endif %}
-        </div>
       </div>
     </div>
   </article>

@@ -41,8 +41,6 @@ favicons: true
 openGraph: true
 twitterCards:
   username: cbracco
-typekit:
-  id: qct4tzq
 
 # Analytics
 analytics:
@@ -52,18 +50,11 @@ analytics:
 # 3rd-Party
 codepen:
   username: cbracco
-  url: http://codepen.io/cbracco
+  url: https://codepen.io/cbracco
 
 ello:
   username: cbracco
   url: https://ello.co/cbracco
-
-disqus:
-  username: cbracco
-
-feedburner:
-  username: cbracco
-  url: http://feeds.feedburner.com/cbracco
 
 github:
   username: cbracco
@@ -76,10 +67,6 @@ goodreads:
 instagram:
   username: cbracco
   url: https://www.instagram.com/cbracco
-
-lastfm:
-  username: cbracco
-  url: http://www.last.fm/user/cbracco
 
 instapaper:
   username: cbracco
@@ -103,9 +90,9 @@ twitter:
 
 # Referral URLs
 referralUrls:
-  linode: http://cbrac.co/linode_ref
-  namecheap: http://cbrac.co/namecheap_ref
-  dropbox: http://cbrac.co/mydropbox_ref
+  linode: https://cbrac.co/linode_ref
+  namecheap: https://cbrac.co/namecheap_ref
+  dropbox: https://cbrac.co/mydropbox_ref
 
 # Excludes
 #
