@@ -33,8 +33,8 @@ module.exports = {
       src + '_layouts/**/*',
       src + '_plugins/**/*',
       src + '_posts/**/*',
-      src + '/**/*.{html,markdown,md,yml,json,txt,xml}',
-      src + '/*'
+      src + '**/*.{html,markdown,md,yml,json,txt,xml}',
+      src + '*'
     ],
     styles: srcAssets + 'styles/**/*',
     scripts: srcAssets + 'scripts/**/*',
