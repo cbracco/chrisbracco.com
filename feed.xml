@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chris Bracco</title>
-    <description>Hello! My name is Chris and I am a web designer and developer who cares about user-centered design, performance, and accessibility.</description>
+    <description>Hello! My name is Chris and I am a web designer and engineer who cares about user-centered design, performance, and accessibility.</description>
     <link>https://chrisbracco.comhttps://chrisbracco.com/</link>
     <atom:link href="https://chrisbracco.comhttps://chrisbracco.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Dec 2020 13:28:05 -0500</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2020 13:28:05 -0500</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Mon, 21 Dec 2020 14:13:01 -0500</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2020 14:13:01 -0500</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>A Simple, Responsive CSS Grid System</title>
@@ -30,20 +30,6 @@
       </item>
     
       <item>
-        <title>The Reason for Flat Web Design</title>
-        <description>&lt;div class=&quot;tweet&quot;&gt;
-  &lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;i think the real reason flat web design became popular is bc responsive design is fucking hard and ain&amp;#39;t nobody got time for shadows&lt;/p&gt;&amp;mdash; Chris Bracco (@cbracco) &lt;a href=&quot;https://twitter.com/cbracco/statuses/390291444986306561&quot;&gt;October 16, 2013&lt;/a&gt;&lt;/blockquote&gt;
-  &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 16 Oct 2013 16:11:34 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/why-flat-web-design/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/why-flat-web-design/</guid>
-        
-        
-      </item>
-    
-      <item>
         <title>A Simple CSS Tooltip</title>
         <description>&lt;p&gt;With pseudo elements, the triangle hack, and data attributes, I created a simple tooltip system in HTML and CSS.&lt;/p&gt;
 
@@ -52,7 +38,7 @@
   &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;/div&gt;
 
-&lt;p&gt;To give any element a tooltip, simply add the &lt;code class=&quot;highlighter-rouge&quot;&gt;data-tooltip&lt;/code&gt; attribute to it, like so:&lt;/p&gt;
+&lt;p&gt;To give any element a tooltip, simply add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-tooltip&lt;/code&gt; attribute to it, like so:&lt;/p&gt;
 
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-tooltip=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am a tooltip&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I am a link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -77,12 +63,12 @@
     
       <item>
         <title>CSS Sticky (But Not Fixed) Footer</title>
-        <description>&lt;p&gt;For a recent web app project, I had to build a footer that would always stick to the bottom of page, using CSS only. My first instincts led me to the &lt;code class=&quot;highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property, but it turns out the client didn’t want the footer visible at all times. They wanted it to behave as follows:&lt;/p&gt;
+        <description>&lt;p&gt;For a recent web app project, I had to build a footer that would always stick to the bottom of page, using CSS only. My first instincts led me to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property, but it turns out the client didn’t want the footer visible at all times. They wanted it to behave as follows:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The footer should be visible if the content above it is shorter than the user’s viewport height.&lt;/li&gt;
   &lt;li&gt;If the content is taller than the user’s viewport height, then the footer should disappear from view and rest at the bottom of the page, as it would naturally.&lt;/li&gt;
-  &lt;li&gt;This must be done without JavaScript, and without using the &lt;code class=&quot;highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property (which would keep the footer at the bottom of the viewport at all times, regardless of the above content).&lt;/li&gt;
+  &lt;li&gt;This must be done without JavaScript, and without using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property (which would keep the footer at the bottom of the viewport at all times, regardless of the above content).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Below is a small pen demonstrating my solution, and it works fabulously. Feel free to use this method on your next project.&lt;/p&gt;
@@ -116,365 +102,79 @@
       </item>
     
       <item>
-        <title>“Mobile-first” for Dummies</title>
-        <description>&lt;p&gt;“&lt;a href=&quot;http://www.lukew.com/resources/mobile_first.asp&quot;&gt;Mobile first&lt;/a&gt;”, a phrase coined by Luke Wroblewski &lt;a href=&quot;http://www.lukew.com/ff/entry.asp?933&quot;&gt;in 2009&lt;/a&gt;, is a strategy for web development that focuses on building the mobile experience of a web application first, and &lt;a href=&quot;http://en.wikipedia.org/wiki/Progressive_enhancement&quot;&gt;progressively enhancing&lt;/a&gt; the application for users with larger devices, better browsers, and greater bandwidth.&lt;/p&gt;
+        <title>Instant Text Editor in Your Browser</title>
+        <description>&lt;p&gt;Sometimes you just need to write something down momentarily to make sense of an idea, or to blow off some steam, or whatever. Why not use your browser? It’s one of the few apps I keep open.&lt;/p&gt;
 
-&lt;p&gt;The idea is that if you design for the smallest devices (and least capable browsers) first, it forces you to prioritize and determine what are the most important data and actions in your application. The end result is an application that is focused on the key tasks a user is supposed to complete, without the extraneous content and interface fluff that plagues many applications that take a top-down, “PC first” approach.&lt;/p&gt;
+&lt;p&gt;I saw Jose’s &lt;a href=&quot;https://coderwall.com/p/lhsrcq&quot;&gt;brilliant little idea&lt;/a&gt; the other day and took a minute to make &lt;a href=&quot;https://gist.github.com/cbracco/4670375&quot;&gt;my own&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Simply copy and paste this line of code into your browser’s address bar and be presented with a distraction-free, in-browser notepad. Bookmark it for a single-click notepad!&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;data:text/html, &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;contenteditable&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;background-color: #f8f3e8; font-family: Garamond, Georgia, serif; font-size: 1.333rem; line-height: 1.5; max-width: 36rem; margin: 0 auto; padding: 3rem 1.5rem;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Wed, 29 May 2013 17:12:50 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/mobile-first-for-dummies/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/mobile-first-for-dummies/</guid>
+        <pubDate>Tue, 26 Feb 2013 09:35:10 -0500</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/browser-notepad/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/browser-notepad/</guid>
         
         
       </item>
     
       <item>
-        <title>How I Keep My iPhone in Order</title>
-        <description>&lt;p&gt;A few friends showed some interest in how I organize apps on my iPhone 5, so I’m going to briefly share my approach here. I’ll also share how I control the notifications so that I don’t end up in tears from never-ending flashes, beeps, and vibrations.&lt;/p&gt;
+        <title>How to Use Curly Quotes on Mac OSX and Windows</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/curly-quotes.png&quot; alt=&quot;curly smart quotes&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;When I first purchased my iPhone 5 in November of 2012, I downloaded a bunch of apps right away and tried to squeeze them all onto a single home screen, grouping all of the icons into categories. This was okay for a while, but things got crowded very quickly. Also, the apps that I used most frequently were with the apps that I rarely used; this made it hard to find the one I was looking for, and easy to get distracted or tempted into doing something else entirely.&lt;/p&gt;
+&lt;p&gt;The curly, or smart quote is an elusive character. For years I have been including straight marks in my writing, blissfully unaware that I was doing it all wrong. Recently, I learned about some functional differences between straight and curly quotation marks.&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Notification_Center&quot;&gt;iOS Notification Center&lt;/a&gt; was new to me, too. It was exciting to be able to keep my hand on the pulse of all these apps from one screen, but my excitement quickly diminished into frustration.&lt;/p&gt;
+&lt;h2 id=&quot;straight-marks&quot;&gt;Straight marks&lt;/h2&gt;
 
-&lt;p&gt;After using the device for a few months, I kept tabs on which apps I used the most and decided on a new approach to reduce the clutter and noise.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/typewriter.gif&quot; alt=&quot;typewriter&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;three-screen-approach&quot;&gt;Three-screen approach&lt;/h2&gt;
+&lt;p&gt;Straight marks were invented for use on typewriters. Due to physical and mechanical constraints, you can only fit so many keys on a typewriter’s keyboard. Using straight quotes instead of curly quotes freed up two slots for other characters on the keyboard, which is why these characters were preferable.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/iphone5-screens-ios7.png&quot; alt=&quot;iphone 5 screen ios7&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;When computers came into the fray, they put these straight marks to good use. Most programming languages require the use of straight marks to indicate string literals (e.g. “Hello world”), so they are still very useful today.&lt;/p&gt;
 
-&lt;p&gt;iOS7 lets you set a different background image for the lock screen, so I chose a photo that I took while visiting Peaks Island, Maine. For the home screens, I chose a neutral background so it would not clash with iOS7’s barf-worthy icons.&lt;/p&gt;
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;On any typical keyboard, simply press &lt;kbd&gt;'&lt;/kbd&gt; for a straight single mark ( ‘ ) and &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;'&lt;/kbd&gt; for a straight double mark ( “ ).&lt;/p&gt;
 
-&lt;p&gt;And instead of squishing all of my apps onto one home screen, I divided them up across two screens. On the first (or home) screen, I have my most-used apps in alphabetical order. On the second screen, I have my least-used apps grouped into categorized folders. On the dock, I have my four most-used apps: Messages, Phone, Photos, and &lt;a href=&quot;http://www.sleepcycle.com&quot;&gt;Sleep Cycle&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;curly-quotes&quot;&gt;Curly quotes&lt;/h2&gt;
+&lt;p&gt;Unlike straight marks, curly quotes are usually more legible in paragraphs and long texts, and match the other characters better. They are more suitable for reading, and should be used when writing documents, articles, blog posts, etc.&lt;/p&gt;
 
-&lt;p&gt;If I use an app on the first screen less often, then I will demote it and promote a different one from the second screen that I use more often. Sometimes I will delete the app entirely if I find it’s not being used at all, or if it’s becoming a distraction (which is why I deleted the Facebook app from my phone). This has been working for me.&lt;/p&gt;
+&lt;h3 id=&quot;usage-1&quot;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;It turns out that producing curly quotes on a computer is super easy. I’ve committed these simple shortcuts to memory.&lt;/p&gt;
 
-&lt;h2 id=&quot;prioritizing-notifications&quot;&gt;Prioritizing notifications&lt;/h2&gt;
-
-&lt;p&gt;To keep the beeps and buzzes to a minimum, I started by turning off all notifications. I decided the Phone, Messages, Reminders, and Calendar apps were important, and gave them each a sound, badge, and alert. None of my other apps produce a sound or alert notification; they only have badges &lt;strong&gt;(yes, even &lt;a href=&quot;http://www.mailboxapp.com&quot;&gt;Mailbox&lt;/a&gt;, the app I use for email)&lt;/strong&gt;. The only apps that show up in the Notification Center are Calendar and Reminders. Nothing shows up on the lock screen, unless I’m listening to music with &lt;a href=&quot;http://rdio.com/people/cbracco&quot;&gt;Rdio&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I have been enjoying this setup, and I find myself spending less time derping around on my phone and more time focusing on what I want to do throughout my day.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 30 Apr 2013 12:27:15 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/iphone-organization/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/iphone-organization/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Feed Reader Blues</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/rss-feeds.png&quot; alt=&quot;rss feed icon&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I am a long-time &lt;abbr title=&quot;Really Simple Syndication&quot;&gt;RSS&lt;/abbr&gt; feed user. I started using them back in 2006 when I was a wee freshman in college, and I like following many publications from one convenient place. Feed readers are great services. Google Reader (&lt;a href=&quot;http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html&quot;&gt;R.I.P.&lt;/a&gt;) was my companion for many years, but I suddenly find myself resenting the RSS experience.&lt;/p&gt;
-
-&lt;h2 id=&quot;it-usually-goes-something-like-this&quot;&gt;It usually goes something like this…&lt;/h2&gt;
-
-&lt;p&gt;I discover a new blog, website, or publication that has great content and is also relevant to my interests. I’ll visit said blog and skim through some content. If I like what I see then I will usually consume some content in full, maybe leave a comment, maybe share something, and then subscribe to the RSS feed.&lt;/p&gt;
-
-&lt;p&gt;If the website publishes content sporadically (weekly, bi-weekly, monthly, etc), I can &lt;em&gt;usually&lt;/em&gt; keep up. If they are posting multiple articles everyday, I end up having to skim through them in my feed reader, leaving several articles unread.&lt;/p&gt;
-
-&lt;p&gt;Since Google Reader has an inbox-style interface, the unread articles are &lt;strong&gt;bold&lt;/strong&gt; and the ones I’ve already read are &lt;small style=&quot;color: #646464;&quot;&gt;less emphasized&lt;/small&gt;. As unread articles accumulate, I become more overwhelmed and disheartened. It feels like I’ve failed that publication and myself because I couldn’t keep up. Time to give in and press the ”Mark as read“ button, or delete the feed entirely.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-vicious-cycle&quot;&gt;A vicious cycle&lt;/h2&gt;
-
-&lt;p&gt;I’ll keep subscribing to more feeds, assuring myself that I will find the time to keep up. After a while, the content piles up and becomes unmanageable. &lt;strong&gt;This happens to me every six months or so.&lt;/strong&gt; And if I subscribe to a few large sites that post upwards of 50 articles per day? Forget about it, I’ve totally hosed myself after a few months. Time to delete everything and start over.&lt;/p&gt;
-
-&lt;p&gt;After allowing this cyclical behavior to happen for years, I came to the initial conclusion that I hated RSS. However, while writing this article I realized that:&lt;/p&gt;
-
-&lt;h2 id=&quot;the-problem-isnt-rss-the-problem-is-me&quot;&gt;The problem isn’t RSS. The problem is me.&lt;/h2&gt;
-
-&lt;p&gt;I’ve been abusing RSS all this time and didn’t even know it.&lt;/p&gt;
-
-&lt;p&gt;The inbox-style interfaces of many feed readers get very cluttered when the user is following frequently updated websites. If you’ve subscribed to a website like &lt;a href=&quot;http://mashable.com&quot;&gt;Mashable&lt;/a&gt; or &lt;a href=&quot;http://buzzfeed.com&quot;&gt;Buzzfeed&lt;/a&gt;, your reader will soon resemble an e-mail inbox gone awry. The smaller publications you’ve subscribed to will be very difficult to find unless you filter down to those feeds, specifically.&lt;/p&gt;
-
-&lt;p&gt;This excerpt from Marco Arment’s article &lt;a href=&quot;http://www.marco.org/2013/03/26/power-of-rss&quot;&gt;“The power of the RSS reader”&lt;/a&gt; sums up my feelings nicely:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I don’t mind missing a random &lt;em&gt;New York Times&lt;/em&gt; post, but I’ll regret missing the only &lt;em&gt;Dan’s Data&lt;/em&gt; post this month because it was buried under everyone’s basketball tweets and nobody else I follow will link to it later.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The true power of the RSS inbox is keeping you informed of new posts that you probably won’t see linked elsewhere…&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;so-what-now&quot;&gt;So, what now?&lt;/h2&gt;
-
-&lt;p&gt;I erased all the feeds in my Google Reader account since I heard the news that &lt;a href=&quot;http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html&quot;&gt;they will be shutting down in the summer&lt;/a&gt;, and I uninstalled the Reeder app for iOS.&lt;/p&gt;
-
-&lt;p&gt;Recently, I’ve found myself browsing Layervault’s &lt;a href=&quot;https://news.layervault.com&quot;&gt;Designer News&lt;/a&gt; and Y Combinator’s &lt;a href=&quot;https://news.ycombinator.com/&quot;&gt;Hacker News&lt;/a&gt; aggregators whenever I need a short break between working. For any other general news, I check &lt;a href=&quot;https://twitter.com/cbracco&quot;&gt;Twitter&lt;/a&gt; and &lt;a href=&quot;http://reddit.com&quot;&gt;Reddit&lt;/a&gt;, and for personal stuff I’ll log onto &lt;a href=&quot;http://facebook.com&quot;&gt;Facebook&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://instagram.com&quot;&gt;Instagram&lt;/a&gt; once a day (I’ve deleted the Facebook app from my phone to minimize distractions).&lt;/p&gt;
-
-&lt;p&gt;Until a new subscription alternative emerges that I can really get on board with, this will do just fine for now.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 08 Apr 2013 12:53:28 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/rss-feeds/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/rss-feeds/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>My Essential Mac OSX Apps</title>
-        <description>&lt;p&gt;My machines have been feeling a bit sluggish lately, due in part to the amount of applications I’ve downloaded over the past year. The entire Adobe Creative Suite, Microsoft Office, iWork, and a whole mess of smaller applications.&lt;/p&gt;
-
-&lt;p&gt;After giving it a year to soak in, I decided I should evaluate which apps are essential to my workflow, and which rarely see the light of day. In the wake of some digital spring cleaning, I’ve decided to list out the apps that have made the cut.&lt;/p&gt;
-
+&lt;h4 id=&quot;mac-osx&quot;&gt;Mac OSX&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://agilebits.com/onepassword&quot;&gt;1Password&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.adobe.com/products/photoshop.html&quot;&gt;Adobe Photoshop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.adobe.com/products/illustrator.html&quot;&gt;Adobe Illustrator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.adobe.com/products/indesign.html&quot;&gt;Adobe InDesign&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.freemacsoft.net/appcleaner/&quot;&gt;AppCleaner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.macbartender.com/&quot;&gt;Bartender&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.charlesproxy.com/&quot;&gt;Charles&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://mattpatenaude.com/&quot;&gt;Colors&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://cbrac.co/mydropbox_ref&quot;&gt;Dropbox&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://evernote.com/&quot;&gt;Evernote&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.mozilla.org/en-US/firefox/new/&quot;&gt;Firefox&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gfycat.com/gifbrewery&quot;&gt;GIF Brewery&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.google.com/chrome&quot;&gt;Google Chrome&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://grabbox.devsoft.no/&quot;&gt;GrabBox&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://growl.info/&quot;&gt;Growl&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ia.net/writer&quot;&gt;iA Writer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://pngmini.com/&quot;&gt;ImageAlpha&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/icon-slate/id439697913?mt=12&quot;&gt;Icon Slate&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://imageoptim.com/&quot;&gt;ImageOptim&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.apple.com/iwork/&quot;&gt;iWork&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/jpegmini-lite/id525742250&quot;&gt;JPEGmini Lite&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/keynote/id409183694?mt=12&quot;&gt;Keynote&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.mamp.info/&quot;&gt;MAMP&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://office.microsoft.com/&quot;&gt;Microsoft Office&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.microsoft.com/silverlight/&quot;&gt;Microsoft Silverlight&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/mint-personal-finance-money/id300238550?mt=8&quot;&gt;Mint&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://manytricks.com/moom/&quot;&gt;Moom&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.opera.com/&quot;&gt;Opera&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.opera.com/developer&quot;&gt;Opera Mobile Emulator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/pixelmator/id407963104?mt=12&quot;&gt;Pixelmator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.rdio.com/&quot;&gt;Rdio&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.amazon.com/gp/sendtokindle&quot;&gt;Send to Kindle&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.sequelpro.com/&quot;&gt;Sequel Pro&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.bohemiancoding.com/sketch/&quot;&gt;Sketch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.skype.com/&quot;&gt;Skype&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.sonos.com/support&quot;&gt;Sonos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/svg/svgo-gui&quot;&gt;svgo-gui&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.roxio.com/enu/products/toast/titanium/overview.html&quot;&gt;Toast Titanium 11&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://panic.com/transmit/&quot;&gt;Transmit&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/twitter/id333903271?mt=8&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/gb/app/the-unarchiver/id425424353?mt=12&quot;&gt;The Unarchiver&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.utorrent.com/&quot;&gt;uTorrent&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.virtualbox.org/&quot;&gt;VirtualBox&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.videolan.org/vlc/index.html&quot;&gt;VLC&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/xcode/&quot;&gt;Xcode&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;]&lt;/kbd&gt; produces an opening single curly quote ( &lt;strong&gt;‘&lt;/strong&gt; )&lt;/li&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;]&lt;/kbd&gt; produces a closing single curly quote ( &lt;strong&gt;’&lt;/strong&gt; )&lt;/li&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;[&lt;/kbd&gt; produces an opening double curly quote ( &lt;strong&gt;“&lt;/strong&gt; )&lt;/li&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;[&lt;/kbd&gt; produces a closing double curly quote ( &lt;strong&gt;”&lt;/strong&gt; )&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&quot;windows&quot;&gt;Windows&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0145&lt;/kbd&gt; produces an opening single curly quote ( &lt;strong&gt;‘&lt;/strong&gt; )&lt;/li&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0146&lt;/kbd&gt; produces a closing single curly quote ( &lt;strong&gt;’&lt;/strong&gt; )&lt;/li&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0147&lt;/kbd&gt; produces an opening double curly quote ( &lt;strong&gt;“&lt;/strong&gt; )&lt;/li&gt;
+  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0148&lt;/kbd&gt; produces a closing double curly quote ( &lt;strong&gt;”&lt;/strong&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;converting-straight-marks-to-curly-quotes&quot;&gt;Converting straight marks to curly quotes&lt;/h2&gt;
+
+&lt;p&gt;Some word processors like &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_Word&quot;&gt;Microsoft Word&lt;/a&gt; will automatically convert straight marks to curly quotes for you on the fly, as you type. However, if you copy and paste text that includes straight marks into a word processor, it may not always convert the straight marks properly.&lt;/p&gt;
+
+&lt;p&gt;To manually convert straight marks to curly quotes within your word processor, simply use the &lt;strong&gt;search and replace&lt;/strong&gt; function to find all instances of the straight single quote ( ‘ ) and replace it with the same character — a straight single quote ( ‘ ). You can do the same for straight double marks ( “ ) too.&lt;/p&gt;
+
+&lt;p&gt;I’m not sure why, but it works.&lt;/p&gt;
+
+&lt;h2 id=&quot;who-cares&quot;&gt;Who cares?&lt;/h2&gt;
+
+&lt;p&gt;These small details in your writing will go unnoticed by most, no doubt. Snobby typographers, bookworms, and other designers and developers will be among the few who may actually notice. And maybe that significant other you dated back in 2006 who majored in creative writing.&lt;/p&gt;
+
+&lt;p&gt;Either way, I like to believe that the devil is in the details. The subtleties of these pesky quotation marks is an interesting tidbit in type history worth rehashing.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 14 Mar 2013 15:16:08 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/essential-mac-osx-apps/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/essential-mac-osx-apps/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>SSH Keys 101</title>
-        <description>&lt;p&gt;I began by following GitHub’s &lt;a href=&quot;https://help.github.com/articles/generating-ssh-keys&quot;&gt;basic instructions&lt;/a&gt; on how to generate a key pair and add it to my account, but I really didn’t have any clue what I was doing. It just worked, so I left it alone.&lt;/p&gt;
-
-&lt;p&gt;Since then, I’ve had to set up SSH key authentication on several local machines and remote servers, and things have become a mess. It’s time for some spring cleaning.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-an-ssh-key-pair&quot;&gt;What is an SSH key pair?&lt;/h2&gt;
-
-&lt;p&gt;SSH keys are a means of identifying yourself to an SSH server. They are useful because they allow you access to a server, via SSH, without having to manually enter your password each time.&lt;/p&gt;
-
-&lt;p&gt;SSH keys always come in pairs: &lt;strong&gt;one private key&lt;/strong&gt; and &lt;strong&gt;one public key&lt;/strong&gt;. The private key should be safely guarded, while the public key can be shared freely on any SSH server to which you would like to connect.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
-
-&lt;p&gt;When you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; command to connect to a server that has your public SSH key on file, a few things happen behind the scenes:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The SSH server uses your public SSH key to create and send your machine a “challenge”. This challenge is basically a coded message that must be met with an appropriate response or else your connection attempt will be refused.&lt;/li&gt;
-  &lt;li&gt;The only thing that can decode this challenge and send the correct response is your corresponding &lt;strong&gt;private SSH key&lt;/strong&gt; in the key pair. This encrypted private key usually lives in the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/&lt;/code&gt; directory on your machine.&lt;/li&gt;
-  &lt;li&gt;If a correct response is sent back to the SSH server, your connection will be authenticated and you will receive access.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;managing-ssh-key-pairs&quot;&gt;Managing SSH key pairs&lt;/h2&gt;
-
-&lt;p&gt;Up until now, I’ve been using keys generated on my local machines, passphrase-less keys generated on remote servers, and  whatever else seemed to work. This isn’t terribly secure and it has become unmanageable — confusing, even.&lt;/p&gt;
-
-&lt;p&gt;I came across &lt;a href=&quot;http://serverfault.com/questions/13354/best-system-for-managing-ssh-keys&quot;&gt;a very helpful ServerFault thread&lt;/a&gt; and decided that having &lt;strong&gt;one key pair per local machine&lt;/strong&gt; was the best option for me.&lt;/p&gt;
-
-&lt;p&gt;This has several implications.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;You will have to delete all existing SSH stuff and start fresh. Well, maybe not, but it helped me since I’m new to this stuff.&lt;/li&gt;
-  &lt;li&gt;You will have to generate one key pair on each of your workstations, and then authorize each public key on every server that you’d like to access.&lt;/li&gt;
-  &lt;li&gt;You will have to set up &lt;a href=&quot;http://www.unixwiz.net/techtips/ssh-agent-forwarding.html&quot;&gt;SSH agent forwarding&lt;/a&gt; so that you can use your local keys instead of leaving passphrase-less keys on every server.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;At the moment, I only have two machines: a 15” MacBook Pro at home, and a 27” iMac at the office. This should be a piece of cake, right?&lt;/p&gt;
-
-&lt;p&gt;Welp. Not really.&lt;/p&gt;
-
-&lt;h2 id=&quot;backing-up-and-removing-all-ssh-stuff&quot;&gt;Backing up and removing all SSH stuff&lt;/h2&gt;
-
-&lt;p&gt;Since my situation was such a mess, I wanted to start over with some fresh keys. You don’t necessarily have to, but it relieved some of my confusion by starting from nothing.&lt;/p&gt;
-
-&lt;p&gt;This was not as easy as I had hoped, but going through the motions helped me learn some new things.&lt;/p&gt;
-
-&lt;p&gt;So, before you go on a deleting frenzy, make sure that &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordAuthentication&lt;/code&gt; is set to “Yes” on your &lt;strong&gt;remote server(s)&lt;/strong&gt;, otherwise you will lock yourself out after deleting keys. And obviously, you will need to know your user passwords so you can connect to your servers the ol’ fashioned way.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordAuthentication&lt;/code&gt; is set in the &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/ssh/sshd_config&lt;/code&gt; file on most of my servers. It may be the &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/ssh/ssh_config&lt;/code&gt; file instead.&lt;/p&gt;
-
-&lt;p&gt;Shell in to each &lt;strong&gt;remote server&lt;/strong&gt;, and edit this file:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh you@yourserver.com
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/ssh/sshd_config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Edit the following lines and save:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PasswordAuthentication Yes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Restart SSH:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service ssh restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Next, you will want to remove any references to your old keys from the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/known_hosts&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/authorized_keys&lt;/code&gt; files, and then remove the keys themselves. &lt;strong&gt;You may need to do this on your remote server(s) and your local machines.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To remove the references, simply open up those files, delete the old entries, and save them.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.ssh/authorized_keys
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.ssh/known_hosts
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After deleting the references to the old keys, you will want to delete the keys themselves. If necessary, backup the old keys prior to removing them. Again, do this on your remote server(s) &lt;em&gt;and&lt;/em&gt; local machines if you have keys in both places.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; ~/.ssh/id_rsa ~/.ssh/id_rsa.bak
-&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; ~/.ssh/id_rsa.pub ~/.ssh/id_rsa.pub.bak
-&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Repeat this process on all of your remote servers and local machines, so that you are back to square one. You should have to type your user password every time you try and SSH into any of your remote servers.&lt;/p&gt;
-
-&lt;h3 id=&quot;removing-keys-from-github&quot;&gt;Removing keys from Github&lt;/h3&gt;
-
-&lt;p&gt;If you are like me and have some remote servers that need to connect to Github, then you’ve probably added a few SSH keys to your account. These will also need to be deleted.&lt;/p&gt;
-
-&lt;p&gt;Simply login to your Github account and go to &lt;a href=&quot;https://github.com/settings/ssh&quot;&gt;this settings page&lt;/a&gt; to delete them.&lt;/p&gt;
-
-&lt;h2 id=&quot;generating-new-local-ssh-key-pairs&quot;&gt;Generating new local SSH key pairs&lt;/h2&gt;
-
-&lt;p&gt;At this point I was pretty terrified with what I did, but confident I could come out the other side a victorious noob.&lt;/p&gt;
-
-&lt;p&gt;Creating new keys is pretty simple. You will be generating a new key on &lt;strong&gt;each local machine&lt;/strong&gt; that you expect to use SSH. For me, that means creating a pair on my laptop and a pair on my work computer.&lt;/p&gt;
-
-&lt;p&gt;You can generate either DSA or RSA keys. I typically generate RSA keys because they have no key length limits, so you can make them larger and therefore &lt;a href=&quot;http://www.guyrutenberg.com/2007/10/05/ssh-keygen-tutorial-generating-rsa-and-dsa-keys/&quot;&gt;more secure&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To generate a pair of public and private SSH keys, simply run this command in your terminal:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 4096 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;your comment&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;the &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; flag stands for type, the &lt;code class=&quot;highlighter-rouge&quot;&gt;-b&lt;/code&gt; flag stands for the key length in bits, and the &lt;code class=&quot;highlighter-rouge&quot;&gt;-C&lt;/code&gt; flag stands for the comment included in the pair.&lt;/p&gt;
-
-&lt;p&gt;Comments in your SSH public keys can help differentiate copies of the same public key. &lt;strong&gt;Each copy of a public key can have its own unique comment.&lt;/strong&gt; I like to specify the local machine in the comment (e.g. “iMac”, “MacBook”, whatever).&lt;/p&gt;
-
-&lt;p&gt;After running the previous &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-keygen&lt;/code&gt; command, you will be prompted for the desired name and location of your private key. To accept the defaults, &lt;strong&gt;press return&lt;/strong&gt; for each prompt.&lt;/p&gt;
-
-&lt;p&gt;Next, you will be prompted for a passphrase. Make it strong, and store it somewhere so you don’t have to remember it. I use &lt;a href=&quot;https://agilebits.com/onepassword&quot;&gt;1Password&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;If you create a passphrase-less key,&lt;/strong&gt; you will want to be aware of the risks. Without a passphrase, your private key will be stored on your machine in an unencrypted form. If some jerk gets their hands on your private key, they can assume your identity on any SSH server that is using the corresponding public key in the pair. You also must trust your root user (if it isn’t you), because they can bypass file permissions and will be able to access your private key file at any time.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;If you have an existing private key&lt;/strong&gt; on your local machine that you would like to keep the same but add/change/remove the passphrase, then run the following command:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ~/.ssh/id_rsa &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;authorizing-public-keys-on-your-remote-servers&quot;&gt;Authorizing public keys on your remote server(s)&lt;/h2&gt;
-
-&lt;p&gt;Once your new keys are generated, you will want to authorize your public keys for each server that you plan on accessing. There are several ways you can do this, but I prefer to stay in the terminal for this process, using the secure copy &lt;code class=&quot;highlighter-rouge&quot;&gt;scp&lt;/code&gt; command:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;scp ~/.ssh/id_rsa.pub you@yourserver.com:
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This command copies your public key (&lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt;) to your home directory on the server. The colon &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; at the end of the command is important — it stands for your home directory.&lt;/p&gt;
-
-&lt;p&gt;Now, you will want to connect to your server via SSH, concatenate your public key to the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/authorized_keys&lt;/code&gt; file using the &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command, and change the permissions so that the file is only readable and writable by you:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh you@yourserver.com
-&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; ~/id_rsa.pub &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.ssh/authorized_keys
-&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;700 ~/.ssh
-&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;600 ~/.ssh/authorized_keys
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After adding your public key to &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/authorized_keys&lt;/code&gt;, remove your key from your home directory:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; ~/id_rsa.pub
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Repeat this process&lt;/strong&gt; on every remote server, for each of your public keys.&lt;/p&gt;
-
-&lt;p&gt;Once you are done authorizing your new keys, remember to set &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordAuthentication&lt;/code&gt; back to “No” in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/ssh/sshd_config&lt;/code&gt;, and restart ssh on each remote server.&lt;/p&gt;
-
-&lt;p&gt;When you SSH back in, you will be prompted for your &lt;strong&gt;SSH passphrase&lt;/strong&gt; (if you entered one while creating your key pair). On OSX, you can select “Remember password in my keychain” so that you don’t have to type in the passphrase every time you use &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; to access your remote server(s). Enter the password and continue, and you should be connected to your server.&lt;/p&gt;
-
-&lt;h2 id=&quot;configuring-ssh-agent-forwarding&quot;&gt;Configuring SSH agent forwarding&lt;/h2&gt;
-
-&lt;p&gt;(These forwarding instructions were mostly extracted from &lt;a href=&quot;https://help.github.com/articles/using-ssh-agent-forwarding&quot;&gt;this Github article&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;After you authorize your new SSH key pairs, it’s time to set up agent forwarding so you can actually use the suckers.&lt;/p&gt;
-
-&lt;p&gt;This nifty little technique allows you to use SSH keys stored on your local machines instead of leaving passphrase-less keys sitting on your remote servers. &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-agent&lt;/code&gt; runs in the background, and keeps your key stored in memory so you don’t have to enter your passphrase every time you need to use the key.&lt;/p&gt;
-
-&lt;p&gt;To start, you will want to create/modify the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/config&lt;/code&gt; file to allow forwarding to your remote servers.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.ssh/config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Add the following, replacing &lt;code class=&quot;highlighter-rouge&quot;&gt;yourserver.com&lt;/code&gt; with your remote server’s domain name or IP address:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Host yourserver.com
-	ForwardAgent yes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You will want to add a host entry for each remote server you would like to access. It’s more secure this way than to use a wildcard like &lt;code class=&quot;highlighter-rouge&quot;&gt;Host *&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;add-your-new-local-keys-to-github&quot;&gt;Add your new local keys to Github&lt;/h2&gt;
-
-&lt;p&gt;Now you will want to add your new keys in &lt;a href=&quot;https://github.com/settings/ssh&quot;&gt;the same spot&lt;/a&gt; where you removed them earlier in this process. You should now be able to access Github from your remote server(s)!&lt;/p&gt;
-
-&lt;h2 id=&quot;troubleshoot&quot;&gt;Troubleshoot&lt;/h2&gt;
-
-&lt;p&gt;At this point, you may be all set up. In my case, I was still having trouble, specifically with Github. I was getting this mysterious error:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fatal: The remote end hung up unexpectedly
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you see this, you should follow the “Troubleshooting” section of &lt;a href=&quot;https://help.github.com/articles/using-ssh-agent-forwarding&quot;&gt;this Github article&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For me, I needed to add each of my private keys to &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-agent&lt;/code&gt; and everything was working again.&lt;/p&gt;
-
-&lt;h2 id=&quot;extra-security-optional&quot;&gt;Extra security (optional)&lt;/h2&gt;
-
-&lt;p&gt;These extra tweaks are to protect yourself from yourself. You will want to run these commands on  your &lt;strong&gt;remote server(s)&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;400 ~/.ssh/authorized_keys
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chattr +i ~/.ssh/authorized_keys
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chattr +i ~/.ssh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The first command makes the file read-only by you, so that it cannot be accidentally edited…by you. The second command prevents you, the user, from simply changing the permissions back. The third command prevents you from accidentally renaming the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;This of course assumes that you will not need to change the file. If you end up having to change something in the future, then you will have to reverse this process in order to edit the file again.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;The learning curve for this was much higher than I had expected, but I’m glad I muscled through it. I am still very new to all of this, so if there is something I am doing wrong or could be doing better please feel free to flame me in the comments.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 06 Mar 2013 14:42:56 -0500</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/ssh-keys/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/ssh-keys/</guid>
+        <pubDate>Mon, 11 Feb 2013 20:44:05 -0500</pubDate>
+        <link>https://chrisbracco.comhttps://chrisbracco.com/curly-quotes/</link>
+        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/curly-quotes/</guid>
         
         
       </item>
