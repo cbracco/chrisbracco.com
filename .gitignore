@@ -10,3 +10,4 @@ rsync-credentials.json
 
 downloads/
 .publish/
+.jekyll-cache/
