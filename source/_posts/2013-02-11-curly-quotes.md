@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "How to Use Curly Quotes on Mac OSX and Windows"
-teaser: "For years I have been including straight marks in my writing, blissfully unaware that I was doing it all wrong."
+teaser: "For years I have been including straight marks in my writing, blissfully unaware of their elusive curly counterparts."
 date: "2013-02-11 20:44:05"
 ---
 
 ![curly smart quotes](/assets/images/posts/curly-quotes.png)
 
-The curly, or smart quote is an elusive character. For years I have been including straight marks in my writing, blissfully unaware that I was doing it all wrong. Recently, I learned about some functional differences between straight and curly quotation marks.
+The curly, or smart quote is an elusive character. For years I have been including straight marks in my writing, blissfully unaware of their curly counterparts. Recently, I learned about some functional differences between straight and curly quotation marks.
 
 ## Straight marks
 

@@ -7,7 +7,14 @@ layout: default
     <h1 class="lg-text-center padding-bottom-4 border-bottom-1px">{{ page.title }}</h1>
     <div class="grid grid--gutter">
       <div class="grid__item width-one-whole lg-width-1/3">
-        <div class="page__meta font-size-4 color-gray-dark margin-bottom-4">Published on {{ page.date | date: "%B %-d, %Y" }}{% if page.dateUpdated %}, and last updated on {{ page.dateUpdated | date: "%B %-d, %Y" }}{% endif %}.</div>
+        <div class="page__meta font-size-4 margin-bottom-4">
+          <div class="font-size-4 font-weight-700 color-gray-dark text-uppercase">Published on</div>
+          {{ page.date | date: "%B %-d, %Y" }}
+          {% if page.dateUpdated %}
+            <div class="font-size-4 font-weight-700 color-gray-dark text-uppercase margin-top-4">Last updated</div>
+            {{ page.dateUpdated | date: "%B %-d, %Y" }}
+          {% endif %}
+        </div>
       </div>
       <div class="grid__item width-one-whole lg-width-2/3">
         <div class="markdown">

@@ -169,7 +169,7 @@ td,
 textarea,
 th {
   word-wrap: break-word;
-  hyphens: auto;
+  /* hyphens: auto; */
 }
 
 /**

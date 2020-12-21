@@ -9,8 +9,11 @@ meta: "Some notable companies and projects I have been involved with over the ye
   {% for item in works %}
     <li class="grid__item width-one-whole sm-width-1/2 lg-width-one-whole">
       {% if item.previewImage %}
-        {% if item.link %}<a class="display-block" href="{{ item.link }}" rel="nofollow" target="_blank">{% endif %}<img class="margin-bottom-1" src="{{ item.previewImage }}" alt="{{ item.title }}">{% if item.link %}</a>{% endif %}
-        <h1 class="heading-6">{% if item.link %}<a class="display-block" href="{{ item.link }}" rel="nofollow" target="_blank">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %}</h1>
+        {% if item.link %}<a class="display-block" href="{{ item.link }}" rel="nofollow" target="_blank">{% endif %}<img class="margin-bottom-3" src="{{ item.previewImage }}" alt="{{ item.title }}">{% if item.link %}</a>{% endif %}
+        <h1 class="heading-6 margin-bottom-1">{% if item.link %}<a class="display-block" href="{{ item.link }}" rel="nofollow" target="_blank">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %}</h1>
+        {% if item.content %}
+          {{ item.content }}
+        {% endif %}
       {% endif %}
     </li>
   {% endfor %}
