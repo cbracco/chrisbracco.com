@@ -5,19 +5,13 @@
     <description>Hello! My name is Chris and I am a web designer and engineer who cares about user-centered design, performance, and accessibility.</description>
     <link>https://chrisbracco.comhttps://chrisbracco.com/</link>
     <atom:link href="https://chrisbracco.comhttps://chrisbracco.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Dec 2020 14:13:01 -0500</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2020 14:13:01 -0500</lastBuildDate>
+    <pubDate>Mon, 21 Dec 2020 14:48:50 -0500</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2020 14:48:50 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>A Simple, Responsive CSS Grid System</title>
-        <description>&lt;p&gt;We are currently building a new &lt;abbr title=&quot;Content Management System&quot;&gt;CMS&lt;/abbr&gt; at &lt;a href=&quot;http://bigroomstudios.com&quot;&gt;Big Room Studios&lt;/a&gt;, and I was given the task of writing a fluid CSS grid system for said CMS.&lt;/p&gt;
-
-&lt;p&gt;Although this CSS grid is fluid, it also had to be somewhat rigid to start. We didn’t want to give users too much control in the &lt;abbr title=&quot;Minimum Viable Product&quot;&gt;MVP&lt;/abbr&gt; stage.&lt;/p&gt;
-
-&lt;p&gt;Because of this, all grid columns simply stack on top of each other on smaller screens, as 100% width blocks. It’s nothing revolutionary, but the code is super minimal and I wanted to share it here in case anyone else found it useful.&lt;/p&gt;
-
-&lt;div class=&quot;codepen&quot;&gt;
+        <description>&lt;div class=&quot;codepen&quot;&gt;
   &lt;div data-height=&quot;450&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;hjFDL&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
   &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;/div&gt;
@@ -40,7 +34,7 @@
 
 &lt;p&gt;To give any element a tooltip, simply add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-tooltip&lt;/code&gt; attribute to it, like so:&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-tooltip=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am a tooltip&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I am a link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#!&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-tooltip=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am a tooltip&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I am a link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;One caveat with this method is that transitions on pseudo elements &lt;a href=&quot;http://css-tricks.com/transitions-and-animations-on-css-generated-content/&quot;&gt;don’t quite work right&lt;/a&gt; in Webkit browsers (Chrome, Safari). It works just fine in Firefox, but if you include the CSS for the transition it will break the tooltip in Webkit, which is annoying. This means you can’t transition the opacity or positioning of the tooltip for a fade or movement effect. But if you don’t care about that extra pizazz, then this method will work just fine.&lt;/p&gt;
@@ -74,7 +68,16 @@
 &lt;p&gt;Below is a small pen demonstrating my solution, and it works fabulously. Feel free to use this method on your next project.&lt;/p&gt;
 
 &lt;div class=&quot;codepen&quot;&gt;
-  &lt;div data-height=&quot;750&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;zekgx&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+  &lt;div data-height=&quot;500&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;zekgx&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;update-with-flexbox&quot;&gt;Update! With flexbox&lt;/h2&gt;
+
+&lt;p&gt;Turns out you can also accomplish this particular layout with flexbox. The CSS is a lot simpler, too.&lt;/p&gt;
+
+&lt;div class=&quot;codepen&quot;&gt;
+  &lt;div data-height=&quot;500&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;BaLdqKp&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
   &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;/div&gt;
 </description>
@@ -102,28 +105,10 @@
       </item>
     
       <item>
-        <title>Instant Text Editor in Your Browser</title>
-        <description>&lt;p&gt;Sometimes you just need to write something down momentarily to make sense of an idea, or to blow off some steam, or whatever. Why not use your browser? It’s one of the few apps I keep open.&lt;/p&gt;
-
-&lt;p&gt;I saw Jose’s &lt;a href=&quot;https://coderwall.com/p/lhsrcq&quot;&gt;brilliant little idea&lt;/a&gt; the other day and took a minute to make &lt;a href=&quot;https://gist.github.com/cbracco/4670375&quot;&gt;my own&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Simply copy and paste this line of code into your browser’s address bar and be presented with a distraction-free, in-browser notepad. Bookmark it for a single-click notepad!&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;data:text/html, &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;contenteditable&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;background-color: #f8f3e8; font-family: Garamond, Georgia, serif; font-size: 1.333rem; line-height: 1.5; max-width: 36rem; margin: 0 auto; padding: 3rem 1.5rem;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Tue, 26 Feb 2013 09:35:10 -0500</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/browser-notepad/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/browser-notepad/</guid>
-        
-        
-      </item>
-    
-      <item>
         <title>How to Use Curly Quotes on Mac OSX and Windows</title>
         <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/curly-quotes.png&quot; alt=&quot;curly smart quotes&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The curly, or smart quote is an elusive character. For years I have been including straight marks in my writing, blissfully unaware that I was doing it all wrong. Recently, I learned about some functional differences between straight and curly quotation marks.&lt;/p&gt;
+&lt;p&gt;The curly, or smart quote is an elusive character. For years I have been including straight marks in my writing, blissfully unaware of their curly counterparts. Recently, I learned about some functional differences between straight and curly quotation marks.&lt;/p&gt;
 
 &lt;h2 id=&quot;straight-marks&quot;&gt;Straight marks&lt;/h2&gt;
 
