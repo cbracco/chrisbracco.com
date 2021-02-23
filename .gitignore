@@ -1,0 +1,7 @@
+node_modules/
+.snowpack/
+
+src/_site
+/public
+
+*.log
