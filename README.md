@@ -7,6 +7,7 @@
 -   [Eleventy][eleventy] for static site generation.
 -   [Webpack][webpack] for bundling and cache busting assets.
 -   [PostCSS][postcss] for CSS [file imports][postcss-import], [future-friendly syntax][postcss-preset-env], [vendor prefixing][autoprefixer] and [minification][cssnano].
+- Continuous deployment with GitHub Actions to GitHub Pages.
 
 ## Installation
 
@@ -27,6 +28,18 @@ To start working locally, first run the following command(s):
 ```bash
 npm start
 ```
+
+### Serve production locally
+
+If you want to preview your production build locally, run the following command(s):
+
+```bash
+npm run build && npm run serve
+```
+
+### Deploying
+
+Deployments happen automatically every time you push a change to the `master` branch of this repository. Hurray for continuous deployment!
 
 [@stefanfrede]: https://github.com/stefanfrede/
 [11st-starter-kit]: https://github.com/stefanfrede/11st-starter-kit/
