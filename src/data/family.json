@@ -1,41 +1,49 @@
 {
     "2019-08-23": {
-        "milestone": "Sofia arrives",
+        "member": "Sofia",
+        "title": "Sofia arrives",
         "description": "Born _ lbs _ ounces, and _ inches tall. Came out screaming at the top of her lungs. Grandma Gail could hear her from the waiting room which was several rooms away from ours. She’s got pipes!",
         "proof": null
     },
     "2019-10-01": {
-        "milestone": "Sofia sleeps through the night",
+        "member": "Sofia",
+        "title": "Sofia sleeps through the night",
         "description": "This was the first evening that Sofia slept the entire night until morning. She begins transitioning into a wonderful sleeper from this point forward.",
         "proof": null
     },
     "2020-04-01": {
-        "milestone": "Sofia rides her roaster",
+        "member": "Sofia",
+        "title": "Sofia rides her roaster",
         "description": "She rides her roaster toy for the first time, and it quickly becomes a family favorite to use during walks instead the stroller.",
         "proof": null
     },
     "2020-07-01": {
-        "milestone": "Sofia visits the ocean!",
+        "member": "Sofia",
+        "title": "Sofia visits the ocean!",
         "description": "She meets the ocean and gets to squish some sand between her toes for the first time.",
         "proof": null
     },
     "2020-08-06": {
-        "milestone": "Sofia walks!",
+        "member": "Sofia",
+        "title": "Sofia walks!",
         "description": "Grandma Gail gets Sofia to walk across an entire room for the first time, and we were all lucky enough to be there and see it happen. It was all walking from here on out.",
         "proof": null
     },
     "2020-10-01": {
-        "milestone": "Sofia joins The Little Gym",
+        "member": "Sofia",
+        "title": "Sofia joins The Little Gym",
         "description": "This becomes her outlet during the later months of the pandemic, and she begins to look forward to going here to jump around, climb, sing, and play with other kids.",
         "proof": null
     },
     "2021-02-01": {
-        "milestone": "Sofia speaks!",
+        "member": "Sofia",
+        "title": "Sofia speaks!",
         "description": "Begins saying simple words like “Yes”, “No”, and “Ball”.",
         "proof": null
     },
     "2021-03-06": {
-        "milestone": "First tooth brushing",
+        "member": "Sofia",
+        "title": "First tooth brushing",
         "description": "",
         "proof": null
     }
