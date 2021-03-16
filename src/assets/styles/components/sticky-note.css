@@ -1,0 +1,60 @@
+/* ============================================================================ *\
+   Components -> Sticky Note
+\* ============================================================================ */
+
+.sticky-note {
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+    background: var(--theme-sticky-background);
+    padding: var(--space);
+    height: 100%;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 var(--space) var(--space) 0;
+        border-color: transparent var(--theme-html-background) transparent
+            transparent;
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: var(--space) 0 0 var(--space);
+        border-color: transparent transparent transparent
+            var(--theme-sticky-fold-background);
+    }
+
+    & i {
+        /* position: absolute;
+        bottom: var(--space-fourth);
+        right: calc((var(--space-half) + var(--space-fourth)) * -1);
+        z-index: 1; */
+        margin-right: var(--space-half);
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--theme-html-color);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.sticky-note__heading {
+    margin: 0;
+    font-size: var(--font-size-base);
+}

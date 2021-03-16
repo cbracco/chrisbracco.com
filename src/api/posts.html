@@ -1,0 +1,17 @@
+---
+permalink: /api/posts.json
+sitemap:
+    ignore: true
+---
+
+{# https://dev.to/mattwaler/creating-json-files-with-eleventy-13lk #}
+
+[
+  {% for post in collections.posts  %}
+    {
+      "title": "{{ post.data.title | escape }}",
+      "teaser": "{{ post.data.teaser | escape }}",
+      "url": "{{ post.url | escape }}"
+    }{{ '' if loop.last else ',' }}
+  {% endfor  %}
+]

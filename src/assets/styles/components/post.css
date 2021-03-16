@@ -1,0 +1,69 @@
+/* ============================================================================ *\
+   Components -> Post
+
+   Styles for pages that use the post layout.
+\* ============================================================================ */
+
+.post__date,
+.post__teaser {
+    color: var(--gray-3);
+}
+
+.post__date {
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.post__title {
+    margin-top: var(--space);
+}
+
+.post__taglist {
+    margin-top: calc(var(--space-half) + var(--space-fourth));
+    margin-bottom: var(--space);
+
+    & .button {
+        font-size: var(--font-size-xsmall);
+        margin: var(--space-fourth) var(--space-fourth) 0 0;
+    }
+}
+
+.post__image {
+    margin-bottom: var(--space);
+
+    & figure {
+        margin-bottom: 0;
+    }
+}
+
+.post__content {
+    & :--headings {
+        margin-top: var(--space);
+        margin-bottom: var(--space-eighth);
+    }
+}
+
+@media screen and (--large-and-up) {
+    .post__title {
+        margin-top: var(--space-2x);
+        font-size: var(--font-size-display-2);
+    }
+
+    .post__taglist,
+    .post__image {
+        margin-bottom: var(--space-2x);
+    }
+
+    .post__content {
+        & h2 {
+            font-size: var(--font-size-display-1);
+        }
+
+        & :--headings {
+            margin-top: var(--space-2x);
+            margin-bottom: var(--space-half);
+        }
+    }
+}

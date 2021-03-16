@@ -1,0 +1,19 @@
+/* ============================================================================ *\
+   Components -> Avatar
+\* ============================================================================ */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, var(--space));
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.avatar {
+    opacity: 0;
+    animation: fadeIn 1s 0.5s ease forwards;
+}

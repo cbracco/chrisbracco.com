@@ -1,0 +1,11 @@
+{% include 'head.html' %}
+
+<div class="page wrapper" role="document">
+    {% include 'masthead.html' %}
+    <div id="content" class="page__container">
+        {% include 'navigation.html' %}
+        <main id="main" class="page__main">{{ content | safe }}</main>
+    </div>
+</div>
+
+{% include 'foot.html' %}

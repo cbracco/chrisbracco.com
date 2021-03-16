@@ -1,0 +1,128 @@
+/* ============================================================================ *\
+   Components -> Section
+
+   Content broken up into sections
+\* ============================================================================ */
+
+.section {
+    &:first-of-type:not(.section--archive) .section__heading:first-child {
+        margin-top: 0;
+    }
+}
+
+.section__heading {
+    font-size: var(--font-size-medium);
+    border-bottom: 1px solid var(--theme-hr-color);
+    margin-bottom: var(--space);
+    padding-bottom: var(--space-half);
+}
+
+/**
+ * Intro section on home page
+ */
+
+.section--intro {
+    display: flex;
+
+    & h1 {
+        margin-top: 0;
+    }
+
+    & p,
+    & .avatar {
+        margin-bottom: 0;
+    }
+
+    & .avatar {
+        margin-left: var(--space);
+        width: 33.333%;
+        flex-shrink: 0;
+    }
+
+    @media screen and (--medium-and-up) {
+        & h1 {
+            font-size: var(--font-size-display-1);
+        }
+
+        & p {
+            font-size: var(--font-size-xlarge);
+        }
+    }
+
+    @media screen and (--xlarge-and-up) {
+        & h1 {
+            font-size: var(--font-size-display-2);
+        }
+
+        & p {
+            font-size: var(--font-size-display-1);
+        }
+
+        & .avatar {
+            margin-left: var(--space-2x);
+        }
+    }
+}
+
+/* Pinned posts */
+.section--pinned {
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(228px, 1fr));
+        grid-gap: var(--space-half);
+
+        & li {
+            margin: 0;
+        }
+    }
+}
+
+/* Recently modified posts */
+.section--recent {
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    & li {
+        margin-left: 0;
+    }
+
+    & p {
+        color: var(--gray-3);
+    }
+
+    @media screen and (--large-and-up) {
+        & .post__title {
+            font-size: var(--font-size-display-1);
+        }
+    }
+}
+
+/* Post archives, like tag pages */
+.section--archive {
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    & li {
+        margin-left: 0;
+    }
+
+    & p {
+        color: var(--gray-3);
+    }
+
+    @media screen and (--large-and-up) {
+        & .section__heading,
+        & .post__title {
+            font-size: var(--font-size-display-1);
+        }
+    }
+}

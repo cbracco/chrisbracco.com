@@ -1,0 +1,171 @@
+/* ============================================================================ *\
+   Typography
+\* ============================================================================ */
+
+/**
+ * Set some default document styles.
+ */
+html {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height);
+    background: var(--theme-html-background);
+    color: var(--theme-html-color);
+}
+
+/**
+ * Set consistent :focus styles across browsers.
+ */
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: var(--theme-focus-outline);
+}
+
+/**
+ * Set a vertical rhythm for commmon elements.
+ */
+
+:--vertical-rhythm {
+    margin-bottom: var(--space);
+}
+
+/**
+ * Set some default heading styles.
+ */
+
+:--headings {
+    color: var(--theme-heading-color);
+    line-height: var(--heading-line-height);
+    margin: var(--space-2x) 0 var(--space-half);
+}
+
+h1 {
+    font-size: var(--font-size-large);
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+}
+
+h3 {
+    font-size: var(--font-size-base);
+}
+
+/**
+ * Add word wrapping to common elements.
+ */
+
+caption,
+p,
+table,
+td,
+textarea,
+th {
+    word-wrap: break-word;
+}
+
+/**
+ * Set some default link styles.
+ */
+
+a {
+    color: var(--theme-link-color);
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+/**
+ * Set some default list element styles.
+ */
+
+dl {
+    & dt {
+        font-weight: var(--weight-bold);
+        color: var(--theme-heading-color);
+    }
+
+    & dd {
+        margin: 0;
+    }
+}
+
+/**
+ * Reset margin for <ol> and <ul> elements, and set nested list styles.
+ */
+
+ol,
+ul {
+    & li {
+        margin-left: var(--space-2x);
+        margin-bottom: var(--space-eighth);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    & ul,
+    & ol,
+    & ul ul,
+    & ol ol,
+    & ul ul ul,
+    & ol ol ol {
+        margin-bottom: 0;
+
+        & li {
+            margin-left: var(--space);
+        }
+    }
+}
+
+/**
+ * Set nested `list-style` types for ordered lists.
+ */
+
+ol {
+    list-style: decimal;
+
+    & ol {
+        list-style: upper-alpha;
+    }
+
+    & ol ol {
+        list-style: lower-roman;
+    }
+
+    & ol ol ol {
+        list-style: lower-alpha;
+    }
+}
+
+/**
+ * Remove `margin-bottom` on nested lists.
+ */
+
+ol,
+ul {
+    & ol,
+    & ul {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Set some sensible default styles.
+ */
+
+hr {
+    height: 0;
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid var(--theme-hr-color);
+    margin: var(--space-2x) 0;
+}

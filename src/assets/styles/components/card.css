@@ -1,0 +1,19 @@
+/* ============================================================================ *\
+   Components -> Card
+\* ============================================================================ */
+
+.card {
+    display: block;
+    background: var(--yellow);
+    border-radius: var(--border-radius-base);
+    padding: var(--space-half);
+
+    &,
+    & a {
+        color: var(--theme-html-color);
+    }
+}
+
+.card__heading {
+    margin: 0;
+}

@@ -1,0 +1,21 @@
+/* ============================================================================ *\
+   Components -> Break Out
+   Element that breaks out of its container
+\* ============================================================================ */
+
+[data-breakout] {
+    margin-bottom: var(--space);
+
+    &,
+    & * {
+        display: block;
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media screen and (--large-and-up) {
+    [data-breakout] {
+        margin-bottom: var(--space-2x);
+    }
+}

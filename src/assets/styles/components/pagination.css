@@ -1,0 +1,62 @@
+/* ============================================================================ *\
+   Components -> Pagination
+\* ============================================================================ */
+
+.pagination {
+    background: var(--theme-input-background);
+    border-radius: var(--border-radius-base);
+    font-size: var(--font-size-base);
+
+    &,
+    & [aria-current='page'] {
+        color: var(--gray-3);
+    }
+
+    & ol {
+        display: flex;
+        margin: var(--space-2x) 0 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.pagination__item {
+    margin-bottom: 0;
+    margin-left: 0;
+
+    & > * {
+        display: inline-block;
+        padding: var(--space-half) var(--space-half);
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--theme-heading-color);
+
+        &:not([aria-current='page']):hover {
+            background: var(--theme-button-background);
+        }
+
+        &[aria-current='page'] {
+            cursor: default;
+            font-style: italic;
+            color: var(--gray-3);
+        }
+    }
+
+    &:first-child a:hover {
+        border-radius: var(--border-radius-base) 0 0 var(--border-radius-base);
+    }
+
+    &:last-child a:hover {
+        border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0;
+    }
+}
+
+.pagination--prev {
+    margin-right: auto;
+}
+
+.pagination--next {
+    margin-left: auto;
+}

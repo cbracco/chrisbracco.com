@@ -1,0 +1,11 @@
+<nav class="post__taglist taglist">
+    <ul>
+        {% for tag in tags %}
+        <li>
+            <a href="{{ '/tags/' }}{{ tag | slug }}" class="button button--outline">
+                {{ tag | title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

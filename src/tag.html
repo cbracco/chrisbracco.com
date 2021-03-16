@@ -1,0 +1,22 @@
+---
+layout: default
+eleventyExcludeFromCollections: true
+pagination:
+    data: collections.pagedPostsByTag
+    size: 1
+    alias: paged
+permalink: "tags/{{ paged.tagName | slug }}/{% if paged.number > 1 %}{{ paged.number }}/{% endif %}index.html"
+eleventyComputed:
+    title: Tagged with “{{ tag | title }}”
+---
+
+<p><a class="button" href="{{ '/garden/' }}">⬅️&nbsp;&nbsp;Go Back</a></p>
+
+<section class="section section--archive">
+    <h1 class="section__heading">{{ paged.tagName | title }}</h1>
+    {% include 'postslist.html' %}
+</section>
+
+{% if collections.tagList[paged.tagName] > site.paginate %}
+    {% include 'pagination.html' %}
+{% endif %}

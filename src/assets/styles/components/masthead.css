@@ -1,0 +1,216 @@
+/* ============================================================================ *\
+   Components -> Masthead
+
+   Default: Shows logo and light bulb only.
+   Small and up: Adds outlet, wire and switch.
+   Large and up: Increases size of all masthead elements.
+\* ============================================================================ */
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.masthead {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: var(--space);
+}
+
+.masthead__logo {
+    align-self: flex-start;
+}
+
+.masthead__title {
+    font-size: var(--font-size-large);
+    font-weight: var(--weight-regular);
+    margin-top: var(--space-eighth);
+    margin-bottom: var(--space-eighth);
+
+    & a {
+        color: var(--theme-heading-color);
+        text-decoration: none;
+    }
+}
+
+.masthead__subtitle {
+    font-size: var(--font-size-small);
+    font-weight: var(--weight-regular);
+    color: var(--theme-html-color);
+    margin: 0;
+}
+
+/* Hide outlet and light switch on smaller devices */
+.masthead__outlet,
+.masthead__light-switch-icon {
+    display: none;
+}
+
+/* Light switch, wire, and bulb */
+.masthead__light {
+    position: relative;
+    top: calc(var(--space) * -1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: var(--zindex-10);
+}
+
+[data-color-scheme='light'] .masthead__light {
+    cursor: pointer;
+    cursor: var(--cursor-emoji-moon);
+}
+
+[data-color-scheme='dark'] .masthead__light {
+    cursor: pointer;
+    cursor: var(--cursor-emoji-sun);
+}
+
+.masthead__light-wire {
+    width: var(--space-twelfth);
+    height: var(--space);
+    background: var(--theme-frame-color);
+}
+
+.masthead__light-bulb {
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.masthead__light-bulb-icon {
+    width: var(--icon-size-medium);
+    height: var(--icon-size-medium);
+}
+
+@media screen and (--xsmall-and-up) {
+    .masthead__outlet {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        margin-left: var(--space);
+        margin-right: var(--space);
+    }
+
+    .masthead__outlet-wire {
+        width: calc(100% - var(--space));
+        height: var(--space-twelfth);
+        background: var(--theme-frame-color);
+    }
+
+    .masthead__outlet-icon {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: var(--icon-size-xlarge);
+        height: var(--icon-size-xlarge);
+        cursor: default;
+        cursor: var(--cursor-emoji-death);
+    }
+
+    .masthead__light {
+        top: auto;
+        position: absolute;
+        right: calc(var(--space-fourth) * -1);
+    }
+
+    .masthead__light-wire {
+        height: var(--space-medium);
+    }
+
+    .masthead__light-switch-icon {
+        display: block;
+        width: var(--icon-size-xlarge);
+        height: var(--icon-size-xlarge);
+    }
+}
+
+@media screen and (--medium-and-up) {
+    .masthead__title {
+        font-size: var(--font-size-display-2);
+    }
+
+    .masthead__subtitle {
+        font-size: var(--font-size-base);
+        margin-left: var(--space-twelfth);
+    }
+
+    .masthead__outlet {
+        margin-top: var(--space-third);
+    }
+
+    .masthead__light {
+        top: var(--space-third);
+    }
+}
+
+@media screen and (--large-and-up) {
+    .masthead__title {
+        font-size: var(--font-size-display-3);
+        margin-top: 0;
+
+        & a {
+            cursor: pointer;
+            cursor: var(--cursor-emoji-bow);
+        }
+    }
+
+    .masthead__subtitle {
+        /* font-size: var(--font-size-base); */
+        margin-left: var(--space-eighth);
+    }
+
+    .masthead__outlet {
+        margin-top: var(--space-half);
+        margin-right: calc(
+            var(--space) + var(--space-half) + var(--space-eighth)
+        );
+    }
+
+    .masthead__outlet-icon {
+        width: var(--icon-size-xxxlarge);
+        height: var(--icon-size-xxxlarge);
+    }
+
+    .masthead__outlet-wire {
+        height: var(--space-sixth);
+    }
+
+    .masthead__light {
+        top: var(--space-half);
+
+        &:hover {
+            & .masthead__light-bulb {
+                transform-origin: 50% 0;
+                animation: swing 2s linear forwards infinite;
+            }
+        }
+    }
+
+    .masthead__light-switch-icon {
+        width: var(--icon-size-xxxlarge);
+        height: var(--icon-size-xxxlarge);
+    }
+
+    .masthead__light-wire {
+        width: var(--space-sixth);
+        height: calc(var(--space-large) + var(--space-medium));
+    }
+
+    .masthead__light-bulb-icon {
+        width: var(--icon-size-xlarge);
+        height: var(--icon-size-xlarge);
+    }
+}

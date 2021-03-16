@@ -1,0 +1,37 @@
+/* ============================================================================ *\
+   Reset -> Tables
+\* ============================================================================ */
+
+/**
+ * Reset common table element styles.
+ */
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    caption-side: bottom;
+    empty-cells: show;
+}
+
+caption,
+tfoot td,
+th {
+    text-align: left;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+td,
+th {
+    overflow: visible;
+}

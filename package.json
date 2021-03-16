@@ -1,0 +1,75 @@
+{
+    "name": "chrisbracco.com",
+    "version": "2.0.0",
+    "description": "The source code for Chris Bracco's personal website.",
+    "main": "index.js",
+    "scripts": {
+        "build": "npm-run-all clean build:assets build:site",
+        "build:assets": "NODE_ENV=production webpack --mode=production",
+        "build:site": "NODE_ENV=production eleventy",
+        "clean": "rm -rf ./public",
+        "start": "npm-run-all clean webpack:assets --parallel dev:*",
+        "debug": "DEBUG=* npm start",
+        "dev:assets": "yarn run webpack:assets --watch",
+        "dev:site": "NODE_ENV=development eleventy --serve",
+        "prod": "npm-run-all build serve",
+        "serve": "serve --no-clipboard --listen 8080 public",
+        "webpack:assets": "NODE_ENV=development webpack --mode=development"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cbracco/chrisbracco.com.git"
+    },
+    "keywords": [
+        "website"
+    ],
+    "author": "Chris Bracco",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/cbracco/chrisbracco.com/issues"
+    },
+    "homepage": "https://github.com/cbracco/chrisbracco.com#readme",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.11.1",
+        "@11ty/eleventy-img": "^0.8.0",
+        "@11ty/eleventy-navigation": "^0.1.6",
+        "@11ty/eleventy-plugin-rss": "^1.1.0",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+        "@babel/core": "^7.13.8",
+        "@babel/plugin-proposal-class-properties": "^7.13.0",
+        "@babel/plugin-transform-runtime": "^7.13.9",
+        "@babel/preset-env": "^7.13.9",
+        "babel-loader": "^8.2.2",
+        "cross-env": "^7.0.3",
+        "css-loader": "^5.1.1",
+        "cssnano": "^4.1.10",
+        "eslint": "^7.21.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "fast-glob": "^3.2.5",
+        "luxon": "^1.26.0",
+        "markdown-it": "^12.0.4",
+        "markdown-it-footnote": "^3.0.2",
+        "mini-css-extract-plugin": "^1.3.9",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.2.7",
+        "postcss-import": "^14.0.0",
+        "postcss-loader": "^5.0.0",
+        "postcss-preset-env": "^6.7.0",
+        "serve": "^11.3.2",
+        "svg-sprite": "^1.5.0",
+        "webpack": "^5.24.3",
+        "webpack-cli": "^4.5.0",
+        "webpack-manifest-plugin": "^3.0.0"
+    },
+    "dependencies": {
+        "emojisplosion": "^2.5.0",
+        "lazysizes": "^5.3.0",
+        "lightgallery.js": "^1.4.0"
+    }
+}
