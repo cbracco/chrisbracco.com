@@ -39,5 +39,5 @@ npm start
 [postcss]: https://postcss.org
 [postcss-import]: https://github.com/postcss/postcss-import
 [postcss-preset-env]: https://github.com/csstools/postcss-preset-env
-[snowpack]: https://www.snowpack.dev
+[webpack]: https://webpack.js.org/
 [vredeburg]: https://github.com/dafiulh/vredeburg
