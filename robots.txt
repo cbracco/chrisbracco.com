@@ -1,6 +1,4 @@
+
 User-agent: *
-Disallow: /error/
-
 Allow: /
-
 Sitemap: https://chrisbracco.com/sitemap.xml

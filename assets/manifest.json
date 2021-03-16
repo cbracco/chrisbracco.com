@@ -1,22 +1,6 @@
 {
-  "assets/images/logo.png": "assets/images/logo-58ceb15b7b.png",
-  "assets/images/portrait.jpg": "assets/images/portrait-2a6c6e48c2.jpg",
-  "assets/images/posts/chrome-inspector-vertical.gif": "assets/images/posts/chrome-inspector-vertical-42f580fba7.gif",
-  "assets/images/posts/counterstrike.jpg": "assets/images/posts/counterstrike-d3f3da6e56.jpg",
-  "assets/images/posts/curly-quotes.png": "assets/images/posts/curly-quotes-927ea9bcc9.png",
-  "assets/images/posts/gif-test.gif": "assets/images/posts/gif-test-edf7157e09.gif",
-  "assets/images/posts/iphone5-screens-ios7.png": "assets/images/posts/iphone5-screens-ios7-032ed89953.png",
-  "assets/images/posts/iphone5-screens.png": "assets/images/posts/iphone5-screens-0e753608fe.png",
-  "assets/images/posts/rss-feeds.png": "assets/images/posts/rss-feeds-72b786e409.png",
-  "assets/images/posts/typewriter.gif": "assets/images/posts/typewriter-816b735986.gif",
-  "assets/images/work/big-room-studios/thumbnail-widescreen.png": "assets/images/work/big-room-studios/thumbnail-widescreen-cd88351067.png",
-  "assets/images/work/big-room-studios/thumbnail.png": "assets/images/work/big-room-studios/thumbnail-7cbaa6f80b.png",
-  "assets/images/work/cardinal-css/thumbnail-widescreen.png": "assets/images/work/cardinal-css/thumbnail-widescreen-e93d3a4fdb.png",
-  "assets/images/work/cardinal-css/thumbnail.png": "assets/images/work/cardinal-css/thumbnail-43615fa998.png",
-  "assets/images/work/dispatch-magazine/thumbnail.jpg": "assets/images/work/dispatch-magazine/thumbnail-9a9234bb69.jpg",
-  "assets/images/work/muck-rack/thumbnail-widescreen.png": "assets/images/work/muck-rack/thumbnail-widescreen-80274dab50.png",
-  "assets/images/work/muck-rack/thumbnail.png": "assets/images/work/muck-rack/thumbnail-6ddf5b1448.png",
-  "assets/scripts/head.min.js": "assets/scripts/head-b6983c4029.min.js",
-  "assets/scripts/scripts.min.js": "assets/scripts/scripts-8fe1d2f111.min.js",
-  "assets/styles/styles.min.css": "assets/styles/styles-49867c22d6.min.css"
+  "main.css": "/assets/index.889e2fe747b6ce9cb838.css",
+  "main.js": "/assets/index.eeee2c2bf72e6a642e23.js",
+  "main.css.map": "/assets/index.889e2fe747b6ce9cb838.css.map",
+  "main.js.map": "/assets/index.eeee2c2bf72e6a642e23.js.map"
 }

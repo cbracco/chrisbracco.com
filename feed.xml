@@ -1,168 +1,316 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
     <title>Chris Bracco</title>
-    <description>Hello! My name is Chris and I am a web designer and engineer who cares about user-centered design, performance, and accessibility.</description>
-    <link>https://chrisbracco.comhttps://chrisbracco.com/</link>
-    <atom:link href="https://chrisbracco.comhttps://chrisbracco.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Dec 2020 14:48:50 -0500</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2020 14:48:50 -0500</lastBuildDate>
-    <generator>Jekyll v4.2.0</generator>
+    <subtitle>web design, engineering, management</subtitle>
+    <link href="https://chrisbracco.com/feed.xml" rel="self"/>
+    <link href="https://chrisbracco.com"/>
+    <updated>2021-03-11T00:00:00Z</updated>
+    <id>https://chrisbracco.com</id>
+    <author>
+        <name>Chris Bracco</name>
+        <email>chris@cbracco.me</email>
+    </author>
     
-      <item>
-        <title>A Simple, Responsive CSS Grid System</title>
-        <description>&lt;div class=&quot;codepen&quot;&gt;
-  &lt;div data-height=&quot;450&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;hjFDL&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
-  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 13 Mar 2014 11:13:52 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/a-simple-responsive-css-grid-system/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/a-simple-responsive-css-grid-system/</guid>
         
-        
-      </item>
+        <entry>
+            <title>Records for the desert island</title>
+            <link href="https://chrisbracco.com/records-for-the-desert-island.html"/>
+            <updated>2021-03-11T00:00:00Z</updated>
+            <id>https://chrisbracco.com/records-for-the-desert-island.html</id>
+            <content type="html">&lt;p&gt;In no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;It&#39;s Album Time&lt;/em&gt;, Todd Terje&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Random Access Memories&lt;/em&gt;, Daft Punk&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Bringing It All Back Home&lt;/em&gt;, Bob Dylan&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dive&lt;/em&gt;, Tycho&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Undercurrent&lt;/em&gt;, Bill Evans&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Broken Social Scene&lt;/em&gt;, Broken Social Scene&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Devil And God Are Raging Inside Me&lt;/em&gt;, Brand New&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Attack On Memory&lt;/em&gt;, Cloud Nothings&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Either/Or&lt;/em&gt;, Elliott Smith&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dookie&lt;/em&gt;, Green Day&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Alien Lanes&lt;/em&gt;, Guided By Voices&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;This Is Happening&lt;/em&gt;, LCD Soundsystem&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Salad Days&lt;/em&gt;, Mac DeMarco&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Boxer&lt;/em&gt;, The National&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Everything In Between&lt;/em&gt;, No Age&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;McCartney II&lt;/em&gt;, Paul McCartney&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;In Rainbows&lt;/em&gt;, Radiohead&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Let It Be&lt;/em&gt;, The Replacements&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Treats&lt;/em&gt;, Sleigh Bells&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Seven Swans&lt;/em&gt;, Sufjan Stevens&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Wild Hunt&lt;/em&gt;, The Tallest Man On Earth&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Full Moon Fever&lt;/em&gt;, Tom Petty&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;II&lt;/em&gt;, Unknown Mortal Orchestra&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Nocturne&lt;/em&gt;, Wild Nothing&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;It’s Blitz!&lt;/em&gt;, Yeah Yeah Yeahs&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;I Can Hear The Heart Beating As One&lt;/em&gt;, Yo La Tengo&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Greatest Hits&lt;/em&gt;, Bruce Springsteen&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Mothership&lt;/em&gt;, Led Zeppelin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Nirvana&lt;/em&gt;, Nirvana&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Symphonies Nos. 1-9, Beethoven, Nikolaus Harnoncourt&lt;/em&gt;, Chamber Orchestra of Europe&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Greatest Hits&lt;/em&gt;, Al Green&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Pinback&lt;/em&gt;, Pinback&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
     
-      <item>
-        <title>A Simple CSS Tooltip</title>
-        <description>&lt;p&gt;With pseudo elements, the triangle hack, and data attributes, I created a simple tooltip system in HTML and CSS.&lt;/p&gt;
-
-&lt;div class=&quot;codepen&quot;&gt;
-  &lt;div data-height=&quot;380&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;qzukg&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
-  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;p&gt;To give any element a tooltip, simply add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-tooltip&lt;/code&gt; attribute to it, like so:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#!&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-tooltip=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am a tooltip&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;I am a link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+        
+        <entry>
+            <title>Records for focus and productivity</title>
+            <link href="https://chrisbracco.com/records-for-focus-and-productivity.html"/>
+            <updated>2021-03-11T00:00:00Z</updated>
+            <id>https://chrisbracco.com/records-for-focus-and-productivity.html</id>
+            <content type="html">&lt;p&gt;In no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Flow State&lt;/em&gt;, Shawn Rudiman&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dive&lt;/em&gt;, Tycho&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Parking Lot Music&lt;/em&gt;, E.Vax&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;It’s Album Time&lt;/em&gt;, Todd Terje&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Warning&lt;/em&gt;, Hot Chip&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;In Rainbows&lt;/em&gt;, Radiohead&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;A Love Supreme&lt;/em&gt;, John Coltraine&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Hearing Music&lt;/em&gt;, Joanna Brouk&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Random Access Memories&lt;/em&gt;, Daft Punk&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Warm Blood&lt;/em&gt;, Blithe Field&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Positive Force&lt;/em&gt;, Delicate Steve&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Innerspeaker&lt;/em&gt;, Tame Impala&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Selected Ambient Works Volume II&lt;/em&gt;, Aphex Twin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Concrete and Glass&lt;/em&gt;, Nicolas Godin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Digital Rain Systems Vol. 1&lt;/em&gt;, Digital Rain Systems&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Programmer&lt;/em&gt;, CORBEN&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Beautiful You&lt;/em&gt;, Khotin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Oncle Jazz&lt;/em&gt;, Men I Trust&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Silver Ladders&lt;/em&gt;, Mary Lattimore&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Records that make me nostalgic</title>
+            <link href="https://chrisbracco.com/nostalgia-records.html"/>
+            <updated>2021-03-11T00:00:00Z</updated>
+            <id>https://chrisbracco.com/nostalgia-records.html</id>
+            <content type="html">&lt;p&gt;In no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;No Need To Argue&lt;/em&gt;, Cranberries&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tragic Kingdom&lt;/em&gt;, No Doubt&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dookie&lt;/em&gt;, Green Day&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Nevermind&lt;/em&gt;, Nirvana&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Siamese Dream&lt;/em&gt;, Smashing Pumpkins&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Houses of the Holy&lt;/em&gt;, Led Zeppelin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dirt&lt;/em&gt;, Alice in Chains&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ten&lt;/em&gt;, Pearl Jam&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Rage Against The Machine&lt;/em&gt;, Rage Against The Machine&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Appetite For Destruction&lt;/em&gt;, Guns N’ Roses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;No Witch&lt;/em&gt;, The Cave Singers&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Born To Run&lt;/em&gt;, Bruce Springsteen&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Everything All The Time&lt;/em&gt;, Band of Horses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wincing The Night Away&lt;/em&gt;, The Shins&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Bitte Orca&lt;/em&gt;, Dirty Projectors&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;We Are the 21st Century Ambassadors of Peace &amp;amp; Magic&lt;/em&gt;, Foxygen&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>A quick word on happiness</title>
+            <link href="https://chrisbracco.com/happiness-is-control-over-your-time.html"/>
+            <updated>2021-03-11T00:00:00Z</updated>
+            <id>https://chrisbracco.com/happiness-is-control-over-your-time.html</id>
+            <content type="html">&lt;p&gt;Morgan Housel’s characterization of happiness in his book &lt;em&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/41881472-the-psychology-of-money&quot;&gt;The Psychology of Money&lt;/a&gt;&lt;/em&gt; really stuck with me.&lt;/p&gt;
+&lt;p&gt;He cites a study&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://chrisbracco.com/happiness-is-control-over-your-time.html#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; performed by &lt;a href=&quot;https://www.human.cornell.edu/people/kap6&quot;&gt;Karl Pillemer&lt;/a&gt; where Karl interviews one thousand elderly individuals looking for important life lessons. Not a single person in one thousand mentioned material objects or being richer than their peers—instead, participants valued meaningful relationships and spending unstructured time with family and friends.&lt;/p&gt;
+&lt;p&gt;We all have to work and pay the bills though, so how do you get more of this unstructured time? By living below your means, and saving any extra income that comes your way.&lt;/p&gt;
+&lt;p&gt;The feeling of having more time and options and some wiggle room for error helps to reduce stress. It can make you more comfortable with taking risks that align with your goals and interests. It can make you feel less guilty about “the hustle” so you can focus on what’s really important: the people around you.&lt;/p&gt;
+&lt;p&gt;It turns out, happiness is control over your time.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;This study was a part of &lt;a href=&quot;https://legacyproject.human.cornell.edu/&quot;&gt;The Legacy Project&lt;/a&gt; and included in Karl’s book &lt;em&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/11376196-30-lessons-for-living&quot;&gt;30 Lessons For Living&lt;/a&gt;&lt;/em&gt;. &lt;a href=&quot;https://chrisbracco.com/happiness-is-control-over-your-time.html#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Favorite PC games from the 1990s and 2000s</title>
+            <link href="https://chrisbracco.com/favorite-pc-games-1990-2000.html"/>
+            <updated>2021-03-11T00:00:00Z</updated>
+            <id>https://chrisbracco.com/favorite-pc-games-1990-2000.html</id>
+            <content type="html">&lt;p&gt;In no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Counter-Strike_(video_game)&quot;&gt;Counter-Strike&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Need_for_Speed_III:_Hot_Pursuit&quot;&gt;Need For Speed III: Hot Pursuit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Operative:_No_One_Lives_Forever&quot;&gt;No One Lives Forever&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Diablo_II&quot;&gt;Diablo II&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://archive.org/details/msdos_Commander_Keen_1_-_Marooned_on_Mars_1990&quot;&gt;Commander Keen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Age_of_Empires_II&quot;&gt;Age of Empires II&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/FIFA_99&quot;&gt;FIFA 99&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Jazz_Jackrabbit_2&quot;&gt;Jazz Jackrabbit 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Interstate_%2776&quot;&gt;Interstate &#39;76&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Motocross_Madness_2&quot;&gt;Motocross Madness 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Let your kids destroy some stuff</title>
+            <link href="https://chrisbracco.com/let-your-kids-destroy-some-stuff.html"/>
+            <updated>2021-03-03T00:00:00Z</updated>
+            <id>https://chrisbracco.com/let-your-kids-destroy-some-stuff.html</id>
+            <content type="html">&lt;p&gt;Some kids make sense of the world around them by disassembling it&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://chrisbracco.com/let-your-kids-destroy-some-stuff.html#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. To a stressed parent this can appear like mindless destruction, but if you pause and look again it could be them learning.&lt;/p&gt;
+&lt;p&gt;Most parents learn to become comfortable with varying levels of chaos, but also set limits on what is and is not acceptable. Humor helps. A deep breath and a chuckle can go a long way. Try to communicate your limits consistently, and your children should feel they have enough freedom to play, disassemble, have fun, and learn.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;I was reminded of this notion after reading an op-ed in The New York Times entitled “&lt;a href=&quot;https://www.nytimes.com/2021/03/03/parenting/4-year-old-destroy-play.html&quot;&gt;My 4-Year-Old Is a Destroyer&lt;/a&gt;”. Thanks, Jessica. &lt;a href=&quot;https://chrisbracco.com/let-your-kids-destroy-some-stuff.html#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Live with your kids, not for them</title>
+            <link href="https://chrisbracco.com/live-with-your-kids-not-for-them.html"/>
+            <updated>2021-03-02T00:00:00Z</updated>
+            <id>https://chrisbracco.com/live-with-your-kids-not-for-them.html</id>
+            <content type="html">&lt;p&gt;Child-centered activities are great fun for kids, but if that’s all you do with them, you might be detaching them from reality.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://chrisbracco.com/live-with-your-kids-not-for-them.html#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; Don’t treat them like VIPs in your life that you are only looking to please and distract.&lt;/p&gt;
+&lt;p&gt;If you find yourself wondering “How am I going to get through Saturday with Jane?”, all you need to do is modify the stuff you already do so that your children can help out. Even if they are not really helping at first, it’s often comical and makes them feel included. Over time they will learn and become truly helpful. Don’t give up.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;In the months leading up to becoming a father, I received conflicting advice about how to keep kids entertained. An article published on The Atlantic entitled “&lt;a href=&quot;https://www.theatlantic.com/family/archive/2021/03/hunt-gather-parent-timeless-advice-for-modern-parents/618172/&quot;&gt;There’s a Better Way to Parent: Less Yelling, Less Praise&lt;/a&gt;” helped me gain a foothold and reaffirm some things I had been learning from other parents and books. &lt;a href=&quot;https://chrisbracco.com/live-with-your-kids-not-for-them.html#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>A Simple, Fluid Responsive CSS Grid System</title>
+            <link href="https://chrisbracco.com/a-simple-responsive-css-grid-system.html"/>
+            <updated>2014-03-13T00:00:00Z</updated>
+            <id>https://chrisbracco.com/a-simple-responsive-css-grid-system.html</id>
+            <content type="html">&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;hjFDL&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>A Simple CSS Tooltip</title>
+            <link href="https://chrisbracco.com/a-simple-css-tooltip.html"/>
+            <updated>2013-10-01T00:00:00Z</updated>
+            <id>https://chrisbracco.com/a-simple-css-tooltip.html</id>
+            <content type="html">&lt;p&gt;With pseudo elements, the triangle hack, and data attributes, I created a simple tooltip system in HTML and CSS.&lt;/p&gt;
+&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;qzukg&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+&lt;p&gt;To give any element a tooltip, simply add the &lt;code&gt;data-tooltip&lt;/code&gt; attribute to it, like so:&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;#!&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;data-tooltip&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;I am a tooltip&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;I am a link&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;One caveat with this method is that transitions on pseudo elements &lt;a href=&quot;http://css-tricks.com/transitions-and-animations-on-css-generated-content/&quot;&gt;don’t quite work right&lt;/a&gt; in Webkit browsers (Chrome, Safari). It works just fine in Firefox, but if you include the CSS for the transition it will break the tooltip in Webkit, which is annoying. This means you can’t transition the opacity or positioning of the tooltip for a fade or movement effect. But if you don’t care about that extra pizazz, then this method will work just fine.&lt;/p&gt;
-
-&lt;h2 id=&quot;bonus&quot;&gt;Bonus!&lt;/h2&gt;
-
+&lt;h2&gt;Bonus!&lt;/h2&gt;
 &lt;p&gt;Because boredom, I created a simple directional tooltip system. With class names, you can specify which side you would like the tooltip to appear (top, right, bottom, or left).&lt;/p&gt;
-
-&lt;div class=&quot;codepen&quot;&gt;
-  &lt;div data-height=&quot;700&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;nufHz&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
-  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 01 Oct 2013 13:00:36 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/a-simple-css-tooltip/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/a-simple-css-tooltip/</guid>
-        
-        
-      </item>
+&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;nufHz&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
-      <item>
-        <title>CSS Sticky (But Not Fixed) Footer</title>
-        <description>&lt;p&gt;For a recent web app project, I had to build a footer that would always stick to the bottom of page, using CSS only. My first instincts led me to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property, but it turns out the client didn’t want the footer visible at all times. They wanted it to behave as follows:&lt;/p&gt;
-
+        
+        <entry>
+            <title>CSS Sticky (But Not Fixed) Footer</title>
+            <link href="https://chrisbracco.com/css-sticky-footer-effect.html"/>
+            <updated>2013-09-26T00:00:00Z</updated>
+            <id>https://chrisbracco.com/css-sticky-footer-effect.html</id>
+            <content type="html">&lt;p&gt;When tasked to build a footer that would always stick to the bottom of page, using CSS only, my first instincts were to reach for the &lt;code&gt;position: fixed;&lt;/code&gt; property—the problem, though, was that the footer could not be visible all the time. It instead needed to flow naturally, while also following these rules:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;The footer should be visible if the content above it is shorter than the user’s viewport height.&lt;/li&gt;
-  &lt;li&gt;If the content is taller than the user’s viewport height, then the footer should disappear from view and rest at the bottom of the page, as it would naturally.&lt;/li&gt;
-  &lt;li&gt;This must be done without JavaScript, and without using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;position: fixed;&lt;/code&gt; property (which would keep the footer at the bottom of the viewport at all times, regardless of the above content).&lt;/li&gt;
+&lt;li&gt;The footer should be visible if the content above it is shorter than the user’s viewport height.&lt;/li&gt;
+&lt;li&gt;If the content is taller than the user’s viewport height, then the footer should disappear from view and rest at the bottom of the page, as it would naturally.&lt;/li&gt;
+&lt;li&gt;This must be done without JavaScript, and without using the &lt;code&gt;position: fixed;&lt;/code&gt; property (which would keep the footer at the bottom of the viewport at all times, regardless of the above content).&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Below is a small pen demonstrating my solution, and it works fabulously. Feel free to use this method on your next project.&lt;/p&gt;
-
-&lt;div class=&quot;codepen&quot;&gt;
-  &lt;div data-height=&quot;500&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;zekgx&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
-  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;update-with-flexbox&quot;&gt;Update! With flexbox&lt;/h2&gt;
-
+&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;zekgx&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+&lt;h2&gt;Update! With flexbox&lt;/h2&gt;
 &lt;p&gt;Turns out you can also accomplish this particular layout with flexbox. The CSS is a lot simpler, too.&lt;/p&gt;
-
-&lt;div class=&quot;codepen&quot;&gt;
-  &lt;div data-height=&quot;500&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;BaLdqKp&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
-  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 26 Sep 2013 11:28:05 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/css-sticky-footer-effect/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/css-sticky-footer-effect/</guid>
-        
-        
-      </item>
+&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;BaLdqKp&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+&lt;h2&gt;Update! With CSS grid&lt;/h2&gt;
+&lt;p&gt;And finally, you can also achieve this effect using CSS grid.&lt;/p&gt;
+&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;ZEBmQXo&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
-      <item>
-        <title>Simple CSS3 Collapsing Header Effect</title>
-        <description>&lt;p&gt;I wanted a non-JavaScript solution to make a full-width header image appear as though it was collapsing, with content below traveling above the image as the user scrolls. This is what I came up with after a few minutes of tweaking.&lt;/p&gt;
-
-&lt;div class=&quot;codepen&quot;&gt;
-  &lt;div data-height=&quot;450&quot; data-theme-id=&quot;23593&quot; data-slug-hash=&quot;corFl&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
-  &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 11 Jun 2013 14:56:32 -0400</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/simple-css3-collapsing-header-effect/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/simple-css3-collapsing-header-effect/</guid>
         
-        
-      </item>
+        <entry>
+            <title>CSS Collapsing Header Effect</title>
+            <link href="https://chrisbracco.com/simple-css3-collapsing-header-effect.html"/>
+            <updated>2013-06-11T00:00:00Z</updated>
+            <id>https://chrisbracco.com/simple-css3-collapsing-header-effect.html</id>
+            <content type="html">&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;corFl&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
-      <item>
-        <title>How to Use Curly Quotes on Mac OSX and Windows</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/curly-quotes.png&quot; alt=&quot;curly smart quotes&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The curly, or smart quote is an elusive character. For years I have been including straight marks in my writing, blissfully unaware of their curly counterparts. Recently, I learned about some functional differences between straight and curly quotation marks.&lt;/p&gt;
-
-&lt;h2 id=&quot;straight-marks&quot;&gt;Straight marks&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/typewriter.gif&quot; alt=&quot;typewriter&quot; /&gt;&lt;/p&gt;
-
+        
+        <entry>
+            <title>How to Use Curly Quotes on Mac OSX and Windows</title>
+            <link href="https://chrisbracco.com/curly-quotes.html"/>
+            <updated>2013-02-11T00:00:00Z</updated>
+            <id>https://chrisbracco.com/curly-quotes.html</id>
+            <content type="html">&lt;p&gt;The curly (or “smart”) quote is a shifty character. For years I have only been including straight marks in my writing. Recently, I learned about some functional differences between straight and curly quotation marks.&lt;/p&gt;
+&lt;h2&gt;Straight marks&lt;/h2&gt;
 &lt;p&gt;Straight marks were invented for use on typewriters. Due to physical and mechanical constraints, you can only fit so many keys on a typewriter’s keyboard. Using straight quotes instead of curly quotes freed up two slots for other characters on the keyboard, which is why these characters were preferable.&lt;/p&gt;
-
-&lt;p&gt;When computers came into the fray, they put these straight marks to good use. Most programming languages require the use of straight marks to indicate string literals (e.g. “Hello world”), so they are still very useful today.&lt;/p&gt;
-
-&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
-&lt;p&gt;On any typical keyboard, simply press &lt;kbd&gt;'&lt;/kbd&gt; for a straight single mark ( ‘ ) and &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;'&lt;/kbd&gt; for a straight double mark ( “ ).&lt;/p&gt;
-
-&lt;h2 id=&quot;curly-quotes&quot;&gt;Curly quotes&lt;/h2&gt;
+&lt;p&gt;When computers came into the fray, they put these straight marks to good use. Most programming languages require the use of straight marks to indicate string literals (e.g. &amp;quot;Hello world&amp;quot;), so they are still very useful today.&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;On any typical keyboard, simply press &lt;kbd&gt;&#39;&lt;/kbd&gt; for a straight single mark ( &#39; ) and &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;&#39;&lt;/kbd&gt; for a straight double mark ( &amp;quot; ).&lt;/p&gt;
+&lt;h2&gt;Curly quotes&lt;/h2&gt;
 &lt;p&gt;Unlike straight marks, curly quotes are usually more legible in paragraphs and long texts, and match the other characters better. They are more suitable for reading, and should be used when writing documents, articles, blog posts, etc.&lt;/p&gt;
-
-&lt;h3 id=&quot;usage-1&quot;&gt;Usage&lt;/h3&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
 &lt;p&gt;It turns out that producing curly quotes on a computer is super easy. I’ve committed these simple shortcuts to memory.&lt;/p&gt;
-
-&lt;h4 id=&quot;mac-osx&quot;&gt;Mac OSX&lt;/h4&gt;
+&lt;h4&gt;Mac OSX&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;]&lt;/kbd&gt; produces an opening single curly quote ( &lt;strong&gt;‘&lt;/strong&gt; )&lt;/li&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;]&lt;/kbd&gt; produces a closing single curly quote ( &lt;strong&gt;’&lt;/strong&gt; )&lt;/li&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;[&lt;/kbd&gt; produces an opening double curly quote ( &lt;strong&gt;“&lt;/strong&gt; )&lt;/li&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;[&lt;/kbd&gt; produces a closing double curly quote ( &lt;strong&gt;”&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;]&lt;/kbd&gt; produces an opening single curly quote ( &lt;strong&gt;‘&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;]&lt;/kbd&gt; produces a closing single curly quote ( &lt;strong&gt;’&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;[&lt;/kbd&gt; produces an opening double curly quote ( &lt;strong&gt;“&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;[&lt;/kbd&gt; produces a closing double curly quote ( &lt;strong&gt;”&lt;/strong&gt; )&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h4 id=&quot;windows&quot;&gt;Windows&lt;/h4&gt;
+&lt;h4&gt;Windows&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0145&lt;/kbd&gt; produces an opening single curly quote ( &lt;strong&gt;‘&lt;/strong&gt; )&lt;/li&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0146&lt;/kbd&gt; produces a closing single curly quote ( &lt;strong&gt;’&lt;/strong&gt; )&lt;/li&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0147&lt;/kbd&gt; produces an opening double curly quote ( &lt;strong&gt;“&lt;/strong&gt; )&lt;/li&gt;
-  &lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0148&lt;/kbd&gt; produces a closing double curly quote ( &lt;strong&gt;”&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0145&lt;/kbd&gt; produces an opening single curly quote ( &lt;strong&gt;‘&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0146&lt;/kbd&gt; produces a closing single curly quote ( &lt;strong&gt;’&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0147&lt;/kbd&gt; produces an opening double curly quote ( &lt;strong&gt;“&lt;/strong&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;0148&lt;/kbd&gt; produces a closing double curly quote ( &lt;strong&gt;”&lt;/strong&gt; )&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;converting-straight-marks-to-curly-quotes&quot;&gt;Converting straight marks to curly quotes&lt;/h2&gt;
-
+&lt;h2&gt;Converting straight marks to curly quotes&lt;/h2&gt;
 &lt;p&gt;Some word processors like &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_Word&quot;&gt;Microsoft Word&lt;/a&gt; will automatically convert straight marks to curly quotes for you on the fly, as you type. However, if you copy and paste text that includes straight marks into a word processor, it may not always convert the straight marks properly.&lt;/p&gt;
-
-&lt;p&gt;To manually convert straight marks to curly quotes within your word processor, simply use the &lt;strong&gt;search and replace&lt;/strong&gt; function to find all instances of the straight single quote ( ‘ ) and replace it with the same character — a straight single quote ( ‘ ). You can do the same for straight double marks ( “ ) too.&lt;/p&gt;
-
-&lt;p&gt;I’m not sure why, but it works.&lt;/p&gt;
-
-&lt;h2 id=&quot;who-cares&quot;&gt;Who cares?&lt;/h2&gt;
-
+&lt;p&gt;To manually convert straight marks to curly quotes within your word processor, simply use the &lt;strong&gt;search and replace&lt;/strong&gt; function to find all instances of the straight single quote ( &#39; ) and replace them with the same character—a straight single quote ( &#39; ). You can do the same for straight double marks ( &amp;quot; ) too.&lt;/p&gt;
+&lt;h2&gt;So what?&lt;/h2&gt;
 &lt;p&gt;These small details in your writing will go unnoticed by most, no doubt. Snobby typographers, bookworms, and other designers and developers will be among the few who may actually notice. And maybe that significant other you dated back in 2006 who majored in creative writing.&lt;/p&gt;
-
 &lt;p&gt;Either way, I like to believe that the devil is in the details. The subtleties of these pesky quotation marks is an interesting tidbit in type history worth rehashing.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 11 Feb 2013 20:44:05 -0500</pubDate>
-        <link>https://chrisbracco.comhttps://chrisbracco.com/curly-quotes/</link>
-        <guid isPermaLink="true">https://chrisbracco.comhttps://chrisbracco.com/curly-quotes/</guid>
-        
-        
-      </item>
+</content>
+        </entry>
     
-  </channel>
-</rss>
+</feed>
