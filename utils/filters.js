@@ -18,4 +18,9 @@ module.exports = {
     dump: (obj) => {
         return util.inspect(obj);
     },
+    // https://github.com/11ty/eleventy/issues/898#issuecomment-617628635
+    sortByOrder: (values) => {
+        let vals = [...values];     // this *seems* to prevent collection mutation...
+        return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
+    }
 };

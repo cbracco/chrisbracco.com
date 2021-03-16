@@ -1,5 +1,5 @@
 <ul class="worklist">
-    {% for item in collections.work %}
+    {% for item in collections.work | sortByOrder %}
         <li class="worklist__item">
             <a class="worklist__item__image" href="{{ item.data.url }}" target="_blank" rel="noreferrer">
                 {% img item.data.image, item.data.title, '44vw' %}
