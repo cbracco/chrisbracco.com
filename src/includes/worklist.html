@@ -1,0 +1,15 @@
+<ul class="worklist">
+    {% for item in collections.work %}
+        <li class="worklist__item">
+            <a class="worklist__item__image" href="{{ item.data.url }}" target="_blank" rel="noreferrer">
+                {% img item.data.image, item.data.title, '44vw' %}
+            </a>
+            <h2 class="worklist__item__title">
+                <a href="{{ item.data.url }}" target="_blank" rel="noreferrer">{{ item.data.title }}</a>
+            </h2>
+            <div class="worklist__item__content">
+                {{ item.templateContent | safe }}
+            </div>
+        </li>
+    {% endfor %}
+</ul>

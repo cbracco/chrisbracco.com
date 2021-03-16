@@ -1,0 +1,36 @@
+---
+layout: default
+pagination:
+    data: collections.pagedPosts
+    size: 1
+    alias: paged
+eleventyNavigation:
+    key: Garden
+    order: 2
+permalink: "/garden/{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.html"
+---
+
+
+{#<section class="section">
+    <h1 class="section__heading">Search</h1>
+</section>#}
+
+<section class="section section--tags">
+    <h1 class="section__heading">By topic</h1>
+    {% set tags=collections.tagList %}
+    {% include 'taglist.html' %}
+</section>
+
+<section class="section section--pinned">
+    <h1 class="section__heading">Pinned</h2>
+    {% include 'pinned.html' %}
+</section>
+
+<section class="section section--recent">
+    <h1 class="section__heading">Recent</h1>
+    {% include 'postslist.html' %}
+</section>
+
+{% if collections.posts.length > site.paginate %}
+    {% include 'pagination.html' %}
+{% endif %}

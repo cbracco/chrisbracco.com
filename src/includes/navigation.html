@@ -1,0 +1,65 @@
+<nav class="navigation" aria-labelledby="navigationLabel">
+    <h2 id="navigationLabel" class="visually-hidden">Main Menu</h2>
+    <button
+        aria-label="Toggle main menu"
+        class="navigation__toggle"
+        type="button"
+        data-navigation-toggle
+        data-sound-effect="/assets/audio/enter.ogg"
+    >
+        <svg
+            role="presentation"
+            focusable="false"
+            class="navigation__toggle-icon"
+        >
+            <use xlink:href="#icon-ground"></use>
+        </svg>
+    </button>
+    <div class="navigation__menu" data-navigation-menu>
+        <div>
+            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+                listItemClass: 'navigation__menu__item',
+                activeListItemClass:
+                'is-current', activeKey: eleventyNavigation.key
+            }) | safe }}
+            <div class="navigation__menu__item">
+                <button
+                    class="button button--die"
+                    type="button"
+                    data-die
+                    data-sound-effect="/assets/audio/dice.mp3"
+                >
+                    <svg
+                        role="img"
+                        aria-labelledby="icon-die-title"
+                        width="32"
+                        height="32"
+                        focusable="false"
+                        class="button__icon"
+                    >
+                        <title id="icon-die-title">Roll the dice</title>
+                        <use xlink:href="#icon-die"></use>
+                    </svg>
+                    <span class="button__text">feeling lucky?</span>
+                </button>
+            </div>
+        </div>
+        <div class="navigation__footer">
+            <div
+                class="battery"
+                data-battery
+                data-sound-effect="/assets/audio/tick.wav"
+            >
+                <div class="battery__percentage" data-battery-percentage></div>
+                <div class="battery__level" data-battery-level></div>
+            </div>
+            est. 1988
+            <br />
+            <a href="{{ site.license }}" target="_blank" rel="noreferrer"
+                >CC BY-SA 4.0</a
+            >
+            <br />
+            <a href="{{ site.feedUrl }}">Feed</a>
+        </div>
+    </div>
+</nav>

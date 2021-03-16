@@ -1,0 +1,94 @@
+/* ============================================================================ *\
+   Components -> Battery
+\* ============================================================================ */
+
+@keyframes rainbow {
+    0% {
+        background: currentColor;
+    }
+    12.5% {
+        background: red;
+    }
+    25% {
+        background: orange;
+    }
+    37.5% {
+        background: yellow;
+    }
+    50% {
+        background: green;
+    }
+    62.5% {
+        background: blue;
+    }
+    75% {
+        background: indigo;
+    }
+    87.5% {
+        background: violet;
+    }
+}
+
+.battery {
+    position: relative;
+    border: var(--space-twelfth) solid var(--theme-frame-color);
+    border-radius: var(--border-radius-base);
+    width: var(--icon-size-xxxxlarge);
+    height: var(--icon-size-xlarge);
+    padding: var(--space-sixth);
+
+    &:before {
+        display: block;
+        position: absolute;
+        bottom: calc(100% + var(--space-third));
+        left: calc(var(--space-eighth) * -1);
+        content: attr(data-life-remaining);
+        font-size: var(--font-size-xxsmall);
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        cursor: var(--cursor-emoji-stopwatch);
+
+        & .battery__level {
+            animation: rainbow 5s infinite backwards;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: block;
+        content: '';
+        width: var(--space-fourth);
+        height: var(--space);
+        margin: var(--space-sixth) 0;
+        background: var(--theme-frame-color);
+        border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0;
+    }
+}
+
+.battery__level {
+    width: var(--battery-level);
+    height: 100%;
+    text-align: center;
+    border-radius: var(--border-radius-base);
+}
+
+.navigation__footer .battery {
+    margin-bottom: var(--space-half);
+}
+
+@media screen and (--large-and-up) {
+    .battery {
+        border-width: var(--space-sixth);
+
+        &:after {
+            width: var(--space-third);
+            height: var(--space);
+            margin: var(--space-twelfth) 0;
+        }
+    }
+}

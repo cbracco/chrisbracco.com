@@ -1,0 +1,21 @@
+/* ============================================================================ *\
+   Components -> Worklist
+\* ============================================================================ */
+
+.worklist {
+    padding: 0;
+    list-style: none;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.worklist__item {
+    margin-left: 0;
+    margin-bottom: var(--space-2x);
+}
+
+.worklist__item__title {
+    margin-top: 0;
+}

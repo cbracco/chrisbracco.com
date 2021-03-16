@@ -1,0 +1,81 @@
+/* ============================================================================ *\
+   Components -> Button
+\* ============================================================================ */
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    font-weight: var(--weight-medium);
+    font-size: var(--font-size-base);
+    padding: var(--space-fourth) var(--space-half);
+    border-radius: var(--border-radius-base);
+    transition: transform 0.1s ease;
+    cursor: pointer;
+
+    background: var(--theme-button-background);
+    color: var(--theme-button-color);
+
+    &:hover {
+        color: var(--theme-button-hover-color);
+        transform: scale(1.05);
+    }
+}
+
+.button--outline {
+    background: transparent;
+    border: 1px solid var(--theme-button-background);
+
+    &:hover {
+        background: var(--theme-button-background);
+        border-color: transparent;
+    }
+}
+
+.button--die {
+    cursor: pointer;
+    cursor: var(--cursor-emoji-die);
+    font-weight: var(--weight-normal);
+    text-align: left;
+
+    padding: 0;
+    background: transparent;
+    transition: none;
+
+    &:hover {
+        transform: none;
+
+        & .button__icon {
+            transform: rotate(-5deg);
+        }
+    }
+
+    & .button__icon {
+        transition: transform 0.25s ease-out;
+        transform-origin: bottom left;
+    }
+
+    & .button__text {
+        display: inline-block;
+        opacity: 0;
+        visibility: hidden;
+        margin-left: var(--space-third);
+        color: var(--gray-3);
+        font-style: italic;
+        font-size: var(--font-size-small);
+        letter-spacing: var(--letter-spacing-base);
+        transition: transform 0.25s 0.1s, opacity 0.25s 0.1s,
+            visibility 0.25s 0.1s;
+        transform: translate(calc(var(--space-half) * -1));
+    }
+
+    &:hover .button__text,
+    &:focus .button__text {
+        opacity: 1;
+        visibility: visible;
+        transition: transform 0.5s, opacity 0.5s, visibility 0 0.5s;
+        transform: translate(0);
+    }
+}

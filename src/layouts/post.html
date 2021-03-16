@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: "{{ page.filePathStem | replace('/posts/', '/') }}.html"
+---
+
+<article class="post" data-breakout-parent>
+    <p>
+        <time class="post__date" datetime="{{ page.date | htmlDateString }}">
+            {{ page.date | readableDate }}
+        </time>
+    </p>
+    {% set tags=tags %}
+    <h1 class="post__title">{{ title }}</h1>
+    <p class="post__teaser">{{ teaser }}</p>
+    {% include 'taglist_post.html' %}
+    {% if image %}
+        <div class="post__image" data-breakout>
+            {% img './src/assets/images/posts/' + image, imageAlt, '65vw' %}
+        </div>
+    {% endif %}
+    <div class="post__content">{{ content | safe}}</div>
+</article>

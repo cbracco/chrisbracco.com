@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/cbracco
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chrisbracco.com
+  * I am cbracco (https://keybase.io/cbracco) on keybase.
+  * I have a public key with fingerprint EF4A 7274 72A4 0D3B 7E3E  3A3F C88D EC30 C4E8 DB60
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101aefa07e7d34a1efb8eb215d2f6eedfcb71e37aaf4f95c27f088753ac29b820a80a",
+            "fingerprint": "ef4a727472a40d3b7e3e3a3fc88dec30c4e8db60",
+            "host": "keybase.io",
+            "key_id": "c88dec30c4e8db60",
+            "kid": "0101aefa07e7d34a1efb8eb215d2f6eedfcb71e37aaf4f95c27f088753ac29b820a80a",
+            "uid": "a9534072b0c4a877d6b62ee34b3d8e19",
+            "username": "cbracco"
+        },
+        "revoke": {
+            "sig_ids": [
+                "db19dbf47e3de19c4f40871caae05eccb5d12836888c24b84f8f21166d45b7d70f"
+            ]
+        },
+        "service": {
+            "hostname": "chrisbracco.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1465219282,
+    "expire_in": 157680000,
+    "prev": "d6f4daf1a9e5a81cc6a653af1445aa49365edfb7426a84ead380a410e50f3bdd",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMJxAnicrZJfiBVVHMfvqq3bRXGlh4IezJOU1XU7Z86ZOWfuS7i4ET3IBpbRutzO
+n9+5d7runevM7KrZuraaihCukGEUCW7aShKJQRD2V2WjWPuDrLBGtUU9lKxCpYUY
+ndnyrcfm5TAz39/n+z3fc04vnFsotswburKwvvH0bS2ffXSlv7D20U1fbUEqNptR
+eQuqw+wC6w2kWaUeGVRGmGAiwUrMgRvKJAGrBCiP+MazAYCxWnEClEtpmQ197XGL
+heA+ldoLlfCwFFiiErJRowpJM4kamcOCZZJ7nHFPMmyo4kCBSmq1EAY0xZqBMCrA
+brAWp/mEC6dkCh1R7L65l8psvP/Q/8+5+2dxMvQpw9xTzkkKzk2gAg+AMkWNABLm
+whSShuyDPJVKpNYxGiyhBAbiOuS1plHVZU5RuQcZRUKjLHO7Nm5YM8uw4ERLCdgH
+rZVviCdoIITQHlOCWWE9QoLAMF9xw7FFvY7tDAciPQvPS7phXkui9J8AHTruc8ma
+SZzFOl7vftayrJmW82DZ5mau3giq8i+noqKGcafkJgYgSaO4gcrEKXUW5WDCAt8j
+oSe8EoJNzSiBSpQrfB4I7J7cBwYc0gSWGWmJDMGXgmgdyMDVagljvpQspIHv6lec
+eYEUDKShrmlGMPjYUmUMyne2oRE7trPKZNUxXXkNmfUngAY//nDdvEJLsdB605z8
++haKN7ffuNR0ev5fy8YvPE7bpn6afKBWfam4b8XwYHH801vHPj/ZsuTng31HDvXc
+9/z2vXefPfDl1LG5Y0svvzY8XvqGrb40Lme2f3/7cMfI4NFHhn4tPXHk2bc3vLdn
+ZHrv7hfuPTy0q/7OCTp/4uur0S9opoYvtYX7j31y/f3m+QM/jI5e+3OicwE5t7xz
+0dm3vltd3f97+8qVrbu6Wlc8LF5+bE10y9J01YK7pie3ha8sGYuPkw/Op1vLW588
+t7Z3zqLJsVMjX9xz8cGukUNv7vzjTPcza7rLU2faL8BTO+W1nuXdO9596LKcurp7
+2W/PLT7M7jj49LbXL3aOTux54+T1Uzu6u+5cty9YLDunf1x1NHrxVf7tTG/b/X8D
+FRNjqA==
+=Pp6X
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cbracco
+
+==================================================================

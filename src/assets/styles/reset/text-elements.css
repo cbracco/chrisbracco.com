@@ -1,0 +1,33 @@
+/* ============================================================================ *\
+   Reset -> Text Elements
+\* ============================================================================ */
+
+/**
+ * Add help cursor and dotted underlines for abbreviations.
+ */
+
+ abbr[title] {
+    text-decoration: underline;
+    text-decoration: underline dotted;
+    cursor: help;
+    text-decoration-skip-ink: none;
+}
+
+/**
+ * Add default positioning styles for subscripts and superscripts.
+ */
+
+sub,
+sup {
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+sup {
+    top: -.5em;
+}

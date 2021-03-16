@@ -1,0 +1,22 @@
+/* ============================================================================ *\
+   Components -> Photogrid
+\* ============================================================================ */
+
+.photogrid {
+    columns: calc(var(--space) * 8);
+    gap: var(--space-half);
+    list-style: none;
+    padding: 0;
+
+    & a {
+        display: block;
+        margin-left: 0;
+        margin-bottom: var(--space-half);
+        break-inside: avoid;
+    }
+
+    & img {
+        border-radius: var(--border-radius-base);
+        width: 100%;
+    }
+}

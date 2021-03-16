@@ -1,0 +1,20 @@
+/* ============================================================================ *\
+   Components -> Taglist
+\* ============================================================================ */
+
+.taglist {
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: calc(var(--space-half) * -1) 0 0;
+        padding: 0;
+        list-style: none;
+
+        & li {
+            margin: 0;
+        }
+    }
+    & .button {
+        margin: var(--space-half) var(--space-half) 0 0;
+    }
+}

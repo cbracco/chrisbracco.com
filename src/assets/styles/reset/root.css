@@ -1,0 +1,112 @@
+/* ============================================================================ *\
+   Reset -> Root
+\* ============================================================================ */
+
+/**
+ * Future-proof @viewport declaration. Also fixes problems with IE10+ not
+ * recognizing <meta name='viewport'>.
+ */
+
+ @at-root {
+    @-moz-viewport {
+        width: device-width;
+    }
+    @-ms-viewport {
+        width: device-width;
+    }
+    @-o-viewport {
+        width: device-width;
+    }
+    @-webkit-viewport {
+        width: device-width;
+    }
+    @viewport {
+        width: device-width;
+    }
+}
+
+/**
+ * 1. Changes box sizing so element width is not affected by padding or border.
+ *    http://cbrac.co/RQrDL5
+ * 2. Always show a vertical scrollbar.
+ * 3. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    box-sizing: border-box; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/**
+ * Inheriting the `box-sizing` property is probably a better practice.
+ * http://cbrac.co/1tqPFsy
+ */
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+/**
+ * Removes margins, paddings, and borders from common HTML elements.
+ *
+ * @link http://cbrac.co/1Ev9etR
+ */
+
+:--common-elements {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/**
+ * Removes 300ms delay on touch devices that support this property.
+ */
+
+:--tappable-elements {
+    touch-action: manipulation;
+}
+
+/**
+ * Always hide elements with hidden attribute.
+ */
+
+[hidden] {
+    display: none !important;
+}
+
+/**
+ * Suppresses the focus outline on links that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ *
+ * It is okay to use `!important` here because we always want this rule to take
+ * precedence.
+ *
+ * @link http://cbrac.co/1Evazku
+ */
+
+[tabindex='-1']:focus:not(:focus-visible) {
+    outline: 0 !important;
+}
+
+/**
+ * Removes transitions and animations for folks who prefer not to see them.
+ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

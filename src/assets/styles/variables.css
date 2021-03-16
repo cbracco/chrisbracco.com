@@ -1,0 +1,298 @@
+/* ============================================================================ *\
+   Variables
+\* ============================================================================ */
+
+/**
+ * Design tokens
+ */
+
+:root {
+    /* Color */
+    --gray-1: #f4f4f7;
+    --gray-2: #dcdee4;
+    --gray-3: #717482;
+    --gray-4: #3a3c47;
+    --gray-5: #18191f;
+
+    --white: #ffffff;
+    --black: #000000;
+
+    --blue: #0764ef;
+    --yellow: #fee60b;
+    --red: #de281f;
+    --green: #0fe616;
+
+    --beige-1: #f9f6de;
+    --beige-2: #e8e5ce;
+
+    /* Spacing */
+    --space: 1.5rem; /* 24px */
+    --space-twelfth: calc(var(--space) / 12); /* 2px */
+    --space-eighth: calc(var(--space) / 8); /* 3px */
+    --space-sixth: calc(var(--space) / 6); /* 4px */
+    --space-fourth: calc(var(--space) / 4); /* 6px */
+    --space-third: calc(var(--space) / 3); /* 8px */
+    --space-half: calc(var(--space) / 2); /* 12px */
+    --space-medium: calc(var(--space) * 1.5); /* 36px */
+    --space-2x: calc(var(--space) * 2); /* 48px */
+    --space-large: calc(var(--space) * 2.666666667); /* 64px */
+    --space-3x: calc(var(--space) * 3); /* 72px */
+
+    /* Border */
+    --border-radius-small: var(--space-twelfth); /* 2px */
+    --border-radius-base: var(--space-sixth); /* 4px */
+
+    /* Typography */
+    --font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+        sans-serif;
+    --font-family-code: Roboto Mono, Monaco, Consolas, 'Liberation Mono', Courier, monospace;
+
+    --font-size-xxsmall: 0.625rem; /* 10px */
+    --font-size-xsmall: 0.75rem; /* 12px */
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-medium: 1.25rem; /* 20px */
+    --font-size-large: 1.5rem; /* 24px */
+    --font-size-xlarge: 1.75rem; /* 28px */
+    --font-size-display-1: 1.875rem; /* 30px */
+    --font-size-display-2: 2.5rem; /* 40px */
+    --font-size-display-3: 4rem; /* 64px */
+
+    --line-height: 1.4;
+    --heading-line-height: 1.2;
+
+    --letter-spacing-base: 0.0333em;
+
+    --weight-bold: 700;
+    --weight-medium: 600;
+    --weight-normal: 400;
+    --weight-light: 300;
+
+    /* Wrapper */
+    --wrapper-max-width: 85rem; /* 1360px */
+
+    /* Icons */
+    --icon-size-base: var(--font-size-base); /* 16px */
+    --icon-size-medium: var(--space); /* 24px */
+    --icon-size-large: var(--font-size-xlarge); /* 28px */
+    --icon-size-xlarge: 2.375rem; /* 38px */
+    --icon-size-xxlarge: 3rem; /* 48px */
+    --icon-size-xxxlarge: 3.625rem; /* 58px */
+    --icon-size-xxxxlarge: var(--font-size-display-3); /* 64px */
+
+    /* Transitions */
+    --transition-timing-base: 0.5s;
+    --transition-timing-half: 0.25s;
+
+    /* Z-Index */
+    --zindex-1: 1;
+    --zindex-2: 2;
+    --zindex-3: 3;
+    --zindex-4: 4;
+    --zindex-5: 5;
+    --zindex-6: 6;
+    --zindex-7: 7;
+    --zindex-8: 8;
+    --zindex-9: 9;
+    --zindex-10: 10;
+
+    /* Emoji cursors */
+    --cursor-emoji-arrow: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">↖️</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-bow: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">🙇‍♂️</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-death: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">💀⚡️</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-die: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">🎲</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-grimace: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">😬</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-stopwatch: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">⏱</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-point: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">👆</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-lightning: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">⚡️</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-mouse: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">🐭</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-skull: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">💀</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-moon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">🌙</text></svg>')
+            16 0,
+        auto;
+    --cursor-emoji-sun: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:1.5rem;"><text y="50%">☀️</text></svg>')
+            16 0,
+        auto;
+
+    /* Set default color scheme properties */
+    --theme-html-background: var(--white);
+    --theme-html-color: var(--gray-4);
+    --theme-box-shadow: 0 var(--space-twelfth) var(--space-eighth) 0
+            hsla(0, 0%, 0%, 0.06),
+        0 var(--space-twelfth) var(--space-half) 0 hsla(0, 0%, 0%, 0.06);
+    --theme-frame-color: var(--gray-5);
+    --theme-heading-color: var(--gray-5);
+    --theme-link-color: var(--blue);
+    --theme-input-background: var(--gray-1);
+    --theme-button-background: var(--gray-2);
+    --theme-button-color: var(--gray-4);
+    --theme-button-hover-color: var(--gray-5);
+    --theme-hr-color: var(--gray-2);
+    --theme-focus-outline: dotted var(--gray-4);
+    --theme-code-background: var(--gray-5);
+    --theme-code-color: var(--gray-2);
+    --theme-navigation-background: hsla(0, 0%, 255%, 0.7);
+    --theme-switch-top-fill: none;
+    --theme-switch-bottom-fill: var(--gray-2);
+    --theme-bulb-fill: var(--gray-2);
+    --theme-sticky-background: var(--beige-1);
+    --theme-sticky-fold-background: var(--beige-2);
+}
+
+/**
+ * Selector groups
+ */
+
+@custom-selector :--common-elements
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    b,
+    blockquote,
+    body,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    hr,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    main,
+    menu,
+    nav,
+    object,
+    ol,
+    p,
+    pre,
+    q,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    u,
+    ul,
+    var;
+@custom-selector :--tappable-elements
+    a,
+    area,
+    button,
+    [role='button'],
+    input,
+    label,
+    select,
+    summary,
+    textarea;
+@custom-selector :--clickable-form-elements
+    button,
+    html input[type='button'],
+    input[type='checkbox'],
+    input[type='file'],
+    input[type='image'],
+    input[type='radio'],
+    input[type='reset'],
+    input[type='submit'],
+    label,
+    select;
+@custom-selector :--vertical-rhythm
+    blockquote,
+    dl,
+    figure,
+    hr,
+    menu,
+    ol,
+    p,
+    pre,
+    summary,
+    table,
+    ul;
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--lists dl, ol, ul;
+
+/**
+ * Media queries
+ * Use `em` units for proper scaling.
+ * https://zellwk.com/blog/media-query-units/
+ */
+
+@custom-media --xxsmall-and-up (width >= 20em); /* 320px */
+@custom-media --xsmall-and-up (width >= 30em); /* 480px */
+@custom-media --small-and-up (width >= 40em); /* 640px */
+@custom-media --medium-and-up (width >= 48em); /* 768px */
+@custom-media --large-and-up (width >= 64em); /* 1024px */
+@custom-media --xlarge-and-up (width >= 80em); /* 1280px */
+@custom-media --xxlarge-and-up (width >= 96em); /* 1536px */
+@custom-media --xxxlarge-and-up (width >= 110em); /* 1766px */
+
+@custom-media --xxsmall-and-down (width < 20em); /* 320px */
+@custom-media --xsmall-and-down (width < 30em); /* 480px */
+@custom-media --small-and-down (width < 40em); /* 640px */
+@custom-media --medium-and-down (width < 48em); /* 768px */
+@custom-media --large-and-down (width < 64em); /* 1024px */
+@custom-media --xlarge-and-down (width < 80em); /* 1280px */
+@custom-media --xxlarge-and-down (width < 96em); /* 1536px */
+@custom-media --xxxlarge-and-down (width < 110em); /* 1766px */

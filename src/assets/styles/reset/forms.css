@@ -1,0 +1,136 @@
+/* ============================================================================ *\
+   Reset -> Forms
+\* ============================================================================ */
+
+/**
+ * Adds a pointer cursor to enabled clickable form elements.
+ */
+
+:--clickable-form-elements {
+    cursor: pointer;
+
+    &:disabled {
+        cursor: default;
+    }
+}
+
+/**
+ * Removes inner border and padding from focus styles in Firefox.
+ */
+
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+/**
+ * Lets labels use margin for spacing.
+ */
+
+label {
+    display: inline-block;
+}
+
+/**
+ * 1. Inherits font and line height properties.
+ * 2. Removes rounded corners that iOS and Chrome apply.
+ */
+
+button,
+input,
+legend,
+select,
+textarea {
+    font: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    border-radius: 0; /* 2 */
+}
+
+/**
+ * 1. Corrects inability to style clickable inputs and buttons in iOS.
+ */
+
+button,
+html input[type='button'],
+input[type='button'],
+input[type='reset'] {
+    display: inline-block;
+    background: none;
+    border: 0;
+    padding: 0;
+    -webkit-appearance: button; /* 1 */
+}
+
+/**
+ * Fixes vertical alignment inconsistencies.
+ */
+
+input[type='color'],
+input[type='range'] {
+    vertical-align: middle;
+}
+
+/**
+ * Set `min-width` to avoid overflow issues in Chrome.
+ */
+
+fieldset {
+    min-width: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+/**
+ * 1. Set checkbox, image, and radio inputs to `inline-block`.
+ */
+
+input[type='checkbox'],
+input[type='image'],
+input[type='radio'] {
+    display: inline-block; /* 1 */
+    width: auto;
+}
+
+/**
+ * Prevent overflow issues with file inputs.
+ */
+
+input[type='file'] {
+    max-width: 100%;
+}
+
+/**
+ * Reset default iOS Safari styles for search inputs.
+ */
+
+input[type='search'] {
+    -webkit-appearance: textfield;
+    appearance: none;
+}
+
+/**
+ * 1. Prevent overflow issues.
+ * 2. Prevent height inconsistencies.
+ * 3. Remove default scrollbar in IE8+.
+ * 4. Vertical resizing only.
+ */
+
+textarea {
+    max-width: 100%; /* 1 */
+    height: auto; /* 2 */
+    overflow: auto; /* 3 */
+    resize: vertical; /* 4 */
+}
+
+/**
+ * Fixes iOS bug for traditionally non-focusable elements with role='button'.
+ * https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+ */
+
+[role='button'] {
+    cursor: pointer;
+}

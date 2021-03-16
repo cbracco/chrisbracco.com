@@ -1,0 +1,66 @@
+/* ============================================================================ *\
+   Components -> Page
+
+   Styles for the "frame" of each page.
+\* ============================================================================ */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: var(--space);
+}
+
+.page__container {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+.page__main {
+    width: 100%;
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--space);
+    padding-right: var(--space-2x);
+    padding-left: var(--space);
+}
+
+.page__title {
+    margin-top: 0;
+}
+
+@media screen and (--large-and-up) {
+    .page {
+        padding: var(--space-medium);
+        min-height: 0;
+    }
+
+    .page__main {
+        font-size: var(--font-size-medium);
+        padding: 0;
+        margin-top: var(--space);
+        margin-right: var(--space-3x);
+        margin-left: 0;
+        margin-bottom: var(--space-2x);
+    }
+
+    .page__title {
+        font-size: var(--font-size-display-2);
+    }
+}
+
+@media screen and (--xlarge-and-up) {
+    .page__main {
+        margin-top: var(--space-3x);
+    }
+}

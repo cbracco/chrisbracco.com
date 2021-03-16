@@ -1,0 +1,11 @@
+<nav class="taglist">
+    <ul>
+        {% for name, length in tags %}
+        <li>
+            <a href="{{ '/tags/' }}{{ name | slug }}" class="button">
+                {{ name | title }} {#<span class="badge">{{ length }}</span>#}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

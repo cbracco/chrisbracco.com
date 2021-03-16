@@ -1,0 +1,67 @@
+/* ============================================================================ *\
+   Dark mode
+\* ============================================================================ */
+
+/* If user’s default system preference is dark */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-color-scheme]) {
+        --gray-1: #e8e8ec;
+        --gray-2: #caccd2;
+        --gray-3: #7d8190;
+        --red: #ff3429;
+        --blue: #297eff;
+        --theme-html-background: var(--gray-5);
+        --theme-html-color: var(--gray-2);
+        --theme-box-shadow: 0 var(--space-twelfth) var(--space-eighth) 0
+                hsla(0, 0%, 0%, 0.4),
+            0 var(--space-twelfth) var(--space-half) 0 hsla(0, 0%, 0%, 0.6);
+        --theme-frame-color: var(--gray-4);
+        --theme-heading-color: var(--gray-1);
+        --theme-link-color: var(--blue);
+        --theme-input-background: var(--gray-4);
+        --theme-button-background: var(--gray-4);
+        --theme-button-color: var(--gray-2);
+        --theme-button-hover-color: var(--gray-1);
+        --theme-hr-color: var(--gray-4);
+        --theme-focus-outline: dotted var(--gray-1);
+        --theme-code-background: var(--gray-4);
+        --theme-code-color: var(--gray-2);
+        --theme-navigation-background: hsla(231, 13%, 11%, 0.7);
+        --theme-switch-top-fill: var(--gray-2);
+        --theme-switch-bottom-fill: none;
+        --theme-bulb-fill: var(--yellow);
+        --theme-sticky-background: var(--gray-4);
+        --theme-sticky-fold-background: var(--gray-3);
+    }
+}
+
+/* If user set dark manually with the toggle switch */
+[data-color-scheme='dark'] {
+    --gray-1: #e8e8ec;
+    --gray-2: #caccd2;
+    --gray-3: #7d8190;
+    --red: #ff3429;
+    --blue: #297eff;
+    --theme-html-background: var(--gray-5);
+    --theme-html-color: var(--gray-2);
+    --theme-box-shadow: 0 var(--space-twelfth) var(--space-eighth) 0
+            hsla(0, 0%, 0%, 0.2),
+        0 var(--space-twelfth) var(--space-half) 0 hsla(0, 0%, 0%, 0.3);
+    --theme-frame-color: var(--gray-4);
+    --theme-heading-color: var(--gray-1);
+    --theme-link-color: var(--blue);
+    --theme-input-background: var(--gray-4);
+    --theme-button-background: var(--gray-4);
+    --theme-button-color: var(--gray-2);
+    --theme-button-hover-color: var(--gray-1);
+    --theme-hr-color: var(--gray-4);
+    --theme-focus-outline: dotted var(--gray-1);
+    --theme-code-background: var(--gray-4);
+    --theme-code-color: var(--gray-2);
+    --theme-navigation-background: hsla(231, 13%, 11%, 0.7);
+    --theme-switch-top-fill: var(--gray-2);
+    --theme-switch-bottom-fill: none;
+    --theme-bulb-fill: var(--yellow);
+    --theme-sticky-background: var(--gray-4);
+    --theme-sticky-fold-background: var(--gray-3);
+}
