@@ -6,73 +6,73 @@
     {
       "title": "Records for the desert island",
       "teaser": "Because you never know, and if given the choice you better be prepared.",
-      "url": "/records-for-the-desert-island.html"
+      "url": "/records-for-the-desert-island/"
     },
   
     {
       "title": "Records for focus and productivity",
       "teaser": "Maintain focus. Keep it moving.",
-      "url": "/records-for-focus-and-productivity.html"
+      "url": "/records-for-focus-and-productivity/"
     },
   
     {
       "title": "Records that make me nostalgic",
       "teaser": "Soothing sounds for my favorite disorder of the 17th century and beyond.",
-      "url": "/nostalgia-records.html"
+      "url": "/nostalgia-records/"
     },
   
     {
       "title": "A quick word on happiness",
       "teaser": "Hint: It&#39;s about time, money, and freedom.",
-      "url": "/happiness-is-control-over-your-time.html"
+      "url": "/happiness-is-control-over-your-time/"
     },
   
     {
       "title": "Favorite PC games from the 1990s and 2000s",
       "teaser": "A significant chunk of my childhood was spent playing these.",
-      "url": "/favorite-pc-games-1990-2000.html"
+      "url": "/favorite-pc-games-1990-2000/"
     },
   
     {
       "title": "Let your kids destroy some stuff",
       "teaser": "But set a limit on how much chaos you can endure.",
-      "url": "/let-your-kids-destroy-some-stuff.html"
+      "url": "/let-your-kids-destroy-some-stuff/"
     },
   
     {
       "title": "Live with your kids, not for them",
       "teaser": "They want to help and feel like a part of the family.",
-      "url": "/live-with-your-kids-not-for-them.html"
+      "url": "/live-with-your-kids-not-for-them/"
     },
   
     {
       "title": "A Simple, Fluid Responsive CSS Grid System",
       "teaser": "Nothing revolutionary here. An “old school” 12-column grid system using floats.",
-      "url": "/a-simple-responsive-css-grid-system.html"
+      "url": "/a-simple-responsive-css-grid-system/"
     },
   
     {
       "title": "A Simple CSS Tooltip",
       "teaser": "This is my minimalist approach for tooltips in HTML and CSS only.",
-      "url": "/a-simple-css-tooltip.html"
+      "url": "/a-simple-css-tooltip/"
     },
   
     {
       "title": "CSS Sticky (But Not Fixed) Footer",
       "teaser": "“We need the footer to stick to the bottom of the page without using JavaScript or position: fixed;” ...Challenge accepted.",
-      "url": "/css-sticky-footer-effect.html"
+      "url": "/css-sticky-footer-effect/"
     },
   
     {
       "title": "CSS Collapsing Header Effect",
       "teaser": "A few lines of CSS to create the illusion of a full-width header image “collapsing” as the person scrolls.",
-      "url": "/simple-css3-collapsing-header-effect.html"
+      "url": "/simple-css3-collapsing-header-effect/"
     },
   
     {
       "title": "How to Use Curly Quotes on Mac OSX and Windows",
       "teaser": "For years I have been including straight marks in my writing, blissfully unaware of their elusive curly counterparts.",
-      "url": "/curly-quotes.html"
+      "url": "/curly-quotes/"
     }
   
 ]

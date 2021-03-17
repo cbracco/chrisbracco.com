@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Chris Bracco</title>
+        <link rel="canonical" href="https://chrisbracco.com/a-simple-css-tooltip/" />
         
         <link
             rel="icon"
@@ -148,19 +149,19 @@
         <main id="main" class="page__main">
 <article class="post" data-breakout-parent>
     <p>
-        <time class="post__date" datetime="2021-03-11">
-            March 11, 2021
+        <time class="post__date" datetime="2013-10-01">
+            October 1, 2013
         </time>
     </p>
     
-    <h1 class="post__title">Records for the desert island</h1>
-    <p class="post__teaser">Because you never know, and if given the choice you better be prepared.</p>
+    <h1 class="post__title">A Simple CSS Tooltip</h1>
+    <p class="post__teaser">This is my minimalist approach for tooltips in HTML and CSS only.</p>
     <nav class="post__taglist taglist">
     <ul>
         
         <li>
-            <a href="/tags/music" class="button button--outline">
-                Music
+            <a href="/tags/code-snippets" class="button button--outline">
+                Code Snippets
             </a>
         </li>
         
@@ -168,41 +169,20 @@
 </nav>
 
     
-    <div class="post__content"><p>In no particular order:</p>
-<ul>
-<li><em>It's Album Time</em>, Todd Terje</li>
-<li><em>Random Access Memories</em>, Daft Punk</li>
-<li><em>Bringing It All Back Home</em>, Bob Dylan</li>
-<li><em>Dive</em>, Tycho</li>
-<li><em>Undercurrent</em>, Bill Evans</li>
-<li><em>Broken Social Scene</em>, Broken Social Scene</li>
-<li><em>The Devil And God Are Raging Inside Me</em>, Brand New</li>
-<li><em>Attack On Memory</em>, Cloud Nothings</li>
-<li><em>Either/Or</em>, Elliott Smith</li>
-<li><em>Dookie</em>, Green Day</li>
-<li><em>Alien Lanes</em>, Guided By Voices</li>
-<li><em>This Is Happening</em>, LCD Soundsystem</li>
-<li><em>Salad Days</em>, Mac DeMarco</li>
-<li><em>Boxer</em>, The National</li>
-<li><em>Everything In Between</em>, No Age</li>
-<li><em>McCartney II</em>, Paul McCartney</li>
-<li><em>In Rainbows</em>, Radiohead</li>
-<li><em>Let It Be</em>, The Replacements</li>
-<li><em>Treats</em>, Sleigh Bells</li>
-<li><em>Seven Swans</em>, Sufjan Stevens</li>
-<li><em>The Wild Hunt</em>, The Tallest Man On Earth</li>
-<li><em>Full Moon Fever</em>, Tom Petty</li>
-<li><em>II</em>, Unknown Mortal Orchestra</li>
-<li><em>Nocturne</em>, Wild Nothing</li>
-<li><em>It’s Blitz!</em>, Yeah Yeah Yeahs</li>
-<li><em>I Can Hear The Heart Beating As One</em>, Yo La Tengo</li>
-<li><em>Greatest Hits</em>, Bruce Springsteen</li>
-<li><em>Mothership</em>, Led Zeppelin</li>
-<li><em>Nirvana</em>, Nirvana</li>
-<li><em>Symphonies Nos. 1-9, Beethoven, Nikolaus Harnoncourt</em>, Chamber Orchestra of Europe</li>
-<li><em>The Greatest Hits</em>, Al Green</li>
-<li><em>Pinback</em>, Pinback</li>
-</ul>
+    <div class="post__content"><p>With pseudo elements, the triangle hack, and data attributes, I created a simple tooltip system in HTML and CSS.</p>
+<div class="post__codepen" data-breakout>
+            <div data-height="600" data-slug-hash="qzukg" data-default-tab="result" data-user="cbracco" data-border="thick" data-border-color="#18191f" data-tab-bar-color="#3a3c47" data-tab-color="#717482" data-tab-link-color="#dcdee4" data-active-tab-color="#717482" data-link-logo-color="#3a3c47" data-embed-version="1" class="codepen"></div>
+            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+<p>To give any element a tooltip, simply add the <code>data-tooltip</code> attribute to it, like so:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#!<span class="token punctuation">"</span></span> <span class="token attr-name">data-tooltip</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>I am a tooltip<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>I am a link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p>One caveat with this method is that transitions on pseudo elements <a href="http://css-tricks.com/transitions-and-animations-on-css-generated-content/">don’t quite work right</a> in Webkit browsers (Chrome, Safari). It works just fine in Firefox, but if you include the CSS for the transition it will break the tooltip in Webkit, which is annoying. This means you can’t transition the opacity or positioning of the tooltip for a fade or movement effect. But if you don’t care about that extra pizazz, then this method will work just fine.</p>
+<h2>Bonus!</h2>
+<p>Because boredom, I created a simple directional tooltip system. With class names, you can specify which side you would like the tooltip to appear (top, right, bottom, or left).</p>
+<div class="post__codepen" data-breakout>
+            <div data-height="600" data-slug-hash="nufHz" data-default-tab="result" data-user="cbracco" data-border="thick" data-border-color="#18191f" data-tab-bar-color="#3a3c47" data-tab-color="#717482" data-tab-link-color="#dcdee4" data-active-tab-color="#717482" data-link-logo-color="#3a3c47" data-embed-version="1" class="codepen"></div>
+            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
 </div>
 </article>
 </main>
