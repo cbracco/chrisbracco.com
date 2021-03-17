@@ -20,7 +20,7 @@ module.exports = {
     },
     // https://github.com/11ty/eleventy/issues/898#issuecomment-617628635
     sortByOrder: (values) => {
-        let vals = [...values];     // this *seems* to prevent collection mutation...
+        let vals = [...values];
         return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
     }
 };
