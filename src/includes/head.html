@@ -6,27 +6,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Title, desc -->
-        <title>Chris Bracco</title>
-        <meta name="description" content="{{ page.teaser or site.subtitle }}">
+        {% if title and not page.isHome %}
+        <title>{{ title }} &bull; {{ site.title }} &bull; {{ site.subtitle }}</title>
+        {% else %}
+        <title>{{ site.title }} &bull; {{ site.subtitle }}</title>
+        {% endif %}
+        <meta name="description" content="{{ teaser or site.tagline }}">
         <!-- Canonical -->
         <link rel="canonical" href="{{ site.url }}{{ page.url }}">
         {% if ignore %}
         <!-- Noindex -->
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex">
         {% endif %}
         <!-- Open Graph -->
         <meta property="og:site_name" content="{{ site.title }}">
-        {% if page.title and not page.isHome %}
-        <meta property="og:title" content="{{ page.title }} &bull; {{ site.title }}">
+        {% if title and not page.isHome %}
+        <meta property="og:title" content="{{ title }} &bull; {{ site.title }} &bull; {{ site.subtitle }}">
         {% else %}
         <meta property="og:title" content="{{ site.title }} &bull; {{ site.subtitle }}">
         {% endif %}
-        {% if page.title %}
+        {% if title %}
         <meta property="og:type" content="article">
         {% else %}
         <meta property="og:type" content="website">
         {% endif %}
-        <meta property="og:description" content="{{ page.teaser or site.subtitle }}">
+        <meta property="og:description" content="{{ teaser or site.tagline }}">
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
         {% if page.date %}
         <meta property="article:published_time" content="{{ page.date.toISOString() }}">
