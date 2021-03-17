@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title, desc -->
         <title>Chris Bracco</title>
-        <link rel="canonical" href="{{ site.url }}{{ page.url | replace('.html','') }}" />
+        <meta name="description" content="{{ page.teaser or site.subtitle }}">
+        <!-- Canonical -->
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
         {% if ignore %}
-            <meta name="robots" content="noindex" />
+        <!-- Noindex -->
+        <meta name="robots" content="noindex" />
         {% endif %}
+        <!-- Open Graph -->
+        <meta property="og:site_name" content="{{ site.title }}">
+        {% if page.title and not page.isHome %}
+        <meta property="og:title" content="{{ page.title }} &bull; {{ site.title }}">
+        {% else %}
+        <meta property="og:title" content="{{ site.title }} &bull; {{ site.subtitle }}">
+        {% endif %}
+        {% if page.title %}
+        <meta property="og:type" content="article">
+        {% else %}
+        <meta property="og:type" content="website">
+        {% endif %}
+        <meta property="og:description" content="{{ page.teaser or site.subtitle }}">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+        {% if page.date %}
+        <meta property="article:published_time" content="{{ page.date.toISOString() }}">
+        <meta property="article:author" content="{{ site.url }}">
+        {% endif %}
+        <meta property="og:image" content="{{ site.url }}/assets/images/{{ page.openGraphImage or site.openGraphImage }}">
+        <!-- Manifest -->
+        <link rel="manifest" href="{{ '/site.webmanifest' }}">
+        <!-- Favicons -->
+        <link rel="icon" href="{{ '/assets/images/favicon.ico' }}">
         <link
             rel="icon"
             href="{{ '/assets/images/favicon.svg' }}"
             type="image/svg+xml"
         />
+        <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' }}">
+        <!-- Styles -->
         <link rel="stylesheet" href="{% webpackAsset 'main.css' %}" />
         {% if site.isProd %}
-            <script async
-                src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}">
-            </script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag('js', new Date());
-                gtag('config', '{{ site.googleAnalyticsId }}');
-            </script>
+        <!-- Google Analytics -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', '{{ site.googleAnalyticsId }}');
+        </script>
         {% endif %}
     </head>
     <body>

@@ -5,6 +5,7 @@ module.exports = {
     subtitle: 'web design, engineering, management',
     tagline: 'My name is Chris and I am a multifaceted web designer, engineer, and UX manager.',
     author: 'Chris Bracco',
+    openGraphImage: 'portrait-rust.jpg',
     location: 'New Jersey, USA',
     url: 'https://chrisbracco.com',
     feedUrl: 'https://chrisbracco.com/feed.xml',

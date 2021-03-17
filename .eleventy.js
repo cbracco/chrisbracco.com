@@ -73,6 +73,7 @@ module.exports = function (config) {
     config.addPassthroughCopy({ 'src/assets/images': 'assets/images' });
     config.addPassthroughCopy({ 'src/assets/audio': 'assets/audio' });
     config.addPassthroughCopy('src/*.txt');
+    config.addPassthroughCopy('src/*.webmanifest');
     config.addPassthroughCopy('CNAME');
 
     // Set Markdown libraries
