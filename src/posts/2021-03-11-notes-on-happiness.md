@@ -1,11 +1,12 @@
 ---
 layout: post
-title: A quick word on happiness
+title: Notes on happiness
 teaser: "Hint: It's about time, money, and freedom."
 pinned: true
 tags:
     [
         'Health & Wellness',
+        'Notes',
         'Personal Finance',
     ]
 ---
