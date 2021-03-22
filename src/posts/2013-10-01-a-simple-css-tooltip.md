@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A simple css tooltip
+title: A simple CSS tooltip
 teaser: This is my minimalist approach for tooltips in HTML and CSS only.
 tags:
     [
