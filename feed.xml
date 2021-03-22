@@ -40,6 +40,42 @@
     
         
         <entry>
+            <title>How to build a color palette for the backdrop of a user interface</title>
+            <link href="https://chrisbracco.com/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/"/>
+            <updated>2021-03-17T00:00:00Z</updated>
+            <id>https://chrisbracco.com/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/</id>
+            <content type="html">&lt;p&gt;User interfaces serve a wide variety of purposes, and are built to facilitate many different mediums. Some exist to delight, while others aim to increase productivity and efficiency.&lt;/p&gt;
+&lt;p&gt;The “backdrop” of a user interface is where some of your most important color decisions will be made. The colors for your UI backdrop have to be neutral enough to stay out of the way of your content and UI components, but if too dull it can make people feel bored and uninspired.&lt;/p&gt;
+&lt;h1&gt;What’s the intent?&lt;/h1&gt;
+&lt;p&gt;Before diving in, however, it’s important to first consider how you want people to “feel” when using an interface. Certain palettes can make people feel calm, focused, or productive, while others can create confusion, frustration, or boredom.&lt;/p&gt;
+&lt;p&gt;Do you want to facilitate calmness and productivity? Cool blues are helpful. Going for something more welcoming and cozy? Consider warmer earth tones. Looking to excite and delight? Drop the notion of neutrality altogether, and dial up the saturation.&lt;/p&gt;
+&lt;h1&gt;HSL color model to the rescue&lt;/h1&gt;
+&lt;p&gt;I find the HSL color model&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://chrisbracco.com/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; to be the most intuitive for building neutral color palettes for user interfaces. I like to first choose a hue based on intent, and then fine-tune the saturation, lightness, and steps to create a palette that is versatile and has a touch of character, but also stays out of the way and allows the rest of the UI to shine.&lt;/p&gt;
+&lt;h1&gt;Single palette generator&lt;/h1&gt;
+&lt;p&gt;I made a simple palette generator app with &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue.js&lt;/a&gt; to help facilitate this process. Unlike other palette generator apps, this one includes a live preview so you can get some sense of how your palette might look applied to some common user interface elements.&lt;/p&gt;
+&lt;p&gt;If you understand the HSL color model, it should be fairly simple to use.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select a hue that mirrors your intent&lt;/li&gt;
+&lt;li&gt;Add a smidge of saturation&lt;/li&gt;
+&lt;li&gt;Play around with lightness and step up/step down intervals&lt;/li&gt;
+&lt;li&gt;Have a look at the preview and tweak as you go&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There isn’t much method to the madness here, and that’s kind of on purpose. Color selection is very subjective and what “feels” good can be good enough in some cases. Play around, have fun.&lt;/p&gt;
+&lt;div class=&quot;post__codesandbox&quot; data-breakout=&quot;&quot;&gt;
+            &lt;iframe src=&quot;https://codesandbox.io/embed/user-interface-colors-9wc13?fontsize=14&amp;hidenavigation=1&amp;theme=dark&amp;view=preview&quot; style=&quot;width:100%;height:800px;border:0;overflow:hidden;&quot; allow=&quot;accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking&quot; sandbox=&quot;allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts&quot;&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;HSL stands for Hue, Saturation, Lightness. &lt;a href=&quot;https://en.wikipedia.org/wiki/HSL_and_HSV&quot;&gt;It’s a useful model for thinking about color&lt;/a&gt;, especially in the context of software and interfaces. &lt;a href=&quot;https://chrisbracco.com/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
             <title>Records for the desert island</title>
             <link href="https://chrisbracco.com/records-for-the-desert-island/"/>
             <updated>2021-03-11T00:00:00Z</updated>
@@ -107,6 +143,7 @@
 &lt;li&gt;&lt;em&gt;Digital Rain Systems Vol. 1&lt;/em&gt;, Digital Rain Systems&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Programmer&lt;/em&gt;, CORBEN&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Beautiful You&lt;/em&gt;, Khotin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Justamente Tres&lt;/em&gt;, Dos&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Oncle Jazz&lt;/em&gt;, Men I Trust&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Silver Ladders&lt;/em&gt;, Mary Lattimore&lt;/li&gt;
 &lt;/ul&gt;
@@ -222,7 +259,7 @@
     
         
         <entry>
-            <title>A Simple, Fluid Responsive CSS Grid System</title>
+            <title>A simple, fluid responsive CSS grid system</title>
             <link href="https://chrisbracco.com/a-simple-responsive-css-grid-system/"/>
             <updated>2014-03-13T00:00:00Z</updated>
             <id>https://chrisbracco.com/a-simple-responsive-css-grid-system/</id>
@@ -235,7 +272,7 @@
     
         
         <entry>
-            <title>A Simple CSS Tooltip</title>
+            <title>A simple css tooltip</title>
             <link href="https://chrisbracco.com/a-simple-css-tooltip/"/>
             <updated>2013-10-01T00:00:00Z</updated>
             <id>https://chrisbracco.com/a-simple-css-tooltip/</id>
@@ -258,7 +295,7 @@
     
         
         <entry>
-            <title>CSS Sticky (But Not Fixed) Footer</title>
+            <title>CSS sticky (but not fixed) footer</title>
             <link href="https://chrisbracco.com/css-sticky-footer-effect/"/>
             <updated>2013-09-26T00:00:00Z</updated>
             <id>https://chrisbracco.com/css-sticky-footer-effect/</id>
@@ -290,7 +327,7 @@
     
         
         <entry>
-            <title>CSS Collapsing Header Effect</title>
+            <title>CSS collapsing header effect</title>
             <link href="https://chrisbracco.com/simple-css3-collapsing-header-effect/"/>
             <updated>2013-06-11T00:00:00Z</updated>
             <id>https://chrisbracco.com/simple-css3-collapsing-header-effect/</id>

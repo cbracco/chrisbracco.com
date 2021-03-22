@@ -10,6 +10,12 @@
     },
   
     {
+      "title": "How to build a color palette for the backdrop of a user interface",
+      "teaser": "It’s tempting to combine a few flat grayscale shades together and call it a day. But it’s way more fun to create your own. It’s not that hard, and can add a touch of character to your UI.",
+      "url": "/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/"
+    },
+  
+    {
       "title": "Records for the desert island",
       "teaser": "Because you never know, and if given the choice you better be prepared.",
       "url": "/records-for-the-desert-island/"
@@ -23,7 +29,7 @@
   
     {
       "title": "Notes on happiness",
-      "teaser": "Hint: It&#39;s about time, money, and freedom.",
+      "teaser": "Hint: It&#39;s about time, savings, and freedom.",
       "url": "/notes-on-happiness/"
     },
   
@@ -52,25 +58,25 @@
     },
   
     {
-      "title": "A Simple, Fluid Responsive CSS Grid System",
+      "title": "A simple, fluid responsive CSS grid system",
       "teaser": "Nothing revolutionary here. An “old school” 12-column grid system using floats.",
       "url": "/a-simple-responsive-css-grid-system/"
     },
   
     {
-      "title": "A Simple CSS Tooltip",
+      "title": "A simple css tooltip",
       "teaser": "This is my minimalist approach for tooltips in HTML and CSS only.",
       "url": "/a-simple-css-tooltip/"
     },
   
     {
-      "title": "CSS Sticky (But Not Fixed) Footer",
+      "title": "CSS sticky (but not fixed) footer",
       "teaser": "“We need the footer to stick to the bottom of the page without using JavaScript or position: fixed;” ...Challenge accepted.",
       "url": "/css-sticky-footer-effect/"
     },
   
     {
-      "title": "CSS Collapsing Header Effect",
+      "title": "CSS collapsing header effect",
       "teaser": "A few lines of CSS to create the illusion of a full-width header image “collapsing” as the person scrolls.",
       "url": "/simple-css3-collapsing-header-effect/"
     },
