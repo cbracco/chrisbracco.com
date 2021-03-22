@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "Create an image grid with CSS grid, repeat, and minmax",
+      "teaser": "And add a touch of JavaScript to randomly load new images in the grid.",
+      "url": "/create-an-image-grid-with-css-grid-repeat-and-minmax/"
+    },
+  
+    {
       "title": "How to build a color palette for the backdrop of a user interface",
       "teaser": "It’s tempting to combine a few flat grayscale shades together and call it a day. But it’s way more fun to create your own. It’s not that hard, and can add a touch of character to your UI.",
       "url": "/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/"

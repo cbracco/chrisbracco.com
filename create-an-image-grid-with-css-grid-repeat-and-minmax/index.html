@@ -7,24 +7,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Title, desc -->
         
-        <title>Tagged with “” &bull; Chris Bracco &bull; web design, engineering, management</title>
+        <title>Create an image grid with CSS grid, repeat, and minmax &bull; Chris Bracco &bull; web design, engineering, management</title>
         
-        <meta name="description" content="My name is Chris and I am a multifaceted web designer, engineer, and UX manager.">
+        <meta name="description" content="And add a touch of JavaScript to randomly load new images in the grid.">
         <!-- Canonical -->
-        <link rel="canonical" href="https://chrisbracco.com/tags/design/">
+        <link rel="canonical" href="https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax/">
         
         <!-- Open Graph -->
         <meta property="og:site_name" content="Chris Bracco">
         
-        <meta property="og:title" content="Tagged with “” &bull; Chris Bracco &bull; web design, engineering, management">
+        <meta property="og:title" content="Create an image grid with CSS grid, repeat, and minmax &bull; Chris Bracco &bull; web design, engineering, management">
         
         
         <meta property="og:type" content="article">
         
-        <meta property="og:description" content="My name is Chris and I am a multifaceted web designer, engineer, and UX manager.">
-        <meta property="og:url" content="https://chrisbracco.com/tags/design/">
+        <meta property="og:description" content="And add a touch of JavaScript to randomly load new images in the grid.">
+        <meta property="og:url" content="https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax/">
         
-        <meta property="article:published_time" content="2021-03-22T16:23:56.837Z">
+        <meta property="article:published_time" content="2021-03-22T00:00:00.000Z">
         <meta property="article:author" content="https://chrisbracco.com">
         
         <meta property="og:image" content="https://chrisbracco.com/assets/images/portrait-rust.jpg">
@@ -175,81 +175,53 @@
 </nav>
 
         <main id="main" class="page__main">
-<p><a class="button" href="/garden/">⬅️&nbsp;&nbsp;Go Back</a></p>
-
-<section class="section section--archive">
-    <h1 class="section__heading">Design</h1>
-    <ul>
+<article class="post" data-breakout-parent>
+    <p>
+        <time class="post__date" datetime="2021-03-22">
+            March 22, 2021
+        </time>
+    </p>
     
-    <li>
-        <article class="post">
-            <h2 class="post__title">
-                <a href="/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/">How to build a color palette for the backdrop of a user interface</a>
-            </h2>
-            
-                <div class="post__teaser">It’s tempting to combine a few flat grayscale shades together and call it a day. But it’s way more fun to create your own. It’s not that hard, and can add a touch of character to your UI.</div>
-            
-            
-                
-                <nav class="post__taglist taglist">
+    <h1 class="post__title">Create an image grid with CSS grid, repeat, and minmax</h1>
+    <p class="post__teaser">And add a touch of JavaScript to randomly load new images in the grid.</p>
+    <nav class="post__taglist taglist">
     <ul>
         
         <li>
-            <a href="/tags/design" class="button button--outline">
-                Design
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags/tutorials" class="button button--outline">
-                Tutorials
+            <a href="/tags/code-snippets" class="button button--outline">
+                Code Snippets
             </a>
         </li>
         
     </ul>
 </nav>
 
-            
-        </article>
-    </li>
     
-    <li>
-        <article class="post">
-            <h2 class="post__title">
-                <a href="/notes-on-color/">Notes on color</a>
-            </h2>
-            
-                <div class="post__teaser">Assigning colors to stuff is hard. It’s messy. It’s emotional. It’s subjective. It’s worth it. Here are a few things to keep in mind.</div>
-            
-            
-                
-                <nav class="post__taglist taglist">
-    <ul>
-        
-        <li>
-            <a href="/tags/design" class="button button--outline">
-                Design
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags/notes" class="button button--outline">
-                Notes
-            </a>
-        </li>
-        
-    </ul>
-</nav>
-
-            
-        </article>
-    </li>
-    
+    <div class="post__content"><div class="post__embed" data-breakout>
+            <div data-height="600" data-slug-hash="VwjBGby" data-default-tab="result" data-user="cbracco" data-border="thick" data-border-color="#18191f" data-tab-bar-color="#3a3c47" data-tab-color="#717482" data-tab-link-color="#dcdee4" data-active-tab-color="#717482" data-link-logo-color="#3a3c47" data-embed-version="1" class="codepen"></div>
+            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+<p>This grid layout is very easy to accomplish with CSS grid. The magic lies inside a couple lines of CSS:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>10<span class="token punctuation">,</span> <span class="token function">minmax</span><span class="token punctuation">(</span>4em<span class="token punctuation">,</span> 8em<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>What’s happening here, exactly?</p>
+<ul>
+<li><code>repeat</code> tells CSS grid to repeat the rules inside the expression.</li>
+<li><code>10</code> represents the desired number of columns before it begins to repeat.</li>
+<li><code>minmax</code> sets a minimum and maximum size for each column.</li>
 </ul>
-
-</section>
-
-
+<p>To prevent horizontal overflow on smaller devices and keep the entire grid centered also requires two more lines of CSS:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><br>    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<div class="post__embed">
+            <div data-height="600" data-slug-hash="VwjBGby" data-default-tab="css,result" data-user="cbracco" data-border="thick" data-border-color="#18191f" data-tab-bar-color="#3a3c47" data-tab-color="#717482" data-tab-link-color="#dcdee4" data-active-tab-color="#717482" data-link-logo-color="#3a3c47" data-embed-version="1" class="codepen"></div>
+            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+<p>And if there are more images than can fit inside the grid and still look reasonable, with a touch of JavaScript the images can randomly fade in and out and replace one another until there are no new images left to load.</p>
+<div class="post__embed">
+            <div data-height="600" data-slug-hash="VwjBGby" data-default-tab="js" data-user="cbracco" data-border="thick" data-border-color="#18191f" data-tab-bar-color="#3a3c47" data-tab-color="#717482" data-tab-link-color="#dcdee4" data-active-tab-color="#717482" data-link-logo-color="#3a3c47" data-embed-version="1" class="codepen"></div>
+            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+</div>
+</article>
 </main>
     </div>
 </div>

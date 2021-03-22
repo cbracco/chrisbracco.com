@@ -4,12 +4,44 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-03-21T00:00:00Z</updated>
+    <updated>2021-03-22T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
+    
+        
+        <entry>
+            <title>Create an image grid with CSS grid, repeat, and minmax</title>
+            <link href="https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax/"/>
+            <updated>2021-03-22T00:00:00Z</updated>
+            <id>https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax/</id>
+            <content type="html">&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;VwjBGby&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+&lt;p&gt;This grid layout is very easy to accomplish with CSS grid. The magic lies inside a couple lines of CSS:&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.grid&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; grid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;10&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;4em&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 8em&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What’s happening here, exactly?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;repeat&lt;/code&gt; tells CSS grid to repeat the rules inside the expression.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;10&lt;/code&gt; represents the desired number of columns before it begins to repeat.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;minmax&lt;/code&gt; sets a minimum and maximum size for each column.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To prevent horizontal overflow on smaller devices and keep the entire grid centered also requires two more lines of CSS:&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.grid&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; hidden&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;post__embed&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;VwjBGby&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+&lt;p&gt;And if there are more images than can fit inside the grid and still look reasonable, with a touch of JavaScript the images can randomly fade in and out and replace one another until there are no new images left to load.&lt;/p&gt;
+&lt;div class=&quot;post__embed&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;VwjBGby&quot; data-default-tab=&quot;js&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
         
         <entry>
@@ -34,7 +66,7 @@
 &lt;li&gt;Have a look at the preview and tweak as you go&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;There isn’t much method to the madness here, and that’s kind of on purpose. Color selection is very subjective and what “feels” good can be good enough in some cases. Play around, have fun.&lt;/p&gt;
-&lt;div class=&quot;post__codesandbox&quot; data-breakout=&quot;&quot;&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;iframe src=&quot;https://codesandbox.io/embed/user-interface-colors-9wc13?fontsize=14&amp;hidenavigation=1&amp;theme=dark&amp;view=preview&quot; style=&quot;width:100%;height:800px;border:0;overflow:hidden;&quot; allow=&quot;accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking&quot; sandbox=&quot;allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts&quot;&gt;&lt;/iframe&gt;
         &lt;/div&gt;
 &lt;hr class=&quot;footnotes-sep&quot; /&gt;
@@ -263,7 +295,7 @@
             <link href="https://chrisbracco.com/a-simple-responsive-css-grid-system/"/>
             <updated>2014-03-13T00:00:00Z</updated>
             <id>https://chrisbracco.com/a-simple-responsive-css-grid-system/</id>
-            <content type="html">&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            <content type="html">&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;hjFDL&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
         &lt;/div&gt;
@@ -277,7 +309,7 @@
             <updated>2013-10-01T00:00:00Z</updated>
             <id>https://chrisbracco.com/a-simple-css-tooltip/</id>
             <content type="html">&lt;p&gt;With pseudo elements, the triangle hack, and data attributes, I created a simple tooltip system in HTML and CSS.&lt;/p&gt;
-&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;qzukg&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
         &lt;/div&gt;
@@ -286,8 +318,8 @@
 &lt;p&gt;One caveat with this method is that transitions on pseudo elements &lt;a href=&quot;http://css-tricks.com/transitions-and-animations-on-css-generated-content/&quot;&gt;don’t quite work right&lt;/a&gt; in Webkit browsers (Chrome, Safari). It works just fine in Firefox, but if you include the CSS for the transition it will break the tooltip in Webkit, which is annoying. This means you can’t transition the opacity or positioning of the tooltip for a fade or movement effect. But if you don’t care about that extra pizazz, then this method will work just fine.&lt;/p&gt;
 &lt;h2&gt;Bonus!&lt;/h2&gt;
 &lt;p&gt;Because boredom, I created a simple directional tooltip system. With class names, you can specify which side you would like the tooltip to appear (top, right, bottom, or left).&lt;/p&gt;
-&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
-            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;nufHz&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;false&quot; data-slug-hash=&quot;nufHz&quot; data-default-tab=&quot;600&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
         &lt;/div&gt;
 </content>
@@ -306,19 +338,19 @@
 &lt;li&gt;This must be done without JavaScript, and without using the &lt;code&gt;position: fixed;&lt;/code&gt; property (which would keep the footer at the bottom of the viewport at all times, regardless of the above content).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Below is a small pen demonstrating my solution, and it works fabulously. Feel free to use this method on your next project.&lt;/p&gt;
-&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;zekgx&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
         &lt;/div&gt;
 &lt;h2&gt;Update! With flexbox&lt;/h2&gt;
 &lt;p&gt;Turns out you can also accomplish this particular layout with flexbox. The CSS is a lot simpler, too.&lt;/p&gt;
-&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;BaLdqKp&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
         &lt;/div&gt;
 &lt;h2&gt;Update! With CSS grid&lt;/h2&gt;
 &lt;p&gt;And finally, you can also achieve this effect using CSS grid.&lt;/p&gt;
-&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;ZEBmQXo&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
         &lt;/div&gt;
@@ -331,7 +363,7 @@
             <link href="https://chrisbracco.com/simple-css3-collapsing-header-effect/"/>
             <updated>2013-06-11T00:00:00Z</updated>
             <id>https://chrisbracco.com/simple-css3-collapsing-header-effect/</id>
-            <content type="html">&lt;div class=&quot;post__codepen&quot; data-breakout=&quot;&quot;&gt;
+            <content type="html">&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;corFl&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
         &lt;/div&gt;
