@@ -4,7 +4,7 @@
 \* ============================================================================ */
 
 [data-breakout] {
-    margin-bottom: var(--space);
+    margin: var(--space) 0;
 
     &,
     & * {
@@ -16,6 +16,6 @@
 
 @media screen and (--large-and-up) {
     [data-breakout] {
-        margin-bottom: var(--space-2x);
+        margin: var(--space-2x) 0;
     }
 }

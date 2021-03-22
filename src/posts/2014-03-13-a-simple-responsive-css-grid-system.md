@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Simple, Fluid Responsive CSS Grid System
+title: A simple, fluid responsive CSS grid system
 teaser: Nothing revolutionary here. An “old school” 12-column grid system using floats.
 tags:
     [

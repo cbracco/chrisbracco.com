@@ -38,6 +38,7 @@ module.exports = function (config) {
 
     // Shortcodes
     config.addNunjucksShortcode('codepen', shortcodes['codepen']);
+    config.addNunjucksShortcode('codesandbox', shortcodes['codesandbox']);
     config.addNunjucksAsyncShortcode('img', shortcodes['img']);
     config.addNunjucksAsyncShortcode('photo', shortcodes['photo']);
     config.addNunjucksAsyncShortcode('svgiconsprite', svgiconsprite);

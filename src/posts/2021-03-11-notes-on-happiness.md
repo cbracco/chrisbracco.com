@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Notes on happiness
-teaser: "Hint: It's about time, money, and freedom."
+teaser: "Hint: It's about time, savings, and freedom."
 pinned: true
 tags:
     [

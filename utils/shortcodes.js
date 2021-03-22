@@ -54,4 +54,13 @@ module.exports = {
             <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
         </div>`;
     },
+    codesandbox: (url, height = 600, breakout = true) => {
+        return `<div class="post__codesandbox"${breakout ? ' data-breakout' : ''}>
+            <iframe src="${url}"
+                style="width:100%;height:${height}px;border:0;overflow:hidden;"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+            ></iframe>
+        </div>`;
+    },
 };

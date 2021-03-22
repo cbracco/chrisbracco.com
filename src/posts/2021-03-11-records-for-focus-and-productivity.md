@@ -29,5 +29,6 @@ In no particular order:
 - _Digital Rain Systems Vol. 1_, Digital Rain Systems
 - _Programmer_, CORBEN
 - _Beautiful You_, Khotin
+- _Justamente Tres_, Dos
 - _Oncle Jazz_, Men I Trust
 - _Silver Ladders_, Mary Lattimore

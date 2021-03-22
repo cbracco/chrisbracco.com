@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS Sticky (But Not Fixed) Footer
+title: CSS sticky (but not fixed) footer
 teaser: '“We need the footer to stick to the bottom of the page without using JavaScript or position: fixed;” ...Challenge accepted.'
 tags:
     [
