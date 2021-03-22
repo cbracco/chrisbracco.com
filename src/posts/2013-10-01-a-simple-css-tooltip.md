@@ -24,4 +24,4 @@ One caveat with this method is that transitions on pseudo elements [don’t quit
 
 Because boredom, I created a simple directional tooltip system. With class names, you can specify which side you would like the tooltip to appear (top, right, bottom, or left).
 
-{% codepen "nufHz" %}
+{% codepen "nufHz", "600", "false" %}

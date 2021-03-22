@@ -45,6 +45,10 @@
     }
 }
 
+.post__embed {
+    margin: var(--space) 0;
+}
+
 @media screen and (--large-and-up) {
     .post__title {
         margin-top: var(--space-2x);
@@ -65,5 +69,9 @@
             margin-top: var(--space-2x);
             margin-bottom: var(--space-half);
         }
+    }
+
+    .post__embed {
+        margin: var(--space-2x) 0;
     }
 }

@@ -48,14 +48,14 @@ module.exports = {
     ${caption ? `<figcaption>${caption}</figcaption>` : ''}
 </figure>`;
     },
-    codepen: (id, defaultTab = 'result', height = 600, breakout = true) => {
-        return `<div class="post__codepen"${breakout ? ' data-breakout' : ''}>
+    codepen: (id, defaultTab = 'result', height = '600', breakout = 'true') => {
+        return `<div class="post__embed"${breakout === 'true' ? ' data-breakout' : ''}>
             <div data-height="${height}" data-slug-hash="${id}" data-default-tab="${defaultTab}" data-user="cbracco" data-border="thick" data-border-color="#18191f" data-tab-bar-color="#3a3c47" data-tab-color="#717482" data-tab-link-color="#dcdee4" data-active-tab-color="#717482" data-link-logo-color="#3a3c47" data-embed-version="1" class="codepen"></div>
             <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
         </div>`;
     },
-    codesandbox: (url, height = 600, breakout = true) => {
-        return `<div class="post__codesandbox"${breakout ? ' data-breakout' : ''}>
+    codesandbox: (url, height = '600', breakout = 'true') => {
+        return `<div class="post__embed"${breakout === 'true' ? ' data-breakout' : ''}>
             <iframe src="${url}"
                 style="width:100%;height:${height}px;border:0;overflow:hidden;"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
