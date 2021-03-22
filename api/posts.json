@@ -4,15 +4,15 @@
 [
   
     {
-      "title": "Notes on color",
-      "teaser": "Assigning colors to stuff is hard. It’s messy. It’s emotional. It’s subjective. It’s worth it. Here are a few things to keep in mind.",
-      "url": "/notes-on-color/"
-    },
-  
-    {
       "title": "How to build a color palette for the backdrop of a user interface",
       "teaser": "It’s tempting to combine a few flat grayscale shades together and call it a day. But it’s way more fun to create your own. It’s not that hard, and can add a touch of character to your UI.",
       "url": "/how-to-build-a-color-palette-for-the-backdrop-of-a-user-interface/"
+    },
+  
+    {
+      "title": "Notes on color",
+      "teaser": "Assigning colors to stuff is hard. It’s messy. It’s emotional. It’s subjective. It’s worth it. Here are a few things to keep in mind.",
+      "url": "/notes-on-color/"
     },
   
     {
