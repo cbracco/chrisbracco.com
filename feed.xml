@@ -4,7 +4,7 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-03-22T00:00:00Z</updated>
+    <updated>2021-03-23T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
@@ -13,10 +13,82 @@
     
         
         <entry>
+            <title>Personal mantras</title>
+            <link href="https://chrisbracco.com/personal-mantras/"/>
+            <updated>2021-03-23T00:00:00Z</updated>
+            <id>https://chrisbracco.com/personal-mantras/</id>
+            <content type="html">&lt;p&gt;In no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start by starting&lt;/li&gt;
+&lt;li&gt;Focus&lt;/li&gt;
+&lt;li&gt;Show compassion&lt;/li&gt;
+&lt;li&gt;Eat slow&lt;/li&gt;
+&lt;li&gt;Exercise&lt;/li&gt;
+&lt;li&gt;Be frugal&lt;/li&gt;
+&lt;li&gt;Do good work&lt;/li&gt;
+&lt;li&gt;Hone skills&lt;/li&gt;
+&lt;li&gt;Share music&lt;/li&gt;
+&lt;li&gt;Read and write&lt;/li&gt;
+&lt;li&gt;Have fun&lt;/li&gt;
+&lt;li&gt;Give back&lt;/li&gt;
+&lt;li&gt;Stay positive&lt;/li&gt;
+&lt;li&gt;Stay hard&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>How to undo importing an external iCal calendar into an existing one</title>
+            <link href="https://chrisbracco.com/how-to-undo-importing-an-external-ical-calendar-into-an-existing-one/"/>
+            <updated>2021-03-23T00:00:00Z</updated>
+            <id>https://chrisbracco.com/how-to-undo-importing-an-external-ical-calendar-into-an-existing-one/</id>
+            <content type="html">&lt;p&gt;I recently imported a busy external calendar into one of my existing personal calendars using the “Import” feature in the macOS Calendar app, which accepts an &lt;code&gt;.ics&lt;/code&gt; file. I watched in horror as all of these new external events began populating in my &lt;em&gt;personal&lt;/em&gt; calendar. I thought I was doomed and would have to manually delete hundreds of events.&lt;/p&gt;
+&lt;p&gt;Alas, there was a way out. If you open the &lt;code&gt;.ics&lt;/code&gt; file in a text editor (I used &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VS Code&lt;/a&gt;), you should be able to use the editor’s “Find &amp;amp; Replace” functionality to create a new &lt;code&gt;.ics&lt;/code&gt; file that when imported will cancel all of the events you just added from that calendar.&lt;/p&gt;
+&lt;p&gt;At the time of writing, my ICS file looked something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20210323T151852Z
+UID:24e83108-062b-496f-8229-2e2057e3940a
+DTSTART;VALUE=DATE:20200427T000000
+DTEND;VALUE=DATE:20200428T000000
+SUMMARY:Calendar Event Name
+END:VEVENT
+END:VCALENDAR
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may notice there is no &lt;code&gt;STATUS&lt;/code&gt; property for the event. Using “Find &amp;amp; Replace” I added it to each event by replacing every &lt;code&gt;END:VEVENT&lt;/code&gt; line with &lt;code&gt;STATUS:CANCELLED\nEND:VEVENT&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Save the file, re-import it the same way you did the first time, and should start to see the events disappear. Phew!&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Core family values</title>
+            <link href="https://chrisbracco.com/core-family-values/"/>
+            <updated>2021-03-23T00:00:00Z</updated>
+            <id>https://chrisbracco.com/core-family-values/</id>
+            <content type="html">&lt;p&gt;Core values that our family strives to uphold. We are not perfect, but having them written down somewhere means we can revisit them periodically to remind ourselves and reflect on how we’re doing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Live below your means&lt;/li&gt;
+&lt;li&gt;Pause before you speak&lt;/li&gt;
+&lt;li&gt;Control the temper&lt;/li&gt;
+&lt;li&gt;Control the hands&lt;/li&gt;
+&lt;li&gt;If there is a problem, talk about it&lt;/li&gt;
+&lt;li&gt;Be honest but not hurtful&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
             <title>Create an image grid with CSS grid, repeat, and minmax</title>
-            <link href="https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax/"/>
+            <link href="https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax%20copy/"/>
             <updated>2021-03-22T00:00:00Z</updated>
-            <id>https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax/</id>
+            <id>https://chrisbracco.com/create-an-image-grid-with-css-grid-repeat-and-minmax%20copy/</id>
             <content type="html">&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
             &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;VwjBGby&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
             &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;

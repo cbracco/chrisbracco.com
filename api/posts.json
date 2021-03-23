@@ -4,9 +4,27 @@
 [
   
     {
+      "title": "Personal mantras",
+      "teaser": "A brief list of virtues and behaviors that are important to me.",
+      "url": "/personal-mantras/"
+    },
+  
+    {
+      "title": "How to undo importing an external iCal calendar into an existing one",
+      "teaser": "Here’s how to undo that mistake.",
+      "url": "/how-to-undo-importing-an-external-ical-calendar-into-an-existing-one/"
+    },
+  
+    {
+      "title": "Core family values",
+      "teaser": "Every family will have their own set of values and customs, but these transcend.",
+      "url": "/core-family-values/"
+    },
+  
+    {
       "title": "Create an image grid with CSS grid, repeat, and minmax",
       "teaser": "And add a touch of JavaScript to randomly load new images in the grid.",
-      "url": "/create-an-image-grid-with-css-grid-repeat-and-minmax/"
+      "url": "/create-an-image-grid-with-css-grid-repeat-and-minmax copy/"
     },
   
     {
