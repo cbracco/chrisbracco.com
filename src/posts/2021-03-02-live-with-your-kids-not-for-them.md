@@ -2,7 +2,6 @@
 layout: post
 title: Live with your kids, not for them
 teaser: They want to help and feel like a part of the family.
-pinned: true
 tags:
     [
         'Parenting',
