@@ -1,8 +1,7 @@
 ---
 layout: post
-title: How to undo importing an external iCal calendar into an existing one
+title: How to undo an iCal calendar import
 teaser: Here’s how to undo that mistake.
-pinned: true
 tags:
     [
         'Tutorials'
