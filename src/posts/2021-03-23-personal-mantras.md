@@ -3,6 +3,7 @@ layout: post
 title: Personal mantras
 teaser: A brief list of virtues and behaviors that are important to me.
 pinned: true
+order: 1
 tags:
     [
         'Notes'

@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Garden
-teaser: This is my loosely tended plot of digital space. Notes, blog posts, snippets, book reviews, whatever. Anything goes. Have fun.
+layout: garden
 pagination:
     data: collections.pagedPosts
     size: 1
@@ -12,25 +10,28 @@ eleventyNavigation:
 permalink: "/garden/{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.html"
 ---
 
-<p>{{ teaser }}</p>
+{% if paged.first %}
+    {#<section class="section">
+        <h1 class="section__heading">Search</h1>
+    </section>#}
 
-{#<section class="section">
-    <h1 class="section__heading">Search</h1>
-</section>#}
+    <section class="section section--pinned">
+        <h1 class="section__heading">
+            <i role="presentation" aria-hidden="true">📌</i>
+            Pinned
+        </h2>
+        {% include 'pinned.html' %}
+    </section>
 
-<section class="section section--tags">
-    <h1 class="section__heading">By topic</h1>
-    {% set tags=collections.tagList %}
-    {% include 'taglist.html' %}
-</section>
-
-<section class="section section--pinned">
-    <h1 class="section__heading">Pinned</h2>
-    {% include 'pinned.html' %}
-</section>
+    <section class="section section--tags">
+        <h1 class="section__heading">Topics</h1>
+        {% set tags=collections.tagList %}
+        {% include 'taglist.html' %}
+    </section>
+{% endif %}
 
 <section class="section section--recent">
-    <h1 class="section__heading">Recent</h1>
+    <h1 class="section__heading">Recently added</h1>
     {% include 'postslist.html' %}
 </section>
 

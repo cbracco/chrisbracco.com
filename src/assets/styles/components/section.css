@@ -15,6 +15,10 @@
     border-bottom: 1px solid var(--theme-hr-color);
     margin-bottom: var(--space);
     padding-bottom: var(--space-half);
+
+    & i {
+        margin-right: var(--space-fourth);
+    }
 }
 
 /**

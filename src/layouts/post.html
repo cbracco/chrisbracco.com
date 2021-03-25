@@ -3,6 +3,8 @@ layout: default
 permalink: "{{ page.filePathStem | replace('/posts/', '/') }}/index.html"
 ---
 
+{% include 'backToGarden.html' %}
+
 <article class="post" data-breakout-parent>
     <p>
         <time class="post__date" datetime="{{ page.date | htmlDateString }}">

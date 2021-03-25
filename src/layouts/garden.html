@@ -1,0 +1,15 @@
+---
+layout: default
+title: Garden
+teaser: This is my loosely tended plot of digital space. Notes, tutorials, snippets, book reviews, reflections, whatever. Anything goes. Have fun.
+---
+
+{% if paged.tagName or not paged.first %}
+    {% include 'backToGarden.html' %}
+{% endif %}
+
+<h1 class="page__title">{{ title }}</h1>
+<div class="page__content">
+    <p>{{ teaser }}</p>
+    {{ content | safe}}
+</div>

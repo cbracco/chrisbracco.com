@@ -1,8 +1,7 @@
 <ul>
-    {% for post in collections.pinned | reverse %}
+    {% for post in collections.pinned | sortByOrder %}
     <li>
         <article class="sticky-note">
-            <i role="presentation" aria-hidden="true">📌</i>
             <h2 class="sticky-note__heading">
                 <a class="sticky-note__heading__link" href="{{ post.url }}">{{ post.data.title }}</a>
             </h2>

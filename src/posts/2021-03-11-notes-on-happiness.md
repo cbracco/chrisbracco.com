@@ -3,6 +3,7 @@ layout: post
 title: Notes on happiness
 teaser: "Hint: It's about time, savings, and freedom."
 pinned: true
+order: 2
 tags:
     [
         'Health & Wellness',

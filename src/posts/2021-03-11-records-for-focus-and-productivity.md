@@ -2,7 +2,8 @@
 layout: post
 title: Records for focus and productivity
 pinned: true
-teaser: "Maintain focus. Keep it moving."
+order: 3
+teaser: Maintain focus. Keep it moving.
 tags:
     [
         'Lists',
@@ -32,3 +33,4 @@ In no particular order:
 - _Justamente Tres_, Dos
 - _Oncle Jazz_, Men I Trust
 - _Silver Ladders_, Mary Lattimore
+- _The Earth Is Not a Cold Dead Place_, Explosions In The Sky
