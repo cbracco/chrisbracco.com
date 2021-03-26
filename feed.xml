@@ -13,6 +13,20 @@
     
         
         <entry>
+            <title>Fill available space on focus with CSS flexbox and transitions</title>
+            <link href="https://chrisbracco.com/fill-available-space-on-focus-with-css-flexbox-and-transitions/"/>
+            <updated>2021-03-25T00:00:00Z</updated>
+            <id>https://chrisbracco.com/fill-available-space-on-focus-with-css-flexbox-and-transitions/</id>
+            <content type="html">&lt;p&gt;It’s all pretty much in the title on this one. A common interaction for search inputs in user interfaces is to expand the width of the input when the user has placed their focus into it. This example is a dead-simple and flexible way to achieve that effect using only CSS flexbox, transitions, and the &lt;code&gt;:focus-wthin&lt;/code&gt; pseudo selector.&lt;/p&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;YzNwjXX&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
             <title>A typical day? What’s that?</title>
             <link href="https://chrisbracco.com/a-typical-day-whats-that/"/>
             <updated>2021-03-25T00:00:00Z</updated>
@@ -56,6 +70,25 @@
 &lt;li&gt;11:30PM - Sleep&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I don’t actually have any of this written down, because I know as my family grows our schedules will continue to morph and change, and that’s okay. I’ve worked hard and I am grateful that I can build flexibility into my life as a core value. I feel equipped to adapt to life’s changing circumstances and continue to find opportunities to work towards my ”enough”.&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>CSS accessible multi-level dropdown hover navigation menu</title>
+            <link href="https://chrisbracco.com/css-accessible-multi-level-dropdown-hover-navigation/"/>
+            <updated>2021-03-24T00:00:00Z</updated>
+            <id>https://chrisbracco.com/css-accessible-multi-level-dropdown-hover-navigation/</id>
+            <content type="html">&lt;p&gt;After reading a recent article on CSS tricks about &lt;a href=&quot;https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/&quot;&gt;clickable navigation menus&lt;/a&gt;, my inner contrarian was no doubt tempted to explore the opposite.&lt;/p&gt;
+&lt;p&gt;I’ve been using the &lt;a href=&quot;https://fvsch.com/articles/transition-fade/test5.html&quot;&gt;CSS “opacity and visibility” trick&lt;/a&gt; for smooth two-way transitions for quite some time. Works great in a pinch, but these hoverable dropdown menus were not very accessible. I would typically have to enhance them further with some JavaScript in order to be able to move the focus properly through any nested menus.&lt;/p&gt;
+&lt;p&gt;With the &lt;a href=&quot;https://drafts.csswg.org/selectors-4/#the-focus-within-pseudo&quot;&gt;&lt;code&gt;:focus-within&lt;/code&gt; psuedo selector&lt;/a&gt;, however, JavaScript is no longer necessary! It’s &lt;a href=&quot;https://caniuse.com/css-focus-within&quot;&gt;current browser support&lt;/a&gt; is fairly wide, implemented by most modern browsers and Internet Explorer 11 and up.&lt;/p&gt;
+&lt;p&gt;Go ahead and try to &lt;kbd&gt;tab&lt;/kbd&gt; through the below menu yourself. Works like a charm!&lt;/p&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;PoWZedV&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+&lt;h2&gt;Bonus!&lt;/h2&gt;
+&lt;p&gt;And if you like drop shadows on your submenus, the example in this post includes a simple hack to prevent the shadows on child submenus from overlapping their parent submenus.&lt;/p&gt;
 </content>
         </entry>
     

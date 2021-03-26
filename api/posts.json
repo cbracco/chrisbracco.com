@@ -4,9 +4,21 @@
 [
   
     {
+      "title": "Fill available space on focus with CSS flexbox and transitions",
+      "teaser": "A flexible way to expand and collapse a simple input element using the :focus-within pseudo selector.",
+      "url": "/fill-available-space-on-focus-with-css-flexbox-and-transitions/"
+    },
+  
+    {
       "title": "A typical day? What’s that?",
       "teaser": "I find these “My typical day” humblebrag posts floating around to be pretty silly.",
       "url": "/a-typical-day-whats-that/"
+    },
+  
+    {
+      "title": "CSS accessible multi-level dropdown hover navigation menu",
+      "teaser": "While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the new :focus-within psuedo selector, this is easier than ever.",
+      "url": "/css-accessible-multi-level-dropdown-hover-navigation/"
     },
   
     {
