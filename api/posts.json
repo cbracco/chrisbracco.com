@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "CSS simple comparison table",
+      "teaser": "Use HTML tables to create a simple layout for comparing features between competitors. Great for pricing and feature pages for product websites.",
+      "url": "/css-simple-comparison-table/"
+    },
+  
+    {
       "title": "Fill available space on focus with CSS flexbox and transitions",
       "teaser": "A flexible way to expand and collapse a simple input element using the :focus-within pseudo selector.",
       "url": "/fill-available-space-on-focus-with-css-flexbox-and-transitions/"
