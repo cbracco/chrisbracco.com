@@ -8,7 +8,7 @@ tags:
     ]
 ---
 
-Core values that our family strives to uphold. We are not perfect, but having them written down somewhere means we can revisit them periodically to remind ourselves and reflect on how we’re doing.
+I believe these core values to be important regardless of cultural demographics and can be useful building blocks for any family unit.
 
 - Live below your means
 - Pause before you speak
