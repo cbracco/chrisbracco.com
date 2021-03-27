@@ -3,20 +3,9 @@
     
         
             <url>
-                <loc>https://chrisbracco.com/simple-vanilla-javascript-component/</loc>
-                
-                    <lastmod>2021-03-27T00:00:00.000Z</lastmod>
-                
-                <changefreq>monthly</changefreq>
-                <priority>0.5</priority>
-            </url>
-        
-    
-        
-            <url>
                 <loc>https://chrisbracco.com/work/muck-rack/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.395Z</lastmod>
+                    <lastmod>2021-03-27T18:24:00.039Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -27,7 +16,7 @@
             <url>
                 <loc>https://chrisbracco.com/work/cardinal-css/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.395Z</lastmod>
+                    <lastmod>2021-03-27T18:24:00.039Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -38,7 +27,7 @@
             <url>
                 <loc>https://chrisbracco.com/work/big-room-studios/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.395Z</lastmod>
+                    <lastmod>2021-03-27T18:24:00.039Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -49,7 +38,7 @@
             <url>
                 <loc>https://chrisbracco.com/work/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.395Z</lastmod>
+                    <lastmod>2021-03-27T18:24:00.039Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -62,7 +51,7 @@
             <url>
                 <loc>https://chrisbracco.com/photos/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.395Z</lastmod>
+                    <lastmod>2021-03-27T18:24:00.039Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -73,7 +62,7 @@
             <url>
                 <loc>https://chrisbracco.com/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.395Z</lastmod>
+                    <lastmod>2021-03-27T18:24:00.039Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -84,7 +73,7 @@
             <url>
                 <loc>https://chrisbracco.com/garden/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.395Z</lastmod>
+                    <lastmod>2021-03-27T18:24:00.035Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -99,7 +88,18 @@
             <url>
                 <loc>https://chrisbracco.com/404/</loc>
                 
-                    <lastmod>2021-03-26T21:07:15.083Z</lastmod>
+                    <lastmod>2021-03-27T18:23:59.707Z</lastmod>
+                
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://chrisbracco.com/simple-vanilla-javascript-component/</loc>
+                
+                    <lastmod>2021-03-27T00:00:00.000Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
