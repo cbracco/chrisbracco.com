@@ -1,0 +1,15 @@
+<ul class="booklist">
+    {% for book in books %}
+    <li class="booklist__item">
+        <article class="book">
+            <a href="{{ book.url }}" class="book__image" target="_blank" rel="noreferrer">
+                {% img './src/assets/images/books/' + book.image, book.title, '14vw' %}
+            </a>
+            <h2 class="book__heading">
+                <a class="book__heading__link" href="{{ book.url }}">{{ book.title }}</a>
+            </h2>
+            <div class="book__author">{{ book.author }}</div>
+        </article>
+    </li>
+    {% endfor %}
+</ul>

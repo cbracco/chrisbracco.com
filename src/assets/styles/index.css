@@ -18,6 +18,7 @@
 /* Components */
 @import './components/avatar.css';
 @import './components/battery.css';
+@import './components/booklist.css';
 @import './components/break-out.css';
 @import './components/button.css';
 @import './components/card.css';

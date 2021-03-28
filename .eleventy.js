@@ -41,6 +41,7 @@ module.exports = function (config) {
     config.addNunjucksShortcode('codesandbox', shortcodes['codesandbox']);
     config.addNunjucksAsyncShortcode('img', shortcodes['img']);
     config.addNunjucksAsyncShortcode('photo', shortcodes['photo']);
+    config.addNunjucksAsyncShortcode('book', shortcodes['book']);
     config.addNunjucksAsyncShortcode('svgiconsprite', svgiconsprite);
 
     // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:

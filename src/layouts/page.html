@@ -3,4 +3,10 @@ layout: default
 ---
 
 <h1 class="page__title">{{ title }}</h1>
-<div class="page__content" data-breakout-parent>{{ content | safe}}</div>
+<div class="page__content" data-breakout-parent>
+    {% if teaser %}
+        <p>{{ teaser }}</p>
+    {% endif %}
+
+    {{ content | safe}}
+</div>

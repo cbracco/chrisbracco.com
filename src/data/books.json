@@ -1,0 +1,56 @@
+[
+    {
+        "title": "The Invention of Nature: Alexander von Humboldt's New World",
+        "author": "Andrea Wulf",
+        "image": "invention-of-nature.jpg",
+        "url": "https://www.andreawulf.com/about-the-invention-of-nature.html"
+    },
+    {
+        "title": "Predictably Irrational: The Hidden Forces That Shape Our Decisions",
+        "author": "Dan Ariely",
+        "image": "predictably-irrational.jpg",
+        "url": "https://danariely.com/books/predictably-irrational/"
+    },
+    {
+        "title": "Don’t Make Me Think, Revisited: A Common Sense Approach to Web Usability",
+        "author": "Steve Krug",
+        "image": "dont-make-me-think.jpg",
+        "url": "https://sensible.com/dont-make-me-think/"
+    },
+    {
+        "title": "The Shape of Design",
+        "author": "Frank Chimero",
+        "image": "shape-of-design.svg",
+        "url": "https://shapeofdesignbook.com/"
+    },
+    {
+        "title": "Rewire: Digital Cosmopolitans in the Age of Connection",
+        "author": "Ethan Zuckerman",
+        "image": "rewire.jpg",
+        "url": "https://ethanzuckerman.com/books/rewire/"
+    },
+    {
+        "title": "A Short History of Progress",
+        "author": "Ronald Wright",
+        "image": "short-history.jpg",
+        "url": "https://ronaldwright.com/books/a-short-history-of-progress/"
+    },
+    {
+        "title": "Small Great Things",
+        "author": "Jodi Picoult",
+        "image": "small-great-things.jpg",
+        "url": "https://www.jodipicoult.com/small-great-things.html"
+    },
+    {
+        "title": "An Elegant Puzzle: Systems of Engineering Management",
+        "author": "Will Larson",
+        "image": "elegant-puzzle.jpg",
+        "url": "https://lethain.com/elegant-puzzle/"
+    },
+    {
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "image": "psychology-of-money.jpg",
+        "url": "https://amazon.com/gp/product/0857197681/"
+    }
+]

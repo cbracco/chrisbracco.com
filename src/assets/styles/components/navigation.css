@@ -23,11 +23,11 @@
 .navigation__toggle {
     position: fixed;
     background: var(--theme-html-background);
-    padding: var(--space-half) 0 var(--space) calc(var(--space-half) - 1px);
+    padding: var(--space) 0 var(--space) calc(var(--space-third) + 1px);
     line-height: 0;
     left: 0;
-    bottom: 0;
-    z-index: var(--zindex-9);
+    bottom: var(--space-2x);
+    z-index: var(--zindex-10);
 
     &.is-active .navigation__toggle-icon {
         --theme-frame-color: var(--theme-heading-color);

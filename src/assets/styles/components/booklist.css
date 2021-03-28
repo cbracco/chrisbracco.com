@@ -1,0 +1,53 @@
+/* ============================================================================ *\
+   Components -> Booklist
+\* ============================================================================ */
+
+.booklist {
+    list-style: none;
+    margin: var(--space-2x) 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-gap: var(--space-2x);
+
+    & li {
+        margin: 0;
+    }
+}
+
+.book__image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 8rem;
+    height: 14rem;
+    position: relative;
+    transform: translateY(0);
+    margin: 0 auto var(--space);
+
+    & figure {
+        margin: 0;
+    }
+
+    & img {
+        transition: transform 0.1s ease, box-shadow 0.35s ease;
+    }
+
+    &:hover,
+    &:focus {
+        & img {
+            transform: translateY(calc(var(--space-fourth) * -1));
+            box-shadow: 0 var(--space) var(--space) calc(var(--space) * -1) hsla(0, 0%, 0%, 0.25);
+        }
+    }
+}
+
+.book__heading {
+    margin: 0 0 var(--space-fourth);
+    font-size: var(--font-size-base);
+}
+
+.book__author {
+    color: var(--gray-3);
+    font-size: var(--font-size-small);
+}

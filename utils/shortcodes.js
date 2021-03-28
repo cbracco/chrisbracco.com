@@ -1,7 +1,7 @@
 const Image = require('@11ty/eleventy-img');
 
 module.exports = {
-    photo: async (src, title, location, gear) => {
+    photo: async (src, title, date, location, gear) => {
         let metadata = await Image(src, {
             widths: [320, null],
             urlPath: '/assets/images',
@@ -11,7 +11,7 @@ module.exports = {
         let thumb = metadata.jpeg[0];
         let full = metadata.jpeg[1];
 
-        return `<a href="${full.url}" data-sub-html="<div>${title}</div><div>${location}</div><div>${gear}</div>">
+        return `<a href="${full.url}" data-sub-html="<div>${title}</div><div>${date}</div><div>${location}</div><div>${gear}</div>">
             <img
                 data-src="${thumb.url}"
                 alt="${title}"

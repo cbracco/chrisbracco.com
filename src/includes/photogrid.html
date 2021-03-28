@@ -1,5 +1,5 @@
 <div id="photoGrid" class="photogrid">
     {% for item in photos %}
-        {% photo './src/assets/images/photos/' + item.src, item.title, item.location, item.gear %}
+        {% photo './src/assets/images/photos/' + item.src, item.title, item.date, item.location, item.gear %}
     {% endfor %}
 </div>
