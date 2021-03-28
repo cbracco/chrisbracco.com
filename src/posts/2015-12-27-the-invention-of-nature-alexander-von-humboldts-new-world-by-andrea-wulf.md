@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Book Review: The Invention of Nature: Alexander von Humboldt's New World by Andrea Wulf"
+title: "The Invention of Nature: Alexander von Humboldt's New World by Andrea Wulf"
 tags:
     [
         'Book Reviews'
