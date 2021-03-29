@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple Vanilla JavaScript “Component”
+title: Simple vanilla JavaScript “component”
 teaser: Frameworks? Who needs ’em! Kidding.
 tags:
     [
