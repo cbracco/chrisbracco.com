@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Invention of Nature: Alexander von Humboldt's New World by Andrea Wulf"
+title: "The Lessons of History by Will Durant"
 tags:
     [
         'Book Reviews'
