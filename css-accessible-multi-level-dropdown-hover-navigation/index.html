@@ -9,7 +9,7 @@
         
         <title>CSS accessible multi-level dropdown hover navigation menu &bull; Chris Bracco &bull; web design, engineering, management</title>
         
-        <meta name="description" content="While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the new :focus-within psuedo selector, this is easier than ever.">
+        <meta name="description" content="While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the :focus-within psuedo selector, this is easier than ever.">
         <!-- Canonical -->
         <link rel="canonical" href="https://chrisbracco.com/css-accessible-multi-level-dropdown-hover-navigation/">
         
@@ -21,7 +21,7 @@
         
         <meta property="og:type" content="article">
         
-        <meta property="og:description" content="While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the new :focus-within psuedo selector, this is easier than ever.">
+        <meta property="og:description" content="While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the :focus-within psuedo selector, this is easier than ever.">
         <meta property="og:url" content="https://chrisbracco.com/css-accessible-multi-level-dropdown-hover-navigation/">
         
         <meta property="article:published_time" content="2021-03-24T00:00:00.000Z">
@@ -187,7 +187,7 @@
     </p>
     
     <h1 class="post__title">CSS accessible multi-level dropdown hover navigation menu</h1>
-    <p class="post__teaser">While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the new :focus-within psuedo selector, this is easier than ever.</p>
+    <p class="post__teaser">While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the :focus-within psuedo selector, this is easier than ever.</p>
     <nav class="post__taglist taglist">
     <ul>
         
@@ -202,7 +202,7 @@
 
     
     <div class="post__content"><p>After reading a recent article on CSS tricks about <a href="https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/">clickable navigation menus</a>, my inner contrarian was no doubt tempted to explore the opposite.</p>
-<p>I’ve been using the <a href="https://fvsch.com/articles/transition-fade/test5.html">CSS “opacity and visibility” trick</a> for smooth two-way transitions for quite some time. Works great in a pinch, but these hoverable dropdown menus were not very accessible. I would typically have to enhance them further with some JavaScript in order to be able to move the focus properly through any nested menus.</p>
+<p>I’ve been using the <a href="https://fvsch.com/articles/transition-fade/test5.html">CSS “opacity and visibility” trick</a> for smooth two-way transitions for quite some time. Works great in a pinch, except hover-only dropdown menus are not very accessible. Typically I would have to enhance them further with some JavaScript in order to be able to move the focus properly through the nested dropdown menus.</p>
 <p>With the <a href="https://drafts.csswg.org/selectors-4/#the-focus-within-pseudo"><code>:focus-within</code> psuedo selector</a>, however, JavaScript is no longer necessary! It’s <a href="https://caniuse.com/css-focus-within">current browser support</a> is fairly wide, implemented by most modern browsers and Internet Explorer 11 and up.</p>
 <p>Go ahead and try to <kbd>tab</kbd> through the below menu yourself. Works like a charm!</p>
 <div class="post__embed" data-breakout>

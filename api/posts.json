@@ -23,7 +23,7 @@
   
     {
       "title": "CSS accessible multi-level dropdown hover navigation menu",
-      "teaser": "While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the new :focus-within psuedo selector, this is easier than ever.",
+      "teaser": "While clickable menus are often a better solution, sometimes you will need to use the hover style instead. Thanks to the :focus-within psuedo selector, this is easier than ever.",
       "url": "/css-accessible-multi-level-dropdown-hover-navigation/"
     },
   
