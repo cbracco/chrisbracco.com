@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "A simple sweeping animation for skeleton UI components with HTML and CSS",
+      "teaser": "A touch of HTML/CSS to help improve perceived performance in asynchronous web applications.",
+      "url": "/a-simple-sweeping-animation-for-skeleton-ui-components-with-html-and-css/"
+    },
+  
+    {
       "title": "Simple vanilla JavaScript “component”",
       "teaser": "Frameworks? Who needs ’em! Kidding.",
       "url": "/simple-vanilla-javascript-component/"

@@ -4,12 +4,28 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-03-27T00:00:00Z</updated>
+    <updated>2021-03-31T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
+    
+        
+        <entry>
+            <title>A simple sweeping animation for skeleton UI components with HTML and CSS</title>
+            <link href="https://chrisbracco.com/a-simple-sweeping-animation-for-skeleton-ui-components-with-html-and-css/"/>
+            <updated>2021-03-31T00:00:00Z</updated>
+            <id>https://chrisbracco.com/a-simple-sweeping-animation-for-skeleton-ui-components-with-html-and-css/</id>
+            <content type="html">&lt;p&gt;I’m not sure where the terminology originates, but “&lt;a href=&quot;https://css-tricks.com/building-skeleton-screens-css-custom-properties/&quot;&gt;skeleton UI&lt;/a&gt;” has become a popular &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance&quot;&gt;perceived performance&lt;/a&gt; technique and is a useful one to have in the ol’ toolbelt.&lt;/p&gt;
+&lt;p&gt;Depending on the context, this technique can be used to mock entire screens or individual components that may have to load asynchronously. They help communicate to folks that something is indeed happening when they first arrive, and also prevent jumping content and costly layout reflows.&lt;/p&gt;
+&lt;p&gt;Here is a simple example that uses a “sweeping” gradient animation over a generic “card” component to communicate movement and change.&lt;/p&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;YzNNEjR&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
         
         <entry>
