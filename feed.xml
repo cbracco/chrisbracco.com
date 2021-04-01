@@ -4,12 +4,91 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-03-31T00:00:00Z</updated>
+    <updated>2021-04-01T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
+    
+        
+        <entry>
+            <title>CSS “truly center” a single child element horizontally when siblings are present</title>
+            <link href="https://chrisbracco.com/css-truly-center-a-single-child-element-horizontally-when-siblings-are-present/"/>
+            <updated>2021-04-01T00:00:00Z</updated>
+            <id>https://chrisbracco.com/css-truly-center-a-single-child-element-horizontally-when-siblings-are-present/</id>
+            <content type="html">&lt;h2&gt;The problem&lt;/h2&gt;
+&lt;p&gt;If you have a parent element with multiple children, it is trickier than you might think to “truly center” one of the child elements horizontally. Your first instinct may be to reach for flexbox and text-align.&lt;/p&gt;
+&lt;div class=&quot;truly-center truly-center--problem&quot;&gt;
+  &lt;button class=&quot;truly-center__child button button--outline&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt;
+  &lt;div class=&quot;truly-center__child truly-center__centered&quot;&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--problem&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--problem .truly-center__centered&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you can see, this does not work as intended. The “centered” child element is only horizontally centered within the &lt;strong&gt;remaining space&lt;/strong&gt; in the parent element, and not the “true center” of the parent element.&lt;/p&gt;
+&lt;p&gt;In this case the width of the centered element is equal to the width of the parent element minus any sibling element(s). The centered element can only be “truly centered” if the width of child elements on both the left and right of it are equal.&lt;/p&gt;
+&lt;div class=&quot;truly-center truly-center--problem&quot;&gt;
+  &lt;button class=&quot;truly-center__child button button--outline&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt;
+  &lt;div class=&quot;truly-center__child truly-center__centered&quot;&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;
+  &lt;button class=&quot;truly-center__child button button--outline&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt;
+&lt;/div&gt;
+&lt;p&gt;But what if you only wanted one non-centered child element, or non-centered siblings with different widths on each side of the centered element?&lt;/p&gt;
+&lt;h2&gt;Absolute positioning&lt;/h2&gt;
+&lt;p&gt;A quick fix for this is to remove the non-centered child elements from the document flow and position them absolutely.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caveat:&lt;/strong&gt; You need to know the dimensions of each child element, and then calculate the appropriate padding for the centered element so that it doesn’t overlap the absolutely positioned elements.&lt;/p&gt;
+&lt;div class=&quot;truly-center truly-center--absolute&quot;&gt;
+  &lt;button class=&quot;truly-center__child button button--outline&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt;
+  &lt;div class=&quot;truly-center__child truly-center__centered&quot;&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--absolute&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--absolute .button&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; absolute&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 50%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; [SIBLING HEIGHT / 2]&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; [PARENT LEFTHAND PADDING]&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--absolute .truly-center__centered&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Pseudo element&lt;/h2&gt;
+&lt;p&gt;You could also use the :after pseudo selector as a sort of “spacer” element to nudge the centered element to “true center”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caveat:&lt;/strong&gt; You need to know the dimensions of each child element, and then calculate the appropriate dimensions for the pseudo element to nudge the centered element to “true center”.&lt;/p&gt;
+&lt;div class=&quot;truly-center truly-center--pseudo&quot;&gt;
+  &lt;button class=&quot;truly-center__child button button--outline&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt;
+  &lt;div class=&quot;truly-center__child truly-center__centered&quot;&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--pseudo .truly-center__centered&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--pseudo .truly-center__centered:after&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; inline-flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; [SIBLING WIDTH]&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Negative margin&lt;/h2&gt;
+&lt;p&gt;You could also use a negative margin on the centered element to shift it into “true center”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caveat:&lt;/strong&gt; You need to know the dimensions of each child element, and then calculate the appropriate negative margin to nudge the centered element to “true center”.&lt;/p&gt;
+&lt;div class=&quot;truly-center truly-center--negative-margin parent&quot;&gt;
+  &lt;button class=&quot;truly-center__child button button--outline&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt;
+  &lt;div class=&quot;truly-center__child truly-center__centered&quot;&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--negative-margin&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--negative-margin .truly-center__centered&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; [SIBLING WIDTH * -1]&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 [SIBLING WIDTH]&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;CSS grid&lt;/h2&gt;
+&lt;p&gt;The above solutions will work in pretty rigid circumstances, but break down if the size of surrounding siblings change across viewport sizes or different UI states. Is there a better way?&lt;/p&gt;
+&lt;p&gt;CSS grid to the rescue! This solution is the most flexible of the bunch. You can have elements to the left and right, and you don’t need to care about their dimensions.&lt;/p&gt;
+&lt;div class=&quot;truly-center truly-center--grid&quot;&gt;
+  &lt;div class=&quot;truly-center__child&quot;&gt;
+    &lt;button class=&quot;button button--outline&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;truly-center__child truly-center__centered&quot;&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;truly-center__child&quot;&gt;
+    &lt;button class=&quot;button button--outline&quot; type=&quot;button&quot;&gt;Cancel&lt;/button&gt;
+    &lt;button class=&quot;button button--outline&quot; type=&quot;button&quot;&gt;Save&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--grid&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; grid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1fr auto 1fr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;.truly-center--grid .truly-center__child:last-child&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token property&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Notes on procrastination</title>
+            <link href="https://chrisbracco.com/notes-on-procrastination/"/>
+            <updated>2021-03-31T00:00:00Z</updated>
+            <id>https://chrisbracco.com/notes-on-procrastination/</id>
+            <content type="html">&lt;ul&gt;
+&lt;li&gt;Planner journal combined with a daily task list helps keep you on track&lt;/li&gt;
+&lt;li&gt;Write up your to-do list for the following day the night before&lt;/li&gt;
+&lt;li&gt;Commit to new routines and believe in them&lt;/li&gt;
+&lt;li&gt;Delay rewards until after a task is completed&lt;/li&gt;
+&lt;li&gt;Be aware of your procrastination cues&lt;/li&gt;
+&lt;li&gt;Eat your frogs first&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
     
         
         <entry>
