@@ -78,12 +78,33 @@
         "gear": "iPhone 6 back camera 4.15mm f/2.2 - Panorama"
     },
     {
+        "title": "Rhinocorn",
+        "date": "July 2015",
+        "src": "rhinocorn.jpg",
+        "location": "North Adams, Massachussetts",
+        "gear": "iPhone 6 back camera 4.15mm f/2.2"
+    },
+    {
         "title": "Dissolve Them",
         "date": "July 2015",
         "src": "dissolve-them.jpg",
-        "location": "MASS MoCA, North Adams, Massachussetts ",
+        "location": "MASS MoCA, North Adams, Massachussetts",
         "gear": "iPhone 6 back camera 4.15mm f/2.2",
         "caption": "Middle-right portion of <a href=\"https://o.ello.co/http://www.meghitchcock.com/pages/pagination.php?page=10\">Shoonya: Vijnana Bhairava Tantra by Meg Hitchcock</a>, from the <a href=\"https://o.ello.co/http://www.massmoca.org/event_details.php?id=963\">Bibliotechaphilia</a> exhibit."
+    },
+    {
+        "title": "Bell",
+        "date": "August 2015",
+        "src": "bell.jpg",
+        "location": "‎⁨Montréal⁩, ⁨Quebec⁩, ⁨Canada⁩",
+        "gear": "iPhone 6 back camera 4.15mm f/2.2"
+    },
+    {
+        "title": "Rays",
+        "date": "October 2015",
+        "src": "rays.jpg",
+        "location": "Pownal, Maine",
+        "gear": "iPhone 6 back camera 4.15mm f/2.2"
     },
     {
         "title": "Dated",
@@ -100,11 +121,18 @@
         "gear": "iPhone 6 back camera 4.15mm f/2.2"
     },
     {
-        "title": "Boards",
-        "date": "August 2017",
-        "src": "boards.jpg",
-        "location": "Rockaway Beach, New York",
+        "title": "Falls",
+        "date": "May 2016",
+        "src": "falls.jpg",
+        "location": "Paterson Great Falls National Historical Park, Paterson, New Jersey",
         "gear": "iPhone 6 back camera 4.15mm f/2.2"
+    },
+    {
+        "title": "Crumpled",
+        "date": "August 2017",
+        "src": "crumpled.jpg",
+        "location": "Summit, New Jersey",
+        "gear": "Phone 6 back camera 4.15mm f/2.2"
     },
     {
         "title": "Blessed",
@@ -112,5 +140,12 @@
         "src": "blessed.jpg",
         "location": "Hudson, New York",
         "gear": "iPhone 6 back camera 4.15mm f/2.2"
+    },
+    {
+        "title": "Transplants",
+        "date": "May 2018",
+        "src": "transplants.jpg",
+        "location": "Oak Alley Plantation, Vacherie, Louisiana",
+        "gear": "iPhone 8 back camera 3.99mm f/1.8"
     }
 ]
