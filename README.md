@@ -1,6 +1,6 @@
 # chrisbracco.com
 
-> The source code for Chris Bracco's personal website. Based heavily on [11st-starter-kit][11st-starter-kit] by [@stefanfrede][@stefanfrede], [vredeburg][vredeburg] by [dafiulh][dafiulh], [elevenpack][elevenpack] by [deviousdodo][deviousdodo], and [eleventy-base-blog][eleventy-base-blog] by [zachleat][zachleat].
+> The source code for Chris Bracco’s personal website. Based heavily on [11st-starter-kit][11st-starter-kit] by [@stefanfrede][@stefanfrede], [vredeburg][vredeburg] by [dafiulh][dafiulh], [elevenpack][elevenpack] by [deviousdodo][deviousdodo], and [eleventy-base-blog][eleventy-base-blog] by [zachleat][zachleat].
 
 ## Features
 
