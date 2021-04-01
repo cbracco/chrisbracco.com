@@ -4,6 +4,18 @@
 [
   
     {
+      "title": "CSS “truly center” a single child element horizontally when siblings are present",
+      "teaser": "I discovered a less hacky solution to this very specific and minor layout problem.",
+      "url": "/css-truly-center-a-single-child-element-horizontally-when-siblings-are-present/"
+    },
+  
+    {
+      "title": "Notes on procrastination",
+      "teaser": "",
+      "url": "/notes-on-procrastination/"
+    },
+  
+    {
       "title": "A simple sweeping animation for skeleton UI components with HTML and CSS",
       "teaser": "A touch of HTML/CSS to help improve perceived performance in asynchronous web applications.",
       "url": "/a-simple-sweeping-animation-for-skeleton-ui-components-with-html-and-css/"
