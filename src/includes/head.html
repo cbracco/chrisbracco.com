@@ -49,6 +49,9 @@
         <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' }}">
         <!-- Styles -->
         <link rel="stylesheet" href="{% webpackAsset 'main.css' %}" />
+        {% if cssFile %}
+            <link rel="stylesheet" href="{{ '/assets/styles/posts/' + cssFile }}" />
+        {% endif %}
         {% if site.isProd %}
         <!-- Google Analytics -->
         <script async

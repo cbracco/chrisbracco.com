@@ -74,6 +74,7 @@ module.exports = function (config) {
     // Static assets to pass through
     config.addPassthroughCopy({ 'src/assets/images': 'assets/images' });
     config.addPassthroughCopy({ 'src/assets/audio': 'assets/audio' });
+    config.addPassthroughCopy({ 'src/assets/styles/posts': 'assets/styles/posts' });
     config.addPassthroughCopy('src/*.txt');
     config.addPassthroughCopy('src/*.webmanifest');
     config.addPassthroughCopy('CNAME');

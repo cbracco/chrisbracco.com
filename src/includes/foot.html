@@ -1,3 +1,6 @@
         <script defer src="{% webpackAsset 'main.js' %}"></script>
+        {% if jsFile %}
+            <script src="{{ 'assets/scripts/posts/' + jsFile }}"></script>
+        {% endif %}
     </body>
 </html>
