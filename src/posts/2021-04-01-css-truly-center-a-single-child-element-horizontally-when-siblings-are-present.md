@@ -138,8 +138,7 @@ CSS grid to the rescue! This solution is the most flexible of the bunch. You can
   </div>
   <div class="truly-center__child truly-center__centered"><span>Center</span></div>
   <div class="truly-center__child">
-    <button class="button button--outline" type="button">Cancel</button>
-    <button class="button button--outline" type="button">Save</button>
+    <button class="button button--outline" type="button">&times;</button>
   </div>
 </div>
 
