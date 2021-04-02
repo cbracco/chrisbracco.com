@@ -4,47 +4,12 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-04-02T00:00:00Z</updated>
+    <updated>2021-04-01T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
-    
-        
-        <entry>
-            <title>Automate a daily to-do list with Apple Notes and Shortcuts</title>
-            <link href="https://chrisbracco.com/automate-a-daily-to-do-list-with-apple-notes-and-shortcuts/"/>
-            <updated>2021-04-02T00:00:00Z</updated>
-            <id>https://chrisbracco.com/automate-a-daily-to-do-list-with-apple-notes-and-shortcuts/</id>
-            <content type="html">&lt;p&gt;When it comes managing daily tasks, I’ve tried everything: sticky notes, bullet journaling, and every productivity app under the sun. I keep coming back to a very simple and boring solution: an automated daily note.&lt;/p&gt;
-&lt;p&gt;As an iOS user, I realized I can use the &lt;a href=&quot;https://en.wikipedia.org/wiki/Shortcuts_(app)&quot;&gt;Shortcuts app&lt;/a&gt; to automate the creation of a daily to-do note in the &lt;a href=&quot;https://support.apple.com/guide/notes/welcome/mac&quot;&gt;Apple Notes app&lt;/a&gt;, send myself a reminder notification to fill it out, and then keep them all in sync across devices with iCloud.&lt;/p&gt;
-&lt;p&gt;On my phone I have notifications turned off for nearly every app, but this is one that I welcome. I like being prompted to think about what I have to do well before I have to get started.&lt;/p&gt;
-&lt;p&gt;Research shows that writing your to-do list the evening beforehand can help improve sleep quality, reduce procrastination, and reduce guilt about enjoying a relaxing evening. It gives me the opportunity clear this information from my brain’s working memory so that I can either wind down from the day or focus on other things.&lt;/p&gt;
-&lt;h2&gt;How to set it up&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open the Shortcuts app on your iPhone and create a new Personal Automation&lt;/li&gt;
-&lt;li&gt;Add a Date action and set &lt;code&gt;Specified Date&lt;/code&gt; to &lt;code&gt;Tomorrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add a Variable action and set &lt;code&gt;Date&lt;/code&gt; to a variable named &lt;code&gt;Title&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add a Notes action and set &amp;quot;Create note with &lt;code&gt;Title&lt;/code&gt; in &lt;code&gt;To Do&lt;/code&gt; folder&lt;/li&gt;
-&lt;li&gt;Add a Notification action and set &amp;quot;Show notification&amp;quot; to whatever message you want to see.&lt;/li&gt;
-&lt;li&gt;Set the time and interval for when you would like this automation to fire. I chose 8PM, daily.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;figure&quot;&gt;&lt;picture&gt;
-      &lt;source type=&quot;image/webp&quot; data-srcset=&quot;/assets/images/287ffd54-500.webp 500w&quot; data-sizes=&quot;65vw&quot; /&gt;
-  &lt;source type=&quot;image/jpeg&quot; data-srcset=&quot;/assets/images/287ffd54-500.jpeg 500w&quot; data-sizes=&quot;65vw&quot; /&gt;
-    &lt;img data-src=&quot;/assets/images/287ffd54-500.jpeg&quot; width=&quot;500&quot; height=&quot;1083&quot; alt=&quot;apple shortcuts app daily to do automation&quot; class=&quot;lazyload&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
-    &lt;/picture&gt;
-&lt;/figure&gt;
-&lt;p&gt;And, voilà! Each evening at 8PM I receive a reminder notification to fill out my to-do list for the following day. No more scrambling every morning to come up with a plan and stressing out over all of my tasks.&lt;/p&gt;
-&lt;figure class=&quot;figure&quot;&gt;&lt;picture&gt;
-      &lt;source type=&quot;image/webp&quot; data-srcset=&quot;/assets/images/f246974b-640.webp 640w, /assets/images/f246974b-1024.webp 1024w, /assets/images/f246974b-1818.webp 1818w&quot; data-sizes=&quot;65vw&quot; /&gt;
-  &lt;source type=&quot;image/jpeg&quot; data-srcset=&quot;/assets/images/f246974b-640.jpeg 640w, /assets/images/f246974b-1024.jpeg 1024w, /assets/images/f246974b-1818.jpeg 1818w&quot; data-sizes=&quot;65vw&quot; /&gt;
-    &lt;img data-src=&quot;/assets/images/f246974b-640.jpeg&quot; width=&quot;640&quot; height=&quot;466&quot; alt=&quot;apple notes app macos&quot; class=&quot;lazyload&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
-    &lt;/picture&gt;
-&lt;/figure&gt;
-</content>
-        </entry>
     
         
         <entry>
@@ -626,6 +591,41 @@ END:VCALENDAR
 &lt;p&gt;Democracies are designed to temper and distribute power, but a slow and steady centralization has slithered into our society over the past several decades. This, coupled with an uptick in division, fear, and distrust, has been sown into citizens with misinformation needled between traditional and social media.&lt;/p&gt;
 &lt;p&gt;The current divisiveness cannot last forever; if democracy is to revive, Americans must emerge from their echo chambers and reinvigorate common ground through a mutual respect and love for one another. Fear and division isn’t the path forward. Maintaining freedom of speech, agreeing on common truths, and holding said truths to power is our only way out of this mess.&lt;/p&gt;
 &lt;p&gt;Couldn’t hurt to throw your Amazon Echo in the trash, either.&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Automate a daily to-do list with Apple Notes and Shortcuts</title>
+            <link href="https://chrisbracco.com/automate-a-daily-to-do-list-with-apple-notes-and-shortcuts/"/>
+            <updated>2021-01-03T00:00:00Z</updated>
+            <id>https://chrisbracco.com/automate-a-daily-to-do-list-with-apple-notes-and-shortcuts/</id>
+            <content type="html">&lt;p&gt;When it comes managing daily tasks, I’ve tried everything: sticky notes, bullet journaling, and every productivity app under the sun. I keep coming back to a very simple and boring solution: an automated daily note.&lt;/p&gt;
+&lt;p&gt;As an iOS user, I realized I can use the &lt;a href=&quot;https://en.wikipedia.org/wiki/Shortcuts_(app)&quot;&gt;Shortcuts app&lt;/a&gt; to automate the creation of a daily to-do note in the &lt;a href=&quot;https://support.apple.com/guide/notes/welcome/mac&quot;&gt;Apple Notes app&lt;/a&gt;, send myself a reminder notification to fill it out, and then keep them all in sync across devices with iCloud.&lt;/p&gt;
+&lt;p&gt;On my phone I have notifications turned off for nearly every app, but this is one that I welcome. I like being prompted to think about what I have to do well before I have to get started.&lt;/p&gt;
+&lt;p&gt;Research shows that writing your to-do list the evening beforehand can help improve sleep quality, reduce procrastination, and reduce guilt about enjoying a relaxing evening. It gives me the opportunity clear this information from my brain’s working memory so that I can either wind down from the day or focus on other things.&lt;/p&gt;
+&lt;h2&gt;How to set it up&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Shortcuts app on your iPhone and create a new Personal Automation&lt;/li&gt;
+&lt;li&gt;Add a Date action and set &lt;code&gt;Specified Date&lt;/code&gt; to &lt;code&gt;Tomorrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a Variable action and set &lt;code&gt;Date&lt;/code&gt; to a variable named &lt;code&gt;Title&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a Notes action and set &amp;quot;Create note with &lt;code&gt;Title&lt;/code&gt; in &lt;code&gt;To Do&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Add a Notification action and set &amp;quot;Show notification&amp;quot; to whatever message you want to see.&lt;/li&gt;
+&lt;li&gt;Set the time and interval for when you would like this automation to fire. I chose 8PM, daily.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;figure&quot;&gt;&lt;picture&gt;
+      &lt;source type=&quot;image/webp&quot; data-srcset=&quot;/assets/images/287ffd54-500.webp 500w&quot; data-sizes=&quot;65vw&quot; /&gt;
+  &lt;source type=&quot;image/jpeg&quot; data-srcset=&quot;/assets/images/287ffd54-500.jpeg 500w&quot; data-sizes=&quot;65vw&quot; /&gt;
+    &lt;img data-src=&quot;/assets/images/287ffd54-500.jpeg&quot; width=&quot;500&quot; height=&quot;1083&quot; alt=&quot;apple shortcuts app daily to do automation&quot; class=&quot;lazyload&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;p&gt;And, voilà! Each evening at 8PM I receive a reminder notification to fill out my to-do list for the following day. No more scrambling every morning to come up with a plan and stressing out over all of my tasks.&lt;/p&gt;
+&lt;figure class=&quot;figure&quot;&gt;&lt;picture&gt;
+      &lt;source type=&quot;image/webp&quot; data-srcset=&quot;/assets/images/f246974b-640.webp 640w, /assets/images/f246974b-1024.webp 1024w, /assets/images/f246974b-1818.webp 1818w&quot; data-sizes=&quot;65vw&quot; /&gt;
+  &lt;source type=&quot;image/jpeg&quot; data-srcset=&quot;/assets/images/f246974b-640.jpeg 640w, /assets/images/f246974b-1024.jpeg 1024w, /assets/images/f246974b-1818.jpeg 1818w&quot; data-sizes=&quot;65vw&quot; /&gt;
+    &lt;img data-src=&quot;/assets/images/f246974b-640.jpeg&quot; width=&quot;640&quot; height=&quot;466&quot; alt=&quot;apple notes app macos&quot; class=&quot;lazyload&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    &lt;/picture&gt;
+&lt;/figure&gt;
 </content>
         </entry>
     
