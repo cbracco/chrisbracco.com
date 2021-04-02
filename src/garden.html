@@ -19,8 +19,8 @@ permalink: "/garden/{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}
 
     <section class="section section--pinned">
         <h1 class="section__heading">
-            <i role="presentation" aria-hidden="true">📌</i>
             Pinned
+            <i role="presentation" aria-hidden="true">📌</i>
         </h2>
         {% include 'pinned.html' %}
     </section>
@@ -33,7 +33,7 @@ permalink: "/garden/{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}
 {% endif %}
 
 <section class="section section--recent">
-    <h1 class="section__heading">Recently added</h1>
+    <h1 class="section__heading">Recently added <span>{{ paged.number }} of {{ collections.pagedPosts.length }}</span></h1>
     {% include 'postslist.html' %}
 </section>
 
