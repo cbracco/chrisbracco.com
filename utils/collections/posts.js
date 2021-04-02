@@ -1,4 +1,4 @@
-module.exports = (coll) => {
-    const posts = [...coll.getFilteredByGlob('src/posts/*.md')];
+module.exports = (collection) => {
+    const posts = [...collection.getFilteredByGlob('src/posts/*.md')];
     return posts.reverse();
 };

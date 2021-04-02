@@ -2,6 +2,7 @@
 layout: post
 title: "Automate a daily to-do list with Apple Notes and Shortcuts"
 teaser: "For my daily tasks list, I find the less friction the better."
+draft: true
 tags:
     [
         'Tutorials',

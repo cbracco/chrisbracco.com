@@ -6,8 +6,8 @@ function fromEntries(iterable) {
     }, {});
 }
 
-module.exports = (coll) => {
-    const posts = require('./posts')(coll);
+module.exports = (collection) => {
+    const posts = require('./posts')(collection);
 
     const tagListArr = posts
         .reduce((tags, post) => {
@@ -17,7 +17,7 @@ module.exports = (coll) => {
 
             return [...new Set(tags)];
         }, [])
-        .map((tag) => [tag, coll.getFilteredByTag(tag).length])
+        .map((tag) => [tag, collection.getFilteredByTag(tag).length])
         .sort((a, b) => (a[0] < b[0]) ? -1 : (a[0] > b[0]) ? 1 : 0); // alpha
         // .sort((a, b) => b[1] - a[1]); // most to least
 
