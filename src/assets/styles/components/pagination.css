@@ -5,7 +5,7 @@
 .pagination {
     background: var(--theme-input-background);
     border-radius: var(--border-radius-base);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-small);
 
     &,
     & [aria-current='page'] {
@@ -14,6 +14,7 @@
 
     & ol {
         display: flex;
+        align-items: center;
         margin: var(--space-2x) 0 0;
         padding: 0;
         list-style: none;
@@ -26,7 +27,7 @@
 
     & > * {
         display: inline-block;
-        padding: var(--space-half) var(--space-half);
+        padding: var(--space-fourth);
     }
 
     & a {
@@ -59,4 +60,18 @@
 
 .pagination--next {
     margin-left: auto;
+}
+
+@media screen and (--small-and-up) {
+    .pagination__item {
+        & > * {
+            padding: var(--space-half);
+        }
+    }
+}
+
+@media screen and (--large-and-up) {
+    .pagination {
+        font-size: var(--font-size-base);
+    }
 }

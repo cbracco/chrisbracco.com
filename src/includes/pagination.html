@@ -1,17 +1,29 @@
-{# TODO: Add ellipsis feature seen here: https://github.com/11ty/eleventy/issues/455#issuecomment-672162502 #}
 <nav class="pagination" aria-labelledby="paginationLabel">
     <h2 id="paginationLabel" class="visually-hidden">Page Navigation</h2>
     <ol>
-        <li class="pagination__item pagination--first">{% if not paged.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}<span>First</span>{% endif %}</li>
+        {#<li class="pagination__item pagination--first">{% if not paged.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}<span>First</span>{% endif %}</li>#}
         <li class="pagination__item pagination--prev">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Prev</a>{% else %}<span>Prev</span>{% endif %}</li>
         {% for item in collections.pagedPosts %}
-            <li class="pagination__item">
-                <a
-                    href="{{ pagination.hrefs[ loop.index0 ] }}"
-                    {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a>
-            </li>
+            {% set isCurrentPage = pagination.pageNumber == loop.index0 %}
+            {% if isCurrentPage or loop.first or loop.last or pagination.pageNumber in [loop.index0-1, loop.index0+1] %}
+                {% if loop.last and pagination.pageNumber < (loop.length - 3) %}
+                    <li class="pagination__item">
+                        &hellip;
+                    </li>
+                {% endif %}
+                <li class="pagination__item">
+                    <a
+                        href="{{ pagination.hrefs[ loop.index0 ] }}"
+                        {% if isCurrentPage %} aria-current="page"{% endif %}>{{ loop.index }}</a>
+                </li>
+                {% if loop.first and pagination.pageNumber > 2 %}
+                    <li class="pagination__item">
+                        &hellip;
+                    </li>
+                {% endif %}
+            {% endif %}
         {% endfor %}
         <li class="pagination__item pagination--next">{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}<span>Next</span>{% endif %}</li>
-        <li class="pagination__item pagination--last">{% if not paged.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}<span>Last</span>{% endif %}</li>
+        {#<li class="pagination__item pagination--last">{% if not paged.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}<span>Last</span>{% endif %}</li>#}
     </ol>
   </nav>
