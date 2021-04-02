@@ -1,13 +1,16 @@
 const siteData = require('../../src/data/site');
 
-module.exports = (coll) => {
-    const tagList = require('./tagList')(coll);
+module.exports = (collection) => {
+    const tagList = require('./tagList')(collection);
+
+    const now = new Date();
+    const livePosts = post => post.date <= now;
 
     const maxPostsPerPage = siteData.paginate;
     const pagedPosts = [];
 
     Object.keys(tagList).forEach((tagName) => {
-        const taggedPosts = [...coll.getFilteredByTag(tagName)].reverse();
+        const taggedPosts = collection.getFilteredByTag(tagName).filter(livePosts).reverse();
         const numberOfPages = Math.ceil(taggedPosts.length / maxPostsPerPage);
 
         for (let pageNum = 1; pageNum <= numberOfPages; pageNum++) {
