@@ -1,7 +1,7 @@
 const siteData = require('../../src/data/site');
 
-module.exports = (collection) => {
-    const allPosts = require('./posts')(collection);
+module.exports = (coll) => {
+    const allPosts = require('./posts')(coll);
 
     const maxPostsPerPage = siteData.paginate;
     const numberOfPages = Math.ceil(allPosts.length / maxPostsPerPage);
