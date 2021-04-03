@@ -1,10 +1,16 @@
 
 .truly-center {
+    --truly-center-button-size: 36px;
     position: relative;
     padding: var(--space-half);
     border: 1px solid var(--theme-hr-color);
     border-radius: var(--border-radius-base);
     margin-bottom: var(--space-2x);
+
+    & button {
+        width: var(--truly-center-button-size);
+        height: var(--truly-center-button-size);
+    }
 }
 
 .truly-center::before {
@@ -63,6 +69,7 @@
 
 .truly-center--absolute .truly-center__centered {
     text-align: center;
+    padding: var(--space-fourth) var(--truly-center-button-size);
 }
 
 /* pseudo */
@@ -85,8 +92,8 @@
     align-items: center;
     justify-content: center;
     content: '⬅️';
-    width: 2.25rem;
-    height: 2.25rem;
+    width: var(--truly-center-button-size);
+    height: var(--truly-center-button-size);
     background: var(--theme-frame-color);
     opacity: 0.5;
 }
@@ -99,8 +106,8 @@
 
 .truly-center--negative-margin .truly-center__centered {
     flex: 1;
-    margin-left: -2.25rem;
-    padding: 0 2.25rem;
+    margin-left: calc(var(--truly-center-button-size) * -1);
+    padding: 0 var(--truly-center-button-size);
     text-align: center;
 }
 
