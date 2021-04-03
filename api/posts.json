@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "Automate a daily to-do list with Apple Notes and Shortcuts",
+      "teaser": "For my daily tasks list, I find the less friction the better.",
+      "url": "/automate-a-daily-to-do-list-with-apple-notes-and-shortcuts/"
+    },
+  
+    {
       "title": "CSS “truly center” a single child element horizontally when siblings are present",
       "teaser": "I discovered a less hacky solution to this very specific and minor layout problem.",
       "url": "/css-truly-center-a-single-child-element-horizontally-when-siblings-are-present/"
