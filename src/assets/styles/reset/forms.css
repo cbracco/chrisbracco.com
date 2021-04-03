@@ -58,6 +58,7 @@ input[type='reset'] {
     background: none;
     border: 0;
     padding: 0;
+    margin: 0;
     -webkit-appearance: button; /* 1 */
 }
 
