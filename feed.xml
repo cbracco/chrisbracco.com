@@ -4,12 +4,28 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-04-03T00:00:00Z</updated>
+    <updated>2021-04-09T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
+    
+        
+        <entry>
+            <title>Visualize CSS spacing utilities</title>
+            <link href="https://chrisbracco.com/visualize-css-spacing-utilities/"/>
+            <updated>2021-04-09T00:00:00Z</updated>
+            <id>https://chrisbracco.com/visualize-css-spacing-utilities/</id>
+            <content type="html">&lt;p&gt;Design systems, CSS frameworks, styleguides and more will often provide a set of HTML utility classes meant to be reused in situations where a more custom-tailored solution may not be required.&lt;/p&gt;
+&lt;p&gt;Here is a really simple way to visualize spacing utilities intended for display in documentation for a framework, web application, design system or otherwise. Basically just different background colors for the parent element and utiltity classes, and then the &amp;quot;space&amp;quot; will be represented by the background color of the parent element.&lt;/p&gt;
+&lt;p&gt;I am using a SCSS loop for brevity to generate the classes.&lt;/p&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;OJWOKEv&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
         
         <entry>

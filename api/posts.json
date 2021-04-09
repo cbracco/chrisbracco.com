@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "Visualize CSS spacing utilities",
+      "teaser": "A simple way to visualize spacing values for documentation.",
+      "url": "/visualize-css-spacing-utilities/"
+    },
+  
+    {
       "title": "Automate a daily to-do list with Apple Notes and Shortcuts",
       "teaser": "For my daily tasks list, I find the less friction the better.",
       "url": "/automate-a-daily-to-do-list-with-apple-notes-and-shortcuts/"
