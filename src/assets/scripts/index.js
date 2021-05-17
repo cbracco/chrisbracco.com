@@ -8,7 +8,7 @@ import 'lightgallery.js';
 import 'lazysizes';
 
 // Initialize components on DOM ready
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const initNav = new Navigation({
         navigationMenuOffsetEl: document.getElementById('content'),
     });
@@ -20,11 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Lazyload images and iframes
 
-
     const photoGrid = document.getElementById('photoGrid');
     if (lightGallery && photoGrid) {
         lightGallery(photoGrid, {
-            thumbnail: true
+            thumbnail: true,
         });
     }
 });

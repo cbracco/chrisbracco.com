@@ -1,5 +1,2 @@
-module.exports = (collection) => {
-    return collection.getAll().filter(function (item) {
-        return 'pinned' in item.data;
-    });
-};
+module.exports = (collection) =>
+    collection.getAll().filter((item) => 'pinned' in item.data);

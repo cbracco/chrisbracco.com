@@ -32,8 +32,8 @@ module.exports = async () => {
     const spriter = new SVGSpriter(spriteConfig);
 
     // Wrap spriter compile function in a Promise
-    const compileSprite = async (args) => {
-        return new Promise((resolve, reject) => {
+    const compileSprite = async (args) =>
+        new Promise((resolve, reject) => {
             spriter.compile(args, (error, result) => {
                 if (error) {
                     return reject(error);
@@ -41,14 +41,13 @@ module.exports = async () => {
                 resolve(result.symbol.sprite);
             });
         });
-    };
 
     // Get all SVG icon files in working directory
     const getFiles = util.promisify(glob);
-    const files = await getFiles('**/*.svg', { cwd: cwd });
+    const files = await getFiles('**/*.svg', { cwd });
 
     // Add them all to the spriter
-    files.forEach(function (file) {
+    files.forEach((file) => {
         spriter.add(
             new File({
                 path: path.join(cwd, file),

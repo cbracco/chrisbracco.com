@@ -14,17 +14,23 @@ module.exports = {
          *
          * For dev mode, always render all posts.
          */
-        permalink: data => {
-            if (process.env.NODE_ENV === 'production' && (data.draft || data.page.date >= new Date())) {
+        permalink: (data) => {
+            if (
+                process.env.NODE_ENV === 'production' &&
+                (data.draft || data.page.date >= new Date())
+            ) {
                 return false;
             }
             return data.permalink;
         },
-        eleventyExcludeFromCollections: data => {
-            if (process.env.NODE_ENV === 'production' && (data.draft || data.page.date >= new Date())) {
+        eleventyExcludeFromCollections: (data) => {
+            if (
+                process.env.NODE_ENV === 'production' &&
+                (data.draft || data.page.date >= new Date())
+            ) {
                 return true;
             }
             return false;
-        }
-    }
-}
+        },
+    },
+};

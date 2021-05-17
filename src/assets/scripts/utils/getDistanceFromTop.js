@@ -7,7 +7,7 @@
 // https://stackoverflow.com/a/24829409
 //
 export function getDistanceFromTop(element) {
-    var yPosition = 0;
+    let yPosition = 0;
 
     while (element) {
         yPosition += element.offsetTop - element.scrollTop + element.clientTop;

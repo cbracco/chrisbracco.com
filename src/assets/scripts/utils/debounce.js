@@ -4,7 +4,7 @@
 //
 
 export function debounce(func, wait, immediate) {
-    var timeout;
+    let timeout;
     return function () {
         const context = this;
         const args = arguments;

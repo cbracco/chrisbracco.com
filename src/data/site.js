@@ -3,7 +3,8 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
     title: 'Chris Bracco',
     subtitle: 'web design, engineering, management',
-    tagline: 'My name is Chris and I am a multifaceted web designer, engineer, and UX manager.',
+    tagline:
+        'My name is Chris and I am a multifaceted web designer, engineer, and UX manager.',
     author: 'Chris Bracco',
     openGraphImage: 'portrait-rust.jpg',
     location: 'New Jersey, USA',
@@ -19,6 +20,6 @@ module.exports = {
     spotify: 'https://open.spotify.com/user/cbracco',
     license: 'https://creativecommons.org/licenses/by-sa/4.0/',
     paginate: 10,
-    isProd: isProd,
-    googleAnalyticsId: 'UA-12953082-11'
+    isProd,
+    googleAnalyticsId: 'UA-12953082-11',
 };
