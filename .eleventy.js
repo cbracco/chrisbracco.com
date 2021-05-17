@@ -90,7 +90,7 @@ module.exports = function (config) {
         // 404 page when serving production build locally
         callbacks: {
             ready: function (_err, browserSync) {
-                const content_404 = fs.readFileSync('public/404/index.html');
+                const content_404 = fs.readFileSync('public/404.html');
 
                 browserSync.addMiddleware('*', (_req, res) => {
                     // Provides the 404 content without redirect.
