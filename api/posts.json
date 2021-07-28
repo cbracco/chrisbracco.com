@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "Atomic Habits by James Clear",
+      "teaser": "",
+      "url": "/atomic-habits-by-james-clear/"
+    },
+  
+    {
       "title": "Visualize CSS spacing utilities",
       "teaser": "A simple way to visualize spacing values for documentation.",
       "url": "/visualize-css-spacing-utilities/"
