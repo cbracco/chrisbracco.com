@@ -14,7 +14,7 @@ As an iOS user, I realized I can use the [Shortcuts app](https://en.wikipedia.or
 
 On my phone I have notifications turned off for nearly every app, but this is one that I welcome. I like being prompted to think about what I have to do well before I have to get started.
 
-Research shows that writing your to-do list the evening beforehand can help improve sleep quality, reduce procrastination, and reduce guilt about enjoying a relaxing evening. It gives me the opportunity clear this information from my brain’s working memory so that I can either wind down from the day or focus on other things.
+Research shows that writing your to-do list the evening beforehand can help improve sleep quality, reduce procrastination, and reduce guilt about enjoying a relaxing evening. It gives me the opportunity to clear this information from my brain’s working memory so that I can either wind down from the day or focus on other things.
 
 ## How to set it up
 
