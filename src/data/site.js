@@ -4,7 +4,7 @@ module.exports = {
     title: 'Chris Bracco',
     subtitle: 'web design, engineering, management',
     tagline:
-        'My name is Chris and I am a multifaceted web designer, engineer, and UX manager.',
+        'My name is Chris and I am a multifaceted code wrangler and people manager.',
     author: 'Chris Bracco',
     openGraphImage: 'portrait-rust.jpg',
     location: 'New Jersey, USA',
