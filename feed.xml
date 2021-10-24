@@ -4,12 +4,27 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-08-12T00:00:00Z</updated>
+    <updated>2021-10-22T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
+    
+        
+        <entry>
+            <title>Responsive two-column login page with CSS flexbox</title>
+            <link href="https://chrisbracco.com/css-flexbox-login-page-design/"/>
+            <updated>2021-10-22T00:00:00Z</updated>
+            <id>https://chrisbracco.com/css-flexbox-login-page-design/</id>
+            <content type="html">&lt;p&gt;A trend has emerged recently for signup, login and other authentication-style pages that you’ll find in most modern web applications. Several tools I use on a daily basis for work have started using a two-column design for these pages, with the form located on one side and some sort of call-to-action or reminder of the value proposition on the other.&lt;/p&gt;
+&lt;p&gt;I quite like the trend, so I whipped up a proof-of-concept using CSS flexbox. The layout switches to one-column for smaller devices, and creates some visual separation between the login form and the rest of the page content using white space and shadows.&lt;/p&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;JjyRXXx&quot; data-default-tab=&quot;result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
         
         <entry>

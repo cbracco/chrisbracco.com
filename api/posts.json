@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "Responsive two-column login page with CSS flexbox",
+      "teaser": "A simple solution for a recent design trend.",
+      "url": "/css-flexbox-login-page-design/"
+    },
+  
+    {
       "title": "Songs that make me think of family",
       "teaser": "Strap in, it’s a bumpy ride.",
       "url": "/songs-that-make-me-think-of-family/"
