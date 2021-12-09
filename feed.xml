@@ -4,12 +4,29 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-10-22T00:00:00Z</updated>
+    <updated>2021-12-09T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
+    
+        
+        <entry>
+            <title>CSS “or” style dividers with a single DOM element</title>
+            <link href="https://chrisbracco.com/css-or-style-dividers/"/>
+            <updated>2021-12-09T00:00:00Z</updated>
+            <id>https://chrisbracco.com/css-or-style-dividers/</id>
+            <content type="html">&lt;p&gt;Interfaces often ask folks to choose between a set of actions. Fill out this field or that field. Press this button or that button. A common way to visually represent these &amp;quot;or&amp;quot; choices is to separate the choices visually with a line. A line by itself usually is not enough to imply the &amp;quot;or&amp;quot; choice, though. Accompanying text can help, too.&lt;/p&gt;
+&lt;p&gt;I wanted to create a component that could provide this solution as a single DOM element with nested text, and support both vertical and horizontal orientations. Something along these lines:&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Or&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A bit of toying around &lt;a href=&quot;https://codepen.io/cbracco/pen/mdBEOOx&quot;&gt;in Codepen&lt;/a&gt;, and I landed on something useful and flexible. The vertical version uses some absolute positioning hacks, and the horizontal version uses some negative margin hacks.&lt;/p&gt;
+&lt;div class=&quot;post__embed&quot; data-breakout=&quot;&quot;&gt;
+            &lt;div data-height=&quot;600&quot; data-slug-hash=&quot;mdBEOOx&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;cbracco&quot; data-border=&quot;thick&quot; data-border-color=&quot;#18191f&quot; data-tab-bar-color=&quot;#3a3c47&quot; data-tab-color=&quot;#717482&quot; data-tab-link-color=&quot;#dcdee4&quot; data-active-tab-color=&quot;#717482&quot; data-link-logo-color=&quot;#3a3c47&quot; data-embed-version=&quot;1&quot; class=&quot;codepen&quot;&gt;&lt;/div&gt;
+            &lt;script async=&quot;&quot; src=&quot;https://assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+        &lt;/div&gt;
+</content>
+        </entry>
     
         
         <entry>
