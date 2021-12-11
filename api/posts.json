@@ -4,6 +4,12 @@
 [
   
     {
+      "title": "An Elegant Puzzle: Systems of Engineering Management by Will Larson",
+      "teaser": "",
+      "url": "/an-elegant-puzzle-by-will-larson/"
+    },
+  
+    {
       "title": "CSS “or” style dividers with a single DOM element",
       "teaser": "Incorporating text into a dividing line is trickier than you might think.",
       "url": "/css-or-style-dividers/"
