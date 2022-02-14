@@ -40,6 +40,7 @@ export default class BreakOut {
         // and set width style accordingly
         this.elementsToBreakOut.forEach((element) => {
             const elementPosition = element.getBoundingClientRect().right;
+            console.log(elementPosition);
             const elementWidth = element.clientWidth;
             element.style.width = `${Math.floor(
                 elementWidth + (viewportWidth - elementPosition)

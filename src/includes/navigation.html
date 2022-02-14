@@ -22,7 +22,7 @@
                 activeListItemClass:
                 'is-current', activeKey: eleventyNavigation.key
             }) | safe }}
-            <div class="navigation__menu__item">
+            <!-- <div class="navigation__menu__item">
                 <button
                     class="button button--die"
                     type="button"
@@ -42,9 +42,28 @@
                     </svg>
                     <span class="button__text">feeling lucky?</span>
                 </button>
-            </div>
+            </div> -->
         </div>
         <div class="navigation__footer">
+            <button
+                class="button button--die"
+                type="button"
+                data-die
+                data-sound-effect="/assets/audio/dice.mp3"
+            >
+                <svg
+                    role="img"
+                    aria-labelledby="icon-die-title"
+                    width="32"
+                    height="32"
+                    focusable="false"
+                    class="button__icon"
+                >
+                    <title id="icon-die-title">Roll the dice</title>
+                    <use xlink:href="#icon-die"></use>
+                </svg>
+                <span class="button__text">feeling lucky?</span>
+            </button>
             <div
                 class="battery"
                 data-battery

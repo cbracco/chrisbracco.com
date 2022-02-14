@@ -11,17 +11,21 @@
 
 .post__date {
     font-size: var(--font-size-xsmall);
-    font-weight: var(--weight-bold);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.post__title {
+    letter-spacing: var(--letter-spacing-base);
+    margin-bottom: var(--space-half);
     margin-top: var(--space);
 }
 
+.post__title {
+    margin-top: 0;
+}
+
+.post__teaser {
+    margin-bottom: var(--space-half);
+}
+
 .post__taglist {
-    margin-top: calc(var(--space-half) + var(--space-fourth));
+    margin-top: calc(var(--space-half) + var(--space-eighth));
     margin-bottom: var(--space);
 
     & .button {
@@ -50,8 +54,12 @@
 }
 
 @media screen and (--large-and-up) {
-    .post__title {
+    .post__date {
+        font-size: var(--font-size-small);
         margin-top: var(--space-2x);
+    }
+
+    .post__title {
         font-size: var(--font-size-display-2);
     }
 

@@ -1,15 +1,9 @@
 [
     {
-        "title": "The Invention of Nature: Alexander von Humboldt's New World",
-        "author": "Andrea Wulf",
-        "image": "invention-of-nature.jpg",
-        "url": "https://www.andreawulf.com/about-the-invention-of-nature.html"
-    },
-    {
-        "title": "Predictably Irrational: The Hidden Forces That Shape Our Decisions",
-        "author": "Dan Ariely",
-        "image": "predictably-irrational.jpg",
-        "url": "https://danariely.com/books/predictably-irrational/"
+        "title": "An Elegant Puzzle: Systems of Engineering Management",
+        "author": "Will Larson",
+        "image": "elegant-puzzle.jpg",
+        "url": "https://lethain.com/elegant-puzzle/"
     },
     {
         "title": "Don’t Make Me Think, Revisited: A Common Sense Approach to Web Usability",
@@ -30,6 +24,42 @@
         "url": "https://ethanzuckerman.com/books/rewire/"
     },
     {
+        "title": "The Manager’s Path: A Guide for Tech Leaders Navigating Growth & Change",
+        "author": "Camille Fournier",
+        "image": "the-managers-path.jpg",
+        "url": "https://www.oreilly.com/library/view/the-managers-path/9781491973882/"
+    },
+    {
+        "title": "The Invention of Nature: Alexander von Humboldt's New World",
+        "author": "Andrea Wulf",
+        "image": "invention-of-nature.jpg",
+        "url": "https://www.andreawulf.com/about-the-invention-of-nature.html"
+    },
+    {
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "image": "psychology-of-money.jpg",
+        "url": "https://amazon.com/gp/product/0857197681/"
+    },
+    {
+        "title": "Predictably Irrational: The Hidden Forces That Shape Our Decisions",
+        "author": "Dan Ariely",
+        "image": "predictably-irrational.jpg",
+        "url": "https://danariely.com/books/predictably-irrational/"
+    },
+    {
+        "title": "The Millionaire Next Door: The Surprising Secrets of America’s Wealthy",
+        "author": "Thomas J. Stanley, Ph.D., William D. Danko Ph.D.",
+        "image": "the-millionaire-next-door.jpg",
+        "url": "https://themillionairenextdoor.com"
+    },
+    {
+        "title": "Where Do We Go From Here: Chaos or Community?",
+        "author": "Martin Luther King Jr.",
+        "image": "where-do-we-go-from-here.jpg",
+        "url": "https://en.wikipedia.org/wiki/Where_Do_We_Go_from_Here:_Chaos_or_Community"
+    },
+    {
         "title": "A Short History of Progress",
         "author": "Ronald Wright",
         "image": "short-history.jpg",
@@ -40,17 +70,5 @@
         "author": "Jodi Picoult",
         "image": "small-great-things.jpg",
         "url": "https://www.jodipicoult.com/small-great-things.html"
-    },
-    {
-        "title": "An Elegant Puzzle: Systems of Engineering Management",
-        "author": "Will Larson",
-        "image": "elegant-puzzle.jpg",
-        "url": "https://lethain.com/elegant-puzzle/"
-    },
-    {
-        "title": "The Psychology of Money",
-        "author": "Morgan Housel",
-        "image": "psychology-of-money.jpg",
-        "url": "https://amazon.com/gp/product/0857197681/"
     }
 ]

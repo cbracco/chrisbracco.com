@@ -6,12 +6,12 @@ permalink: "{{ page.filePathStem | replace('/posts/', '/') }}/index.html"
 {% include 'backToGarden.html' %}
 
 <article class="post" data-breakout-parent>
-    <p>
-        <time class="post__date" datetime="{{ page.date | htmlDateString }}">
+    {% set tags=tags %}
+    <p class="post__date">
+        <time datetime="{{ page.date | htmlDateString }}">
             {{ page.date | readableDate }}
         </time>
     </p>
-    {% set tags=tags %}
     <h1 class="post__title">{{ title }}</h1>
     <p class="post__teaser">{{ teaser }}</p>
     {% include 'taglist_post.html' %}

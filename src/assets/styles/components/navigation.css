@@ -23,9 +23,9 @@
 .navigation__toggle {
     position: fixed;
     background: var(--theme-html-background);
-    padding: var(--space) 0 var(--space) calc(var(--space-third) + 1px);
+    padding: var(--space-half) 0;
+    margin-left: calc(var(--space-half) * -1 - 1px);
     line-height: 0;
-    left: 0;
     bottom: var(--space-2x);
     z-index: var(--zindex-10);
 
@@ -42,23 +42,21 @@
 .navigation__menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: fixed;
     /* `top` value calculated with JS */
-    left: 0;
     width: calc(100% - (var(--space) + var(--space-twelfth)));
     opacity: 0;
     visibility: hidden;
-    margin-left: calc(var(--space) + var(--space-twelfth));
+    margin-left: var(--space-twelfth);
     padding-left: var(--space);
     padding-top: var(--space-half);
-    padding-bottom: calc(var(--space-large) + var(--space));
+    padding-bottom: var(--space-half);
 
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 
     background: var(--theme-navigation-background);
-    backdrop-filter: blur(var(--space-eighth));
+    backdrop-filter: blur(var(--space-fourth));
     z-index: var(--zindex-9);
 
     &.is-transitioning {
@@ -108,7 +106,14 @@
 
 .navigation__footer {
     font-size: var(--font-size-small);
-    margin-top: var(--space-2x);
+
+    & .button--die {
+        padding: var(--space-half) 0;
+    }
+
+    & .battery {
+        margin-top: var(--space-2x);
+    }
 }
 
 @media screen and (--large-and-down) and (orientation: landscape) {
@@ -135,12 +140,16 @@
 
     .navigation__footer {
         padding-right: var(--space);
+
+        & .battery {
+            margin-top: var(--space);
+        }
     }
 }
 
 @media screen and (--large-and-up) {
     .navigation {
-        width: calc(23.1875rem + var(--space)); /* TODO: calc with JS instead */
+        width: 14rem;
         flex-shrink: 0;
 
         &::before {
@@ -159,7 +168,7 @@
         position: absolute;
         padding: 0;
         bottom: 0;
-        left: calc((var(--space) - var(--space-twelfth)) * -1);
+        left: calc(var(--space-third) * -1 - 1px);
     }
 
     .navigation__toggle-icon {
@@ -178,7 +187,6 @@
         visibility: visible;
         background: none;
         backdrop-filter: none;
-        /* min-height: 100%; */
         margin-left: 0;
         padding-right: calc(var(--space) + var(--space-twelfth));
         padding-left: calc(var(--space) + var(--space-twelfth));
@@ -200,5 +208,11 @@
                 text-decoration: none;
             }
         }
+    }
+}
+
+@media screen and (--xlarge-and-up) {
+    .navigation {
+        width: calc(23.1875rem + var(--space));  /* TODO: calc with JS instead */
     }
 }
