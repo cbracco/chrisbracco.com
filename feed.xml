@@ -4,12 +4,22 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2021-12-18T00:00:00Z</updated>
+    <updated>2022-02-14T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>chris@cbracco.me</email>
     </author>
+    
+        
+        <entry>
+            <title>The Manager’s Path: A Guide for Tech Leaders Navigating Growth &amp; Change by Camille Fournier</title>
+            <link href="https://chrisbracco.com/the-managers-path-by-camille-fournier/"/>
+            <updated>2022-02-14T00:00:00Z</updated>
+            <id>https://chrisbracco.com/the-managers-path-by-camille-fournier/</id>
+            <content type="html">&lt;p&gt;&lt;em&gt;The Manager’s Path&lt;/em&gt; is a fantastic field guide for tech leaders at any level. As someone who made the leap from software engineer to engineering manager at a rapidly growing tech company, I found tons of useful nuggets and reminders in this book that I am excited to implement, apply, and have earmarked for later.&lt;/p&gt;
+</content>
+        </entry>
     
         
         <entry>
