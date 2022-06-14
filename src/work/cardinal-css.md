@@ -6,4 +6,4 @@ url: https://cardinalcss.com
 order: 3
 ---
 
-A (now defunct) LESS CSS framework built with performance and scalability in mind. Clocks in at less than 20KB minified and gzipped. It is essentially a collection of helpful utility classes, a grid system, and encapsulated styles for common UI components like buttons, forms, tables, and more.
+A (now inactive) modular CSS framework built with performance and scalability in mind. Clocks in at less than 20KB minified and gzipped. It is a collection of useful utilities, a responsive grid system, and baseline styles for common UI elements like buttons, forms, tables, and more.
