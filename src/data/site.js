@@ -10,7 +10,7 @@ module.exports = {
     location: 'New Jersey, USA',
     url: 'https://chrisbracco.com',
     feedUrl: 'https://chrisbracco.com/feed.xml',
-    email: 'chris@cbracco.me',
+    email: 'hello@chrisbracco.com',
     goodreads: 'https://www.goodreads.com/cbracco',
     github: 'https://github.com/cbracco',
     instagram: 'https://www.instagram.com/cbracco',
