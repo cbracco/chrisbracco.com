@@ -4,12 +4,23 @@
     <subtitle>web design, engineering, management</subtitle>
     <link href="https://chrisbracco.com/feed.xml" rel="self"/>
     <link href="https://chrisbracco.com"/>
-    <updated>2022-06-14T00:00:00Z</updated>
+    <updated>2022-11-07T00:00:00Z</updated>
     <id>https://chrisbracco.com</id>
     <author>
         <name>Chris Bracco</name>
         <email>hello@chrisbracco.com</email>
     </author>
+    
+        
+        <entry>
+            <title>Thinking in Systems by Donella H. Meadows</title>
+            <link href="https://chrisbracco.com/thinking-in-systems-by-donella-h-meadows/"/>
+            <updated>2022-11-07T00:00:00Z</updated>
+            <id>https://chrisbracco.com/thinking-in-systems-by-donella-h-meadows/</id>
+            <content type="html">&lt;p&gt;Donella Wright devoted her life to analyzing and modeling complex systems. &lt;em&gt;Thinking in Systems&lt;/em&gt; takes the reader by the hand and walks them through the evident, the shared, and the mysterious characteristics and behaviors entwined in all kinds of complex systems that we encounter and create in our universe.&lt;/p&gt;
+&lt;p&gt;The patterns of systems and behaviors therein that Donella lays out are somehow both obvious and shocking at the same time. She is able to break down complex ideas into clear explanations and visuals in a way I’ve yet to encounter until now. This book has cracked my head wide open and has me buzzing about the abstracted but still complex (to me) web engineering systems that I work within, wondering about what leverage I can pull to improve the systems in which I have some agency and influence.&lt;/p&gt;
+</content>
+        </entry>
     
         
         <entry>
