@@ -103,7 +103,7 @@
         "title": "Bell",
         "date": "August 2015",
         "src": "bell.jpg",
-        "location": "‎⁨Montréal⁩, ⁨Quebec⁩, ⁨Canada⁩",
+        "location": "Montréal, Quebec,Canada",
         "gear": "iPhone 6 back camera 4.15mm ƒ2.2"
     },
     {
@@ -154,7 +154,7 @@
         "src": "transplants.jpg",
         "location": "Oak Alley Plantation, Vacherie, Louisiana",
         "gear": "iPhone 8 back camera 3.99mm ƒ1.8"
-    }
+    },
     {
         "title": "Summit",
         "date": "January 2019",
@@ -162,4 +162,18 @@
         "location": "Loveland Ski Area, Dillon, Colorado",
         "gear": "iPhone 8 wide camera 28mm ƒ1.8"
     },
+    {
+        "title": "Well-Groomed Paths",
+        "date": "November 2019",
+        "src": "well-groomed-paths.jpg",
+        "location": "Dia:Beacon, Beacon, New York",
+        "gear": "iPhone 8 wide camera 28mm ƒ1.8"
+    },
+    {
+        "title": "Corncobs",
+        "date": "July 2022",
+        "src": "corncobs.jpg",
+        "location": "Chicago, New York",
+        "gear": "iPhone 12 mini wide camera 26mm ƒ1.6"
+    }
 ]
