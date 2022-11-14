@@ -6,7 +6,7 @@ module.exports = {
     tagline:
         'My name is Chris and I am a multifaceted code wrangler and people manager.',
     author: 'Chris Bracco',
-    openGraphImage: 'portrait-rust.jpg',
+    openGraphImage: 'avatar.jpg',
     location: 'New Jersey, USA',
     url: 'https://chrisbracco.com',
     feedUrl: 'https://chrisbracco.com/feed.xml',
