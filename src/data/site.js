@@ -15,7 +15,7 @@ module.exports = {
     github: 'https://github.com/cbracco',
     instagram: 'https://www.instagram.com/cbracco',
     resume: 'https://docs.google.com/document/d/1Qv_Z1QupbDQE_-ZFoiqWUBefKOObKk1Tzd_R6g4Q8w8/edit',
-    riskyClick: 'https://cbrac.co/3bEssq4',
+    riskyClick: 'https://cbrac.co/3Q7lzP5',
     runkeeper: 'https://runkeeper.com/user/cbracco/profile',
     spotify: 'https://open.spotify.com/user/cbracco',
     license: 'https://creativecommons.org/licenses/by-sa/4.0/',
