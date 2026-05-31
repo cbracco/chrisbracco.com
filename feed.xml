@@ -484,7 +484,7 @@ SUMMARY:Calendar Event Name
 END:VEVENT
 END:VCALENDAR
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You may notice there is no &lt;code&gt;STATUS&lt;/code&gt; property for the event. Using “Find &amp;amp; Replace” I added it to each event by replacing every &lt;code&gt;END:VEVENT&lt;/code&gt; line with &lt;code&gt;STATUS:CANCELLED\nEND:VEVENT&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You may notice there is no &lt;code&gt;STATUS&lt;/code&gt; property for the event. Using “Find &amp;amp; Replace” I added it to each event by replacing every &lt;code&gt;END:VEVENT&lt;/code&gt; line with &lt;code&gt;STATUS:CANCELLED&#92;nEND:VEVENT&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Save the file, re-import it the same way you did the first time, and should start to see the events disappear. Phew!&lt;/p&gt;
 </content>
         </entry>
