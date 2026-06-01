@@ -1,4 +1,4 @@
-import { emojisplosion } from 'emojisplosion';
+import { emojiBlast } from 'emoji-blast';
 
 export default class FeelingLucky {
     constructor() {
@@ -27,7 +27,7 @@ export default class FeelingLucky {
     };
 
     explode = () => {
-        emojisplosion({
+        emojiBlast({
             emojis: ['🎲'],
             position: () => {
                 const offset = this.cumulativeOffset(this.el);

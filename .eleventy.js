@@ -9,8 +9,6 @@ const path = require('path');
 const filters = require('./utils/filters.js');
 const shortcodes = require('./utils/shortcodes.js');
 const svgiconsprite = require('./utils/svgiconsprite.js');
-const rss = require('@11ty/eleventy-plugin-rss');
-
 // In production, resolve fingerprinted asset paths from Vite's manifest.
 // In dev, Vite serves directly from source so no manifest is needed.
 let entry;
@@ -22,7 +20,9 @@ if (process.env.NODE_ENV === 'production') {
 
 const photos = fg.sync(['**/photos/*', '!**/public']);
 
-module.exports = function (config) {
+module.exports = async function (config) {
+    const { default: rss } = await import('@11ty/eleventy-plugin-rss');
+
     // Plugins
     config.addPlugin(navigation);
     config.addPlugin(rss);
