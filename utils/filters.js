@@ -10,7 +10,7 @@ module.exports = {
             zone: 'utc',
         }).toFormat('yyyy-LL-dd'),
     // Debug utility
-    dump: (obj) => util.inspect(obj),
+    inspect: (obj) => JSON.stringify(obj, null, 2),
     // https://github.com/11ty/eleventy/issues/898#issuecomment-617628635
     sortByOrder: (values) => {
         const vals = [...values];
