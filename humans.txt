@@ -1,0 +1,9 @@
+/* TEAM */
+Chris Bracco — Creator, Developer, Designer
+Location: New Jersey, USA
+Contact: hello@chrisbracco.com
+
+/* SITE */
+Language: English
+Doctype: HTML5
+Built with: Eleventy, Vite

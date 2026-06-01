@@ -16,12 +16,12 @@
     "src": "node_modules/lightgallery/images/loading.gif"
   },
   "src/assets/scripts/index.js": {
-    "file": "assets/index-Q1LfP2gM.js",
+    "file": "assets/index-BdgRuZGg.js",
     "name": "index",
     "src": "src/assets/scripts/index.js",
     "isEntry": true,
     "css": [
-      "assets/index-B6scFubF.css"
+      "assets/index-xH3tB1No.css"
     ],
     "assets": [
       "assets/lg-oyjwlqP2.ttf",
