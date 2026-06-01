@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
         
             <url>
                 <loc>https://chrisbracco.com/work/muck-rack/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.886Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.577Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
+                    <image:image>
+                        <image:loc>https://chrisbracco.com/assets/images/posts/./src/assets/images/work/muck-rack.png</image:loc>
+                        
+                        <image:title>Muck Rack</image:title>
+                    </image:image>
+                
             </url>
         
     
@@ -16,10 +24,17 @@
             <url>
                 <loc>https://chrisbracco.com/work/cardinal-css/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.884Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.576Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
+                    <image:image>
+                        <image:loc>https://chrisbracco.com/assets/images/posts/./src/assets/images/work/cardinal-css.png</image:loc>
+                        
+                        <image:title>Cardinal CSS</image:title>
+                    </image:image>
+                
             </url>
         
     
@@ -27,10 +42,17 @@
             <url>
                 <loc>https://chrisbracco.com/work/big-room-studios/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.884Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.576Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
+                    <image:image>
+                        <image:loc>https://chrisbracco.com/assets/images/posts/./src/assets/images/work/big-room-studios.png</image:loc>
+                        
+                        <image:title>Big Room Studios</image:title>
+                    </image:image>
+                
             </url>
         
     
@@ -38,10 +60,11 @@
             <url>
                 <loc>https://chrisbracco.com/work/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.884Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.576Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -51,10 +74,11 @@
             <url>
                 <loc>https://chrisbracco.com/photos/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.883Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.574Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -62,10 +86,11 @@
             <url>
                 <loc>https://chrisbracco.com/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.882Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.573Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -73,10 +98,11 @@
             <url>
                 <loc>https://chrisbracco.com/garden/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.882Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.573Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -86,10 +112,11 @@
             <url>
                 <loc>https://chrisbracco.com/books/</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.882Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.573Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -99,10 +126,11 @@
             <url>
                 <loc>https://chrisbracco.com/404.html</loc>
                 
-                    <lastmod>2026-06-01T19:33:54.650Z</lastmod>
+                    <lastmod>2026-06-01T20:23:25.339Z</lastmod>
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -114,6 +142,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -125,6 +154,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -136,6 +166,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -147,6 +178,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -158,6 +190,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -169,6 +202,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -180,6 +214,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -191,6 +226,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -202,6 +238,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -213,6 +250,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -224,6 +262,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -235,6 +274,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -246,6 +286,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -257,6 +298,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -268,6 +310,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -279,6 +322,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -290,6 +334,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -301,6 +346,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -312,6 +358,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -323,6 +370,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -334,6 +382,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -345,6 +394,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -356,6 +406,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -367,6 +418,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -378,6 +430,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -389,6 +442,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -400,6 +454,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -411,6 +466,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -422,6 +478,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -433,6 +490,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -444,6 +502,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -455,6 +514,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -466,6 +526,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -477,6 +538,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -488,6 +550,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -499,6 +562,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -510,6 +574,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -521,6 +586,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -532,6 +598,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -543,6 +610,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -554,6 +622,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -565,6 +634,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -576,6 +646,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -587,6 +658,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -598,6 +670,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -609,6 +682,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -620,6 +694,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -631,6 +706,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -642,6 +718,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -653,6 +730,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -664,6 +742,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -675,6 +754,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -686,6 +766,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -697,6 +778,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -708,6 +790,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -719,6 +802,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -730,6 +814,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -741,6 +826,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -752,6 +838,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -763,6 +850,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -774,6 +862,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -785,6 +874,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -796,6 +886,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -807,6 +898,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -818,6 +910,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -829,6 +922,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -840,6 +934,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -851,6 +946,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -862,6 +958,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -873,6 +970,7 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
             </url>
         
     
@@ -884,6 +982,15 @@
                 
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
+                
+                    <image:image>
+                        <image:loc>https://chrisbracco.com/assets/images/posts/curly-quotes.png</image:loc>
+                        
+                            <image:caption>curly smart quotes</image:caption>
+                        
+                        <image:title>How to Use Curly Quotes on Mac OSX and Windows</image:title>
+                    </image:image>
+                
             </url>
         
     
