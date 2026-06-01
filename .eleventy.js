@@ -21,6 +21,8 @@ const manifest = JSON.parse(
     fs.readFileSync(manifestPath, { encoding: 'utf8' })
 );
 
+const entry = manifest['src/assets/scripts/index.js'];
+
 const photos = fg.sync(['**/photos/*', '!**/public']);
 
 module.exports = function (config) {
@@ -41,18 +43,14 @@ module.exports = function (config) {
     config.addNunjucksShortcode('codesandbox', shortcodes['codesandbox']);
     config.addNunjucksAsyncShortcode('img', shortcodes['img']);
     config.addNunjucksAsyncShortcode('photo', shortcodes['photo']);
-    config.addNunjucksAsyncShortcode('book', shortcodes['book']);
     config.addNunjucksAsyncShortcode('svgiconsprite', svgiconsprite);
 
-    // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:
-    // {% webpackAsset 'main.js' %} or {% webpackAsset 'main.css' %}
-    config.addShortcode('webpackAsset', function (name) {
-        if (!manifest[name]) {
-            throw new Error(
-                `The asset ${name} does not exist in ${manifestPath}`
-            );
-        }
-        return manifest[name];
+    // Returns the URL to a Vite-built asset. In Nunjucks templates:
+    // {% asset 'js' %} or {% asset 'css' %}
+    config.addShortcode('asset', function (type) {
+        if (type === 'js') return `/${entry.file}`;
+        if (type === 'css') return `/${entry.css[0]}`;
+        throw new Error(`Unknown asset type: ${type}`);
     });
 
     // Collections
@@ -84,36 +82,20 @@ module.exports = function (config) {
         html: true
     }).use(markdownItFootnote));
 
-    config.setBrowserSyncConfig({
-        // Assets manifest
-        files: ['public/assets/manifest.json'],
-        // 404 page when serving production build locally
-        callbacks: {
-            ready: function (_err, browserSync) {
-                const content_404 = fs.readFileSync('public/404.html');
-
-                browserSync.addMiddleware('*', (_req, res) => {
-                    // Provides the 404 content without redirect.
-                    res.write(content_404);
-                    res.end();
-                });
-            },
-        },
+    // Eleventy 2.x dev server: watch for asset rebuilds and serve 404 page
+    config.setServerOptions({
+        watch: ['public/assets/manifest.json'],
+        showAllHosts: true,
     });
-
-    // Deep-Merge data
-    config.setDataDeepMerge(true);
 
     return {
         dir: {
             input: 'src',
             output: 'public',
-            // these are relative to `dir.input`
             includes: 'includes',
             layouts: 'layouts',
             data: 'data',
         },
-        passthroughFileCopy: true,
         templateFormats: ['html', 'md', '11ty.js', 'json'],
         htmlTemplateEngine: 'njk',
         markdownTemplateEngine: 'njk',

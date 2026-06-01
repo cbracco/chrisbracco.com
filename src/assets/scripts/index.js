@@ -1,3 +1,4 @@
+import '../styles/index.css';
 import Navigation from './components/Navigation.js';
 import ColorSchemeSwitcher from './components/ColorSchemeSwitcher.js';
 import Battery from './components/Battery.js';
