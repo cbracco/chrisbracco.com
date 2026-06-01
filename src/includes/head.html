@@ -51,6 +51,44 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:description" content="{{ teaser or site.tagline }}">
         <meta name="twitter:image" content="{{ site.url }}/assets/images/{{ page.openGraphImage or site.openGraphImage }}">
+        <!-- Structured Data -->
+        {% if page.isHome %}
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": {{ site.author | dump | safe }},
+            "url": {{ site.url | dump | safe }},
+            "sameAs": [{{ site.github | dump | safe }}, {{ site.instagram | dump | safe }}]
+        }
+        </script>
+        {% elif page.date and title %}
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": {{ title | dump | safe }},
+            "description": {{ (teaser or site.tagline) | dump | safe }},
+            "url": {{ (site.url + page.url) | dump | safe }},
+            "datePublished": {{ page.date.toISOString() | dump | safe }},
+            "author": {
+                "@type": "Person",
+                "name": {{ site.author | dump | safe }},
+                "url": {{ site.url | dump | safe }}
+            }
+        }
+        </script>
+        {% elif title %}
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": {{ title | dump | safe }},
+            "description": {{ (teaser or site.tagline) | dump | safe }},
+            "url": {{ (site.url + page.url) | dump | safe }}
+        }
+        </script>
+        {% endif %}
         <!-- Manifest -->
         <link rel="manifest" href="{{ '/site.webmanifest' }}">
         <!-- Favicons -->
@@ -67,6 +105,9 @@
             <link rel="stylesheet" href="{{ '/assets/styles/posts/' + cssFile }}" />
         {% endif %}
         {% if site.isProd %}
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+        <link rel="dns-prefetch" href="https://www.google-analytics.com">
         <!-- Google Analytics -->
         <script async
             src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}">
