@@ -1,4 +1,4 @@
-name: Build Eleventy
+name: Build
 
 on:
   push:
@@ -12,17 +12,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '22.x'
+          cache: 'npm'
 
       - name: Install dependencies & build
         run: |

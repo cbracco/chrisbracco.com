@@ -1,10 +1,14 @@
+import '../styles/index.css';
 import Navigation from './components/Navigation.js';
 import ColorSchemeSwitcher from './components/ColorSchemeSwitcher.js';
 import Battery from './components/Battery.js';
 import SoundEffects from './components/SoundEffects.js';
 import FeelingLucky from './components/FeelingLucky.js';
 import BreakOut from './components/BreakOut.js';
-import 'lightgallery.js';
+import lightGallery from 'lightgallery';
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-thumbnail.css';
 import 'lazysizes';
 
 // Initialize components on DOM ready
@@ -21,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lazyload images and iframes
 
     const photoGrid = document.getElementById('photoGrid');
-    if (lightGallery && photoGrid) {
+    if (photoGrid) {
         lightGallery(photoGrid, {
-            thumbnail: true,
+            download: false,
         });
     }
 });

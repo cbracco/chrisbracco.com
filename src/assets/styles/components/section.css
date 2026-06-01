@@ -86,9 +86,10 @@
         grid-template-columns: repeat(auto-fill, minmax(228px, 1fr));
         grid-gap: var(--space-half);
 
-        & li {
-            margin: 0;
-        }
+    }
+
+    & ul li {
+        margin: 0;
     }
 }
 
