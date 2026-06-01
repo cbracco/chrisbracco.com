@@ -11,7 +11,7 @@
         "start": "npm-run-all clean build:site:dev --parallel dev:*",
         "build:site:dev": "NODE_ENV=development eleventy",
         "dev:assets": "vite",
-        "dev:site": "NODE_ENV=development eleventy --watch",
+        "dev:site": "NODE_ENV=development eleventy --watch --quiet",
         "serve": "serve --no-clipboard --listen 8080 public"
     },
     "repository": {
