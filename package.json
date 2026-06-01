@@ -8,8 +8,7 @@
         "build:assets": "vite build",
         "build:site": "NODE_ENV=production eleventy",
         "clean": "rm -rf ./public",
-        "start": "npm-run-all clean build:site:dev --parallel dev:*",
-        "build:site:dev": "NODE_ENV=development eleventy",
+        "start": "npm-run-all clean --parallel dev:*",
         "dev:assets": "vite",
         "dev:site": "NODE_ENV=development eleventy --watch --quiet",
         "serve": "serve --no-clipboard --listen 8080 public"
