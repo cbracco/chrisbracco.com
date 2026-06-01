@@ -27,8 +27,25 @@ export default class Battery {
             100
         ).toFixed(8);
 
-        const timer = setInterval(this.updateBatteryLevel, 100);
+        this.timer = null;
+        this.start();
+
+        window.addEventListener('pagehide', this.stop);
+        window.addEventListener('pageshow', this.handlePageShow);
     }
+
+    start = () => {
+        this.timer = setInterval(this.updateBatteryLevel, 100);
+    };
+
+    stop = () => {
+        clearInterval(this.timer);
+        this.timer = null;
+    };
+
+    handlePageShow = (event) => {
+        if (event.persisted) this.start();
+    };
 
     calculateLifeRemaining = () => {
         const secondsAlive = (Date.now() - this.birthDate) / 1000;
