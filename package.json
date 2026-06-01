@@ -4,15 +4,15 @@
     "description": "The source code for Chris Bracco's personal website.",
     "main": "index.js",
     "scripts": {
-        "build": "npm-run-all clean build:assets build:site",
-        "build:assets": "vite build",
-        "build:site": "NODE_ENV=production eleventy",
         "clean": "rm -rf ./public",
-        "start": "npm-run-all clean build:site:dev --parallel dev:*",
-        "build:site:dev": "NODE_ENV=development eleventy --quiet",
-        "dev:assets": "vite",
-        "dev:site": "NODE_ENV=development eleventy --watch",
-        "serve": "serve --no-clipboard --listen 8080 public"
+        "build": "npm-run-all clean build:vite build:eleventy",
+        "build:eleventy": "NODE_ENV=production eleventy",
+        "build:vite": "vite build",
+        "dev": "npm-run-all clean --parallel dev:*",
+        "dev:eleventy": "NODE_ENV=development eleventy --watch --quiet",
+        "dev:vite": "wait-on public/index.html && vite",
+        "prod": "npm-run-all build && serve --no-clipboard --listen 8080 public",
+        "start": "npm-run-all dev"
     },
     "repository": {
         "type": "git",
@@ -35,17 +35,10 @@
         "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
         "cssnano": "^4.1.10",
         "eslint": "^7.26.0",
-        "eslint-config-airbnb": "^18.2.1",
         "eslint-config-prettier": "^8.1.0",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-prettier": "^3.4.0",
-        "eslint-plugin-react": "^7.22.0",
-        "eslint-plugin-react-hooks": "^4.0.1",
         "fast-glob": "^3.2.5",
         "glob": "^13.0.6",
-        "husky": "^6.0.0",
-        "lint-staged": "^11.0.0",
         "luxon": "^3.7.2",
         "markdown-it": "^12.0.4",
         "markdown-it-footnote": "^3.0.2",
@@ -57,7 +50,8 @@
         "serve": "^11.3.2",
         "svg-sprite": "^2.0.4",
         "vinyl": "^3.0.1",
-        "vite": "^8.0.16"
+        "vite": "^8.0.16",
+        "wait-on": "^9.0.10"
     },
     "dependencies": {
         "emojisplosion": "^2.5.0",
