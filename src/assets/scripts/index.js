@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const photoGrid = document.getElementById('photoGrid');
     if (photoGrid) {
         lightGallery(photoGrid, {
-            plugins: [lgThumbnail],
+            download: false,
         });
     }
 });
