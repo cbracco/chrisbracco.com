@@ -39,7 +39,7 @@
         />
         <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
         <!-- Styles -->
-        <link rel="stylesheet" href="/assets/index.bb57d4282755ad1c5754.css" />
+        <link rel="stylesheet" href="/assets/index-DKD0Je3W.css" />
         
             <link rel="stylesheet" href="/assets/styles/posts/truly-center.css" />
         
@@ -229,7 +229,15 @@
   <button class="truly-center__child button button--outline" type="button">&times;</button>
   <div class="truly-center__child truly-center__centered"><span>Center</span></div>
 </div>
-<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--problem</span> <span class="token punctuation">{</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.truly-center--problem .truly-center__centered</span> <span class="token punctuation">{</span><br>    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--problem</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.truly-center--problem .truly-center__centered</span> <span class="token punctuation">{</span>
+    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
 <p>As you can see, this does not work as intended. The “centered” child element is only horizontally centered within the <strong>remaining space</strong> in the parent element, and not the “true center” of the parent element.</p>
 <p>In this case the width of the centered element is equal to the width of the parent element minus any sibling element(s). The centered element can only be “truly centered” if the width of child elements on both the left and right of it are equal.</p>
 <div class="truly-center truly-center--problem">
@@ -245,7 +253,20 @@
   <button class="truly-center__child button button--outline" type="button">&times;</button>
   <div class="truly-center__child truly-center__centered"><span>Center</span></div>
 </div>
-<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--absolute</span> <span class="token punctuation">{</span><br>    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.truly-center--absolute .button</span> <span class="token punctuation">{</span><br>    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>    <span class="token property">top</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span><br>    <span class="token property">margin-top</span><span class="token punctuation">:</span> [SIBLING HEIGHT / 2]<span class="token punctuation">;</span><br>    <span class="token property">left</span><span class="token punctuation">:</span> [PARENT LEFTHAND PADDING]<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.truly-center--absolute .truly-center__centered</span> <span class="token punctuation">{</span><br>    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--absolute</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.truly-center--absolute .button</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> [SIBLING HEIGHT / 2]<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> [PARENT LEFTHAND PADDING]<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.truly-center--absolute .truly-center__centered</span> <span class="token punctuation">{</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
 <h2>Pseudo element</h2>
 <p>You could also use the :after pseudo selector as a sort of “spacer” element to nudge the centered element to “true center”.</p>
 <p><strong>Caveat:</strong> You need to know the dimensions of each child element, and then calculate the appropriate dimensions for the pseudo element to nudge the centered element to “true center”.</p>
@@ -253,7 +274,23 @@
   <button class="truly-center__child button button--outline" type="button">&times;</button>
   <div class="truly-center__child truly-center__centered"><span>Center</span></div>
 </div>
-<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--pseudo .truly-center__centered</span> <span class="token punctuation">{</span><br>    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br>    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.truly-center--pseudo .truly-center__centered:after</span> <span class="token punctuation">{</span><br>    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> inline-flex<span class="token punctuation">;</span><br>    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span><br>    <span class="token property">width</span><span class="token punctuation">:</span> [SIBLING WIDTH]<span class="token punctuation">;</span><br>    <span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--pseudo .truly-center__centered</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.truly-center--pseudo .truly-center__centered:after</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> [SIBLING WIDTH]<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
 <h2>Negative margin</h2>
 <p>You could also use a negative margin on the centered element to shift it into “true center”.</p>
 <p><strong>Caveat:</strong> You need to know the dimensions of each child element, and then calculate the appropriate negative margin to nudge the centered element to “true center”.</p>
@@ -261,7 +298,17 @@
   <button class="truly-center__child button button--outline" type="button">&times;</button>
   <div class="truly-center__child truly-center__centered"><span>Center</span></div>
 </div>
-<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--negative-margin</span> <span class="token punctuation">{</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.truly-center--negative-margin .truly-center__centered</span> <span class="token punctuation">{</span><br>    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>    <span class="token property">margin-left</span><span class="token punctuation">:</span> [SIBLING WIDTH * -1]<span class="token punctuation">;</span><br>    <span class="token property">padding</span><span class="token punctuation">:</span> 0 [SIBLING WIDTH]<span class="token punctuation">;</span><br>    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--negative-margin</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.truly-center--negative-margin .truly-center__centered</span> <span class="token punctuation">{</span>
+    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> [SIBLING WIDTH * -1]<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 [SIBLING WIDTH]<span class="token punctuation">;</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
 <h2>CSS grid</h2>
 <p>The above solutions will work in pretty rigid circumstances, but break down if the size of surrounding siblings change across viewport sizes or different UI states. Is there a better way?</p>
 <p>CSS grid to the rescue! This solution is the most flexible of the bunch. You can have elements to the left and right, and you don’t need to care about their dimensions.</p>
@@ -274,14 +321,22 @@
     <button class="button button--outline" type="button">&times;</button>
   </div>
 </div>
-<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--grid</span> <span class="token punctuation">{</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr auto 1fr<span class="token punctuation">;</span><br>    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><br><span class="token selector">.truly-center--grid .truly-center__child:last-child</span> <span class="token punctuation">{</span><br>    <span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.truly-center--grid</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr auto 1fr<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token selector">.truly-center--grid .truly-center__child:last-child</span> <span class="token punctuation">{</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
 </div>
 </article>
 </main>
     </div>
 </div>
 
-        <script defer src="/assets/index.f2ddeb32575cf57319f3.js"></script>
+        <script type="module" src="/assets/index-DQhfTiEi.js"></script>
         
     </body>
 </html>

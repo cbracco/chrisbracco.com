@@ -1,6 +1,33 @@
 {
-  "main.css": "/assets/index.bb57d4282755ad1c5754.css",
-  "main.js": "/assets/index.f2ddeb32575cf57319f3.js",
-  "index.css.map": "/assets/index.bb57d4282755ad1c5754.css.map",
-  "index.js.map": "/assets/index.f2ddeb32575cf57319f3.js.map"
+  "node_modules/lightgallery/fonts/lg.svg": {
+    "file": "assets/lg-B0dIV2BS.svg",
+    "src": "node_modules/lightgallery/fonts/lg.svg"
+  },
+  "node_modules/lightgallery/fonts/lg.ttf": {
+    "file": "assets/lg-oyjwlqP2.ttf",
+    "src": "node_modules/lightgallery/fonts/lg.ttf"
+  },
+  "node_modules/lightgallery/fonts/lg.woff": {
+    "file": "assets/lg-CosQH4Cu.woff",
+    "src": "node_modules/lightgallery/fonts/lg.woff"
+  },
+  "node_modules/lightgallery/images/loading.gif": {
+    "file": "assets/loading-BZOHaeKn.gif",
+    "src": "node_modules/lightgallery/images/loading.gif"
+  },
+  "src/assets/scripts/index.js": {
+    "file": "assets/index-DQhfTiEi.js",
+    "name": "index",
+    "src": "src/assets/scripts/index.js",
+    "isEntry": true,
+    "css": [
+      "assets/index-DKD0Je3W.css"
+    ],
+    "assets": [
+      "assets/lg-oyjwlqP2.ttf",
+      "assets/lg-CosQH4Cu.woff",
+      "assets/lg-B0dIV2BS.svg",
+      "assets/loading-BZOHaeKn.gif"
+    ]
+  }
 }
