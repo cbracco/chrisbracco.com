@@ -1,0 +1,19 @@
+# Chris Bracco
+
+This is the personal website of Chris Bracco — a web designer, software engineer, and engineering leader.
+
+## Content
+
+- [Garden](https://chrisbracco.com/garden/): Blog with articles, notes, reviews, tutorials, ideas and more
+- [Work](https://chrisbracco.com/work/): Work experience
+- [Books](https://chrisbracco.com/books/): Favorite books
+- [Photos](https://chrisbracco.com/photos/): Curated photos taken by Chris
+
+## Feeds
+
+- [RSS Feed](https://chrisbracco.com/feed.xml): Subscribe to posts
+
+## Contact
+
+- Email: hello@chrisbracco.com
+- GitHub: https://github.com/cbracco

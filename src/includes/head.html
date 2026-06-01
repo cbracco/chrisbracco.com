@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark">
+        <meta name="theme-color" content="#f4f4f7" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#18191f" media="(prefers-color-scheme: dark)">
         <!-- Title, desc -->
         {% if title and not page.isHome %}
         <title>{{ title }} &bull; {{ site.title }} &bull; {{ site.subtitle }}</title>
@@ -37,6 +40,17 @@
         <meta property="article:author" content="{{ site.url }}">
         {% endif %}
         <meta property="og:image" content="{{ site.url }}/assets/images/{{ page.openGraphImage or site.openGraphImage }}">
+        <!-- Feed -->
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.feedUrl }}">
+        <!-- Twitter Card -->
+        {% if title and not page.isHome %}
+        <meta name="twitter:title" content="{{ title }} &bull; {{ site.title }} &bull; {{ site.subtitle }}">
+        {% else %}
+        <meta name="twitter:title" content="{{ site.title }} &bull; {{ site.subtitle }}">
+        {% endif %}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:description" content="{{ teaser or site.tagline }}">
+        <meta name="twitter:image" content="{{ site.url }}/assets/images/{{ page.openGraphImage or site.openGraphImage }}">
         <!-- Manifest -->
         <link rel="manifest" href="{{ '/site.webmanifest' }}">
         <!-- Favicons -->

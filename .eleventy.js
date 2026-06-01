@@ -79,6 +79,7 @@ module.exports = async function (config) {
     config.addPassthroughCopy({ 'src/assets/styles/posts': 'assets/styles/posts' });
     config.addPassthroughCopy('src/*.txt');
     config.addPassthroughCopy('src/*.webmanifest');
+    config.addPassthroughCopy('src/.well-known');
     config.addPassthroughCopy('CNAME');
 
     // Set Markdown libraries
