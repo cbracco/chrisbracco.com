@@ -34,7 +34,7 @@ npm start
 If you want to preview your production build locally, run the following command(s):
 
 ```bash
-npm run build && npm run serve
+npm run prod
 ```
 
 ### Deploying
