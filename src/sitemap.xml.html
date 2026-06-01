@@ -5,7 +5,8 @@ sitemap:
     ignore: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     {% for item in collections.all | reverse %}
         {% if item.data.sitemap.ignore != true %}
             <url>
@@ -17,6 +18,15 @@ sitemap:
                 {% endif %}
                 <changefreq>{{ item.data.sitemap.changefreq or 'monthly' }}</changefreq>
                 <priority>{{ item.data.sitemap.priority or '0.5' }}</priority>
+                {% if item.data.image %}
+                    <image:image>
+                        <image:loc>{{ site.url }}/assets/images/posts/{{ item.data.image }}</image:loc>
+                        {% if item.data.imageAlt %}
+                            <image:caption>{{ item.data.imageAlt }}</image:caption>
+                        {% endif %}
+                        <image:title>{{ item.data.title }}</image:title>
+                    </image:image>
+                {% endif %}
             </url>
         {% endif %}
     {% endfor %}

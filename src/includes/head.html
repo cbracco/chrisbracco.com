@@ -120,17 +120,18 @@
         <!-- Preconnect -->
         <link rel="preconnect" href="https://www.googletagmanager.com">
         <link rel="dns-prefetch" href="https://www.google-analytics.com">
-        <!-- Google Analytics -->
-        <script async
-            src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}">
-        </script>
+        <!-- Google Analytics (skipped if Global Privacy Control is set) -->
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
+            if (!navigator.globalPrivacyControl) {
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}';
+                document.head.appendChild(s);
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', '{{ site.googleAnalyticsId }}');
             }
-            gtag('js', new Date());
-            gtag('config', '{{ site.googleAnalyticsId }}');
         </script>
         {% endif %}
     </head>
