@@ -97,6 +97,14 @@ html {
 }
 
 /**
+ * Cross-document view transitions (fade between page navigations).
+ */
+
+@view-transition {
+    navigation: auto;
+}
+
+/**
  * Removes transitions and animations for folks who prefer not to see them.
  */
 

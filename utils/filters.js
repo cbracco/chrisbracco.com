@@ -11,6 +11,8 @@ module.exports = {
         }).toFormat('yyyy-LL-dd'),
     // Debug utility
     inspect: (obj) => JSON.stringify(obj, null, 2),
+    // Strip trailing slash from a URL string
+    stripTrailingSlash: (str) => str.replace(/\/$/, ''),
     // https://github.com/11ty/eleventy/issues/898#issuecomment-617628635
     sortByOrder: (values) => {
         const vals = [...values];

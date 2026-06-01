@@ -42,6 +42,9 @@
         <meta property="og:image" content="{{ site.url }}/assets/images/{{ page.openGraphImage or site.openGraphImage }}">
         <!-- Feed -->
         <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.feedUrl }}">
+        {% if page.date and title %}
+        <link rel="alternate" type="text/markdown" href="{{ site.url }}{{ page.url | stripTrailingSlash }}.md">
+        {% endif %}
         <!-- Twitter Card -->
         {% if title and not page.isHome %}
         <meta name="twitter:title" content="{{ title }} &bull; {{ site.title }} &bull; {{ site.subtitle }}">
@@ -104,6 +107,15 @@
         {% if cssFile %}
             <link rel="stylesheet" href="{{ '/assets/styles/posts/' + cssFile }}" />
         {% endif %}
+        <!-- Speculation Rules -->
+        <script type="speculationrules">
+        {
+            "prerender": [{
+                "where": { "href_matches": "/*" },
+                "eagerness": "moderate"
+            }]
+        }
+        </script>
         {% if site.isProd %}
         <!-- Preconnect -->
         <link rel="preconnect" href="https://www.googletagmanager.com">
